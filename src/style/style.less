@@ -7,6 +7,9 @@ body {
         padding: 0;
         box-sizing: border-box;
     }
+    .clear {
+        clear: both;
+    }
     .content {
         width: 1200px;
         margin: auto;
@@ -99,22 +102,30 @@ body {
         .block-with-ship {
             position: relative;
             height: 100vh;
-//            background: -webkit-linear-gradient(280deg, #1dbac5, #69dae1);
-//            background: -o-linear-gradient(280deg, #1dbac5, #69dae1);
-//            background: linear-gradient(10deg, #1dbac5, #69dae1);
             background-position: center;
             margin-top: -400px;
+            
             
             .ecosystem-background {
                 width: 100%;
                 position: absolute;
                 background-repeat: no-repeat;
             }
+            .color {
+                background: -webkit-linear-gradient(280deg, #1dbac5, #69dae1);
+                background: -o-linear-gradient(280deg, #1dbac5, #69dae1);
+                background: linear-gradient(10deg, #1dbac5, #69dae1);
+                height: 100%;
+                top: 0;
+                opacity: 0;
+            }
             .sursu-text {
                 background-image: url(../img/sursu.png);
                 top: 0;
                 background-position: center;
+                margin-top: -80px;
                 height: 100%;
+                opacity: 0;
             }
             .ship {                
                 background-image: url(../img/ship.png);
@@ -123,20 +134,39 @@ body {
                 height: calc(100% - 160px);
             }
             .top-container {
+                opacity: 0;
                 .target-audiences {
-                    a {
-                        &:first-child {
-                            margin-left: 0;
-                        }
-                        &:last-child {
-                            margin-right: 0;
-                        }
+                    a {                        
                         width: 16.5%;
-                        background: #fff;
-                        text-transform: capitalize;
+                        font-family: MyriadPro;
+                        text-transform: uppercase;
+                        font-size: 1.1em;
                         height: 35px;
                         margin: 0 2%;
                         display: inline-block;
+                        text-align: center;
+                        line-height: 35px;
+                        color: @white;
+                        letter-spacing: 0.2em;
+                        
+                        &:first-child {
+                            margin-left: 0;
+                            background: #72eee4;
+                        }
+                        &:nth-child(2) {
+                            background: #018b98;
+                        }
+                        &:nth-child(3) {
+                            background: #29d8e7;
+                        }
+                        &:nth-child(4) {
+                            background: #f8e08a;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                            background: #ff6471;
+                        }
+                        
                         &:hover{
                         }
                     }
@@ -145,12 +175,39 @@ body {
             .bottom-container {
                 height: 160px;
                 background-color: @light_gray;
+                border-top: 2px solid @black;
                 position: absolute;
                 bottom: 0;
                 width: 100%;
+                
+                .departments {                    
+                    border-collapse: collapse;
+                }
                 .department {
+//                    float: left;
+//                    width: 14.27%;
+                    padding: 35px 10px 0;
+                    border-left: 2px solid @black;
+                    border-right: 2px solid @black;
+                    height: 90px;
+                    position: relative;
+                    
                     a {
+                        font-family: Bahnschrift;
+                        font-size: 1em;
+                        text-transform: uppercase;
+                        color: @black;
                         &:hover{
+                            color: #57b2ba;
+                        }
+                        &:before {
+                            content: '';
+                            width: 16px;
+                            height: 10px;
+                            background: #ff6471;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
                         }
                     }
                 }

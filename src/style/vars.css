@@ -6,6 +6,13 @@
   /* Путь к файлу со шрифтом */
   font-weight: 400;
 }
+@font-face {
+  font-family: Bahnschrift;
+  /* Гарнитура шрифта */
+  src: url(../fonts/bahnschrift.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: 400;
+}
 @keyframes show {
   0% {
     opacity: 0;

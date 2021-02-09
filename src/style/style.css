@@ -6,6 +6,13 @@
   /* Путь к файлу со шрифтом */
   font-weight: 400;
 }
+@font-face {
+  font-family: Bahnschrift;
+  /* Гарнитура шрифта */
+  src: url(../fonts/bahnschrift.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: 400;
+}
 @keyframes show {
   0% {
     opacity: 0;
@@ -24,6 +31,9 @@ body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body .clear {
+  clear: both;
 }
 body .content {
   width: 1200px;
@@ -109,11 +119,21 @@ body .ecosystem .block-with-ship .ecosystem-background {
   position: absolute;
   background-repeat: no-repeat;
 }
+body .ecosystem .block-with-ship .color {
+  background: -webkit-linear-gradient(280deg, #1dbac5, #69dae1);
+  background: -o-linear-gradient(280deg, #1dbac5, #69dae1);
+  background: linear-gradient(10deg, #1dbac5, #69dae1);
+  height: 100%;
+  top: 0;
+  opacity: 0;
+}
 body .ecosystem .block-with-ship .sursu-text {
   background-image: url(../img/sursu.png);
   top: 0;
   background-position: center;
+  margin-top: -80px;
   height: 100%;
+  opacity: 0;
 }
 body .ecosystem .block-with-ship .ship {
   background-image: url(../img/ship.png);
@@ -121,24 +141,72 @@ body .ecosystem .block-with-ship .ship {
   background-position: bottom;
   height: calc(100% - 160px);
 }
+body .ecosystem .block-with-ship .top-container {
+  opacity: 0;
+}
 body .ecosystem .block-with-ship .top-container .target-audiences a {
   width: 16.5%;
-  background: #fff;
-  text-transform: capitalize;
+  font-family: MyriadPro;
+  text-transform: uppercase;
+  font-size: 1.1em;
   height: 35px;
   margin: 0 2%;
   display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: #ffffff;
+  letter-spacing: 0.2em;
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a:first-child {
   margin-left: 0;
+  background: #72eee4;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(2) {
+  background: #018b98;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(3) {
+  background: #29d8e7;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(4) {
+  background: #f8e08a;
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a:last-child {
   margin-right: 0;
+  background: #ff6471;
 }
 body .ecosystem .block-with-ship .bottom-container {
   height: 160px;
   background-color: #eff0f2;
+  border-top: 2px solid #000000;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+body .ecosystem .block-with-ship .bottom-container .departments {
+  border-collapse: collapse;
+}
+body .ecosystem .block-with-ship .bottom-container .department {
+  padding: 35px 10px 0;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+  height: 90px;
+  position: relative;
+}
+body .ecosystem .block-with-ship .bottom-container .department a {
+  font-family: Bahnschrift;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+body .ecosystem .block-with-ship .bottom-container .department a:hover {
+  color: #57b2ba;
+}
+body .ecosystem .block-with-ship .bottom-container .department a:before {
+  content: '';
+  width: 16px;
+  height: 10px;
+  background: #ff6471;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
