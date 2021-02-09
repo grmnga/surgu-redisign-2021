@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>СурГУ</title>
     <link rel="stylesheet" href="src/style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="src/script/script.js"></script>
 </head>
-<body>
-    <section class="main-screen">
+<body id="myContainer">
+    <section class="main-screen section section_1 main__section main__current">
         <div class="top-sidebar">
             <div class="content">
                 <div class="left-column">
@@ -31,16 +33,19 @@
             <div class="play-button"></div>
         </div>
     </section>
-    <section class="ecosystem">
-       <div class="block-with-ship">
-           <div class="top-container">
+    <section class="ecosystem section section_2 main__section main__next">
+      <div class="ship-wrapper">
+       <div class="block-with-ship" id="ship_background">
+          <div class="ecosystem-background sursu-text" id="ship_text"></div>
+          <div class="ecosystem-background ship" id="ship"></div>
+           <div class="top-container" id="ship-ta">
                <div class="content">
                    <div class="target-audiences">
-                       <a href="">поступающим</a>
-                       <a href="">Студенту </a>
-                       <a href="">выпускнику</a>
-                       <a href="">сотруднику</a>
-                       <a href="">партнеру </a>
+                       <a href="#">поступающим</a>
+                       <a href="#">Студенту </a>
+                       <a href="#">выпускнику</a>
+                       <a href="#">сотруднику</a>
+                       <a href="#">партнеру </a>
                    </div>
                </div>
            </div>
@@ -55,7 +60,8 @@
                    <div class="department"><a href="">Медицинский колледж</a></div>
                </div>
            </div>
-       </div>
+       </div>          
+      </div>
        <div class="link-big-blocks">
            <div class="content">
                <div class="big-link-wrapper">

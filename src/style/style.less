@@ -95,5 +95,67 @@ body {
         }
     }
     
-
+    .ecosystem {
+        .block-with-ship {
+            position: relative;
+            height: 100vh;
+//            background: -webkit-linear-gradient(280deg, #1dbac5, #69dae1);
+//            background: -o-linear-gradient(280deg, #1dbac5, #69dae1);
+//            background: linear-gradient(10deg, #1dbac5, #69dae1);
+            background-position: center;
+            margin-top: -400px;
+            
+            .ecosystem-background {
+                width: 100%;
+                position: absolute;
+                background-repeat: no-repeat;
+            }
+            .sursu-text {
+                background-image: url(../img/sursu.png);
+                top: 0;
+                background-position: center;
+                height: 100%;
+            }
+            .ship {                
+                background-image: url(../img/ship.png);
+                bottom: 160px;
+                background-position: bottom;
+                height: calc(100% - 160px);
+            }
+            .top-container {
+                .target-audiences {
+                    a {
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        width: 16.5%;
+                        background: #fff;
+                        text-transform: capitalize;
+                        height: 35px;
+                        margin: 0 2%;
+                        display: inline-block;
+                        &:hover{
+                        }
+                    }
+                }
+            }
+            .bottom-container {
+                height: 160px;
+                background-color: @light_gray;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                .department {
+                    a {
+                        &:hover{
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+

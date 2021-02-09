@@ -98,3 +98,47 @@ body .main-screen .main-screen-background .color-background {
   left: 0;
   opacity: 0.3;
 }
+body .ecosystem .block-with-ship {
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  margin-top: -400px;
+}
+body .ecosystem .block-with-ship .ecosystem-background {
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+body .ecosystem .block-with-ship .sursu-text {
+  background-image: url(../img/sursu.png);
+  top: 0;
+  background-position: center;
+  height: 100%;
+}
+body .ecosystem .block-with-ship .ship {
+  background-image: url(../img/ship.png);
+  bottom: 160px;
+  background-position: bottom;
+  height: calc(100% - 160px);
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a {
+  width: 16.5%;
+  background: #fff;
+  text-transform: capitalize;
+  height: 35px;
+  margin: 0 2%;
+  display: inline-block;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:first-child {
+  margin-left: 0;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:last-child {
+  margin-right: 0;
+}
+body .ecosystem .block-with-ship .bottom-container {
+  height: 160px;
+  background-color: #eff0f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
