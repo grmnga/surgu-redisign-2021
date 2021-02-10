@@ -264,7 +264,8 @@ body {
         }
         .icon {
         }
-        p {
+        a {
+            display: block;
             font-family: SegoeUI;
             font-size: 24px;
             line-height: 40px;
@@ -278,6 +279,130 @@ body {
         }
     }
     
+    .news {
+        padding: 105px 0;
+        background: @white;
+        h1 {
+            font-family: Bahnschrift;
+            font-size: 3em;
+            line-height: 28px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #505050;
+            text-align: center;
+            
+            &::after {
+                content: '';
+                width: 60px;
+                height: 4px;
+                background: #f38181;
+                display: block;
+                margin: 30px auto 40px;
+            }
+        }
+        .big-new {
+            height: 590px;
+            &:hover{
+            }
+            .news-img {
+            }
+            div.news-body {
+                .color-background {
+                }
+                .new-content {
+                    h2.title {
+                    }
+                    .date {
+                    }
+                    .text {
+                    }
+                }
+            }
+        }
+        .smoll-news {
+            .new-wrapper {
+                float: left;
+                width: 30%;
+                padding: 0 15px;
+                a.news-body {
+                    display: block;
+                    &:hover {}
 
+                    .background {}
+
+                    .data {}
+
+                    p.title {}
+
+                    .text {}
+                }
+            }
+
+            .more-button {}
+
+            button {}
+        }
+    }
+    
+    .tour {
+        padding: 50px 0;
+        background: #aaa;
+        .tour-link {
+        }
+        .icon {
+        }
+        a {
+            display: block;
+            font-family: SegoeUI;
+            font-size: 24px;
+            line-height: 40px;
+            font-weight: 700;
+            padding: 0 30px;
+            color: @white;
+            background-color: #01566c;
+            width: 420px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: auto;
+        }
+    }
+    .people {
+        h2 {}
+
+        .people-wrapper {
+            .people-big {
+                position: sticky;
+                float: left;
+                width: 70%;
+                height: 600px;
+//                background: #fff;
+                top: 0;
+                height: 100vh;
+                padding: 50px 20px 250px;
+                
+//                background: -webkit-linear-gradient(280deg, #228188, #69dae1);
+//                background: -o-linear-gradient(280deg, #228188, #69dae1);
+//                background: linear-gradient(10deg, #228188, #69dae1);
+//                background-image: url(../img/tmp1.jpg);
+//                background-size: contain;
+//                background-repeat: no-repeat;
+                
+//                border: 5px solid #fff;
+            }
+
+            .people-scroll {
+                padding: 50px 0 250px;
+                float: left;
+                width: 30%;
+                .people-smoll {
+                    float: left;
+                    width: 50%;
+                    border: 2px solid #fff;
+                    height: 128px;
+                    background: #aaa;
+                }
+            }
+        }
+    }
 }
 

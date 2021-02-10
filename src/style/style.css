@@ -257,7 +257,8 @@ body .booklet {
   padding: 50px 0;
   background: #aaa;
 }
-body .booklet p {
+body .booklet a {
+  display: block;
   font-family: SegoeUI;
   font-size: 24px;
   line-height: 40px;
@@ -268,4 +269,75 @@ body .booklet p {
   width: 340px;
   text-align: center;
   margin: auto;
+}
+body .news {
+  padding: 105px 0;
+  background: #ffffff;
+}
+body .news h1 {
+  font-family: Bahnschrift;
+  font-size: 3em;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #505050;
+  text-align: center;
+}
+body .news h1::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #f38181;
+  display: block;
+  margin: 30px auto 40px;
+}
+body .news .big-new {
+  height: 590px;
+}
+body .news .smoll-news .new-wrapper {
+  float: left;
+  width: 30%;
+  padding: 0 15px;
+}
+body .news .smoll-news .new-wrapper a.news-body {
+  display: block;
+}
+body .tour {
+  padding: 50px 0;
+  background: #aaa;
+}
+body .tour a {
+  display: block;
+  font-family: SegoeUI;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  padding: 0 30px;
+  color: #ffffff;
+  background-color: #01566c;
+  width: 420px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+body .people .people-wrapper .people-big {
+  position: sticky;
+  float: left;
+  width: 70%;
+  height: 600px;
+  top: 0;
+  height: 100vh;
+  padding: 50px 20px 250px;
+}
+body .people .people-wrapper .people-scroll {
+  padding: 50px 0 250px;
+  float: left;
+  width: 30%;
+}
+body .people .people-wrapper .people-scroll .people-smoll {
+  float: left;
+  width: 50%;
+  border: 2px solid #fff;
+  height: 128px;
+  background: #aaa;
 }
