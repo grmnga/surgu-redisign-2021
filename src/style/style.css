@@ -13,6 +13,13 @@
   /* Путь к файлу со шрифтом */
   font-weight: 400;
 }
+@font-face {
+  font-family: SegoeUI;
+  /* Гарнитура шрифта */
+  src: url(../fonts/segoeui.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: 400;
+}
 @keyframes show {
   0% {
     opacity: 0;
@@ -194,6 +201,7 @@ body .ecosystem .block-with-ship .bottom-container .department {
 }
 body .ecosystem .block-with-ship .bottom-container .department a {
   font-family: Bahnschrift;
+  font-weight: 400;
   font-size: 1em;
   text-transform: uppercase;
   color: #000000;
@@ -209,4 +217,55 @@ body .ecosystem .block-with-ship .bottom-container .department a:before {
   position: absolute;
   top: 0;
   left: 0;
+}
+body .ecosystem .link-big-blocks {
+  background: #ffffff;
+  padding: 70px 0;
+}
+body .ecosystem .link-big-blocks .big-link-wrapper {
+  height: 320px;
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+body .ecosystem .link-big-blocks .big-link-wrapper .big-link {
+  background: #aaa;
+  height: 100%;
+  padding: 30px 20px 20px;
+  position: relative;
+  color: #ffffff;
+}
+body .ecosystem .link-big-blocks .big-link-wrapper .big-link .title {
+  text-shadow: 2px 3px 5px rgba(0, 0, 2, 0.2);
+  font-family: Bahnschrift;
+  font-size: 3em;
+  line-height: 55px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  padding-right: 140px;
+}
+body .ecosystem .link-big-blocks .big-link-wrapper .big-link .link-text {
+  position: absolute;
+  bottom: 20px;
+  opacity: 0.76;
+  font-family: SegoeUI;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+body .booklet {
+  padding: 50px 0;
+  background: #aaa;
+}
+body .booklet p {
+  font-family: SegoeUI;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  padding: 0 30px;
+  color: #01566c;
+  background-color: #6eeee4;
+  width: 340px;
+  text-align: center;
+  margin: auto;
 }
