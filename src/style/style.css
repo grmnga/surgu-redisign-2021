@@ -330,7 +330,7 @@ body .people .people-wrapper .people-big {
   padding: 50px 20px 250px;
 }
 body .people .people-wrapper .people-scroll {
-  padding: 50px 0 250px;
+  padding: 50px 0 20px;
   float: left;
   width: 30%;
 }
