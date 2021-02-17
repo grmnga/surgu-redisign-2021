@@ -163,23 +163,54 @@ body .ecosystem .block-with-ship .top-container .target-audiences a {
   line-height: 35px;
   color: #ffffff;
   letter-spacing: 0.2em;
+  transition-duration: 0.5s;
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a:first-child {
   margin-left: 0;
   background: #72eee4;
 }
+body .ecosystem .block-with-ship .top-container .target-audiences a:first-child .ta-pic {
+  background-image: url(../img/abitur.png);
+}
 body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(2) {
   background: #018b98;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(2) .ta-pic {
+  background-image: url(../img/student.png);
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(3) {
   background: #29d8e7;
 }
+body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(3) .ta-pic {
+  background-image: url(../img/graduate.png);
+}
 body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(4) {
   background: #f8e08a;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:nth-child(4) .ta-pic {
+  background-image: url(../img/staff.png);
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a:last-child {
   margin-right: 0;
   background: #ff6471;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:last-child .ta-pic {
+  background-image: url(../img/partner.png);
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:hover {
+  height: 200px;
+  transition-duration: 0.5s;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a:hover .ta-pic {
+  transition-duration: 0.5s;
+  height: 165px;
+  margin-bottom: 20px;
+}
+body .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic {
+  height: 0;
+  transition-duration: 0.5s;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 body .ecosystem .block-with-ship .bottom-container {
   height: 160px;
