@@ -254,6 +254,41 @@ body {
                 float: left;
                 width: 50%;
                 padding: 5px;
+                &:hover {
+                    .big-link {
+                        background-size: auto;
+                    }
+                }
+                &:nth-child(1) {
+                    .big-link {
+                        background-color: #72eee4;
+                        background-image: url('../img/enroll-back.png');
+                        .link-text {
+                            color: #465c63;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    .big-link {
+                        background-color: #018e9a;
+                        background-image: url('../img/big-university.png');
+                    }
+                }
+                &:nth-child(3) {
+                    .big-link {
+                        background-color: #a3aaad;
+                        background-image: url('../img/science.png');
+                    }
+                }
+                &:nth-child(4) {
+                    .big-link {
+                        background-color: #6fdbe2;
+                        background-image: url('../img/stud-life.png');
+                        .link-text {
+                            color: #465c63;
+                        }
+                    }
+                }
                 
                 .big-link {
                     background: #aaa;
@@ -261,6 +296,10 @@ body {
                     padding: 30px 20px 20px;
                     position: relative;
                     color: @white;
+                    display: block;
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
                     
                     .title {
                         text-shadow: 2px 3px 5px rgba(0,0,2,0.2);
@@ -280,6 +319,9 @@ body {
                         font-size: 0.8em;
                         font-weight: 400;
                         text-transform: uppercase;
+                        &:hover {
+                            text-shadow: 1px 1px #aaa;
+                        }
                     }
                 }                
             }
@@ -290,6 +332,10 @@ body {
 //        height: 200px;
         padding: 50px 0;
         background: #aaa;
+        background-image: url(../img/booklet-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         .booklet-link {
         }
         .icon {
@@ -306,6 +352,10 @@ body {
             width: 340px;
             text-align: center;
             margin: auto;
+            &:hover {
+                background: #01566c;
+                color: @white;
+            }
         }
     }
     
@@ -332,15 +382,63 @@ body {
         }
         .big-new {
             height: 590px;
+            position: relative;
             &:hover{
             }
+            .news-border {
+                height: 440px;
+                width: 755px;
+                border: 4px solid #6eeee4;
+//                position: absolute;
+//                left: -20px;
+//                top: 25px;
+                margin-left: -20px;
+            }
             .news-img {
+                height: 500px;
+                width: 755px;
+                background-image: url(../img/big-new.jpg);
+                transition-duration: 1s;
+                display: block;
+                position: absolute;
+                background-position: center;
+                background-size: contain;
+                top: -20px;
+                &:hover {
+                    transition-duration: 1s;
+                    background-size: auto;
+                }
             }
             div.news-body {
+                height: 380px;
+                width: 610px;
+                box-shadow: 5px 8px 8px 0px rgba(0,3,1,0.02);
+                position: absolute;
+                top: 40px;
+                right: 0;
                 .color-background {
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 228, 103, 0.2);
+                    margin-left: -20px;
+                    margin-top: 20px;
                 }
                 .new-content {
+                    background: @white;
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    padding: 35px 55px;
                     h2.title {
+                        font-family: Bahnschrift;
+                        font-size: 3.3em;
+                        line-height: 52px;
+                        font-weight: 400;
+                        letter-spacing: -0.055em;
+                        color: #000000;
+                        &:hover {
+                            color: #1dbac5;
+                        }
                     }
                     .date {
                     }

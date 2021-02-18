@@ -259,12 +259,41 @@ body .ecosystem .link-big-blocks .big-link-wrapper {
   width: 50%;
   padding: 5px;
 }
+body .ecosystem .link-big-blocks .big-link-wrapper:hover .big-link {
+  background-size: auto;
+}
+body .ecosystem .link-big-blocks .big-link-wrapper:nth-child(1) .big-link {
+  background-color: #72eee4;
+  background-image: url('../img/enroll-back.png');
+}
+body .ecosystem .link-big-blocks .big-link-wrapper:nth-child(1) .big-link .link-text {
+  color: #465c63;
+}
+body .ecosystem .link-big-blocks .big-link-wrapper:nth-child(2) .big-link {
+  background-color: #018e9a;
+  background-image: url('../img/big-university.png');
+}
+body .ecosystem .link-big-blocks .big-link-wrapper:nth-child(3) .big-link {
+  background-color: #a3aaad;
+  background-image: url('../img/science.png');
+}
+body .ecosystem .link-big-blocks .big-link-wrapper:nth-child(4) .big-link {
+  background-color: #6fdbe2;
+  background-image: url('../img/stud-life.png');
+}
+body .ecosystem .link-big-blocks .big-link-wrapper:nth-child(4) .big-link .link-text {
+  color: #465c63;
+}
 body .ecosystem .link-big-blocks .big-link-wrapper .big-link {
   background: #aaa;
   height: 100%;
   padding: 30px 20px 20px;
   position: relative;
   color: #ffffff;
+  display: block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 body .ecosystem .link-big-blocks .big-link-wrapper .big-link .title {
   text-shadow: 2px 3px 5px rgba(0, 0, 2, 0.2);
@@ -284,9 +313,16 @@ body .ecosystem .link-big-blocks .big-link-wrapper .big-link .link-text {
   font-weight: 400;
   text-transform: uppercase;
 }
+body .ecosystem .link-big-blocks .big-link-wrapper .big-link .link-text:hover {
+  text-shadow: 1px 1px #aaa;
+}
 body .booklet {
   padding: 50px 0;
   background: #aaa;
+  background-image: url(../img/booklet-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 body .booklet a {
   display: block;
@@ -300,6 +336,10 @@ body .booklet a {
   width: 340px;
   text-align: center;
   margin: auto;
+}
+body .booklet a:hover {
+  background: #01566c;
+  color: #ffffff;
 }
 body .news {
   padding: 105px 0;
@@ -324,6 +364,61 @@ body .news h1::after {
 }
 body .news .big-new {
   height: 590px;
+  position: relative;
+}
+body .news .big-new .news-border {
+  height: 440px;
+  width: 755px;
+  border: 4px solid #6eeee4;
+  margin-left: -20px;
+}
+body .news .big-new .news-img {
+  height: 500px;
+  width: 755px;
+  background-image: url(../img/big-new.jpg);
+  transition-duration: 1s;
+  display: block;
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  top: -20px;
+}
+body .news .big-new .news-img:hover {
+  transition-duration: 1s;
+  background-size: auto;
+}
+body .news .big-new div.news-body {
+  height: 380px;
+  width: 610px;
+  box-shadow: 5px 8px 8px 0px rgba(0, 3, 1, 0.02);
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+body .news .big-new div.news-body .color-background {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 228, 103, 0.2);
+  margin-left: -20px;
+  margin-top: 20px;
+}
+body .news .big-new div.news-body .new-content {
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 35px 55px;
+}
+body .news .big-new div.news-body .new-content h2.title {
+  font-family: Bahnschrift;
+  font-size: 3.3em;
+  line-height: 52px;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  color: #000000;
+}
+body .news .big-new div.news-body .new-content h2.title:hover {
+  color: #1dbac5;
 }
 body .news .smoll-news .new-wrapper {
   float: left;
