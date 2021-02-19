@@ -260,7 +260,8 @@ body .ecosystem .link-big-blocks .big-link-wrapper {
   padding: 5px;
 }
 body .ecosystem .link-big-blocks .big-link-wrapper:hover .big-link {
-  background-size: auto;
+  background-size: 110%;
+  transition-duration: 0.5s;
 }
 body .ecosystem .link-big-blocks .big-link-wrapper:nth-child(1) .big-link {
   background-color: #72eee4;
@@ -291,9 +292,10 @@ body .ecosystem .link-big-blocks .big-link-wrapper .big-link {
   position: relative;
   color: #ffffff;
   display: block;
-  background-size: contain;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  transition-duration: 1s;
 }
 body .ecosystem .link-big-blocks .big-link-wrapper .big-link .title {
   text-shadow: 2px 3px 5px rgba(0, 0, 2, 0.2);
@@ -380,12 +382,12 @@ body .news .big-new .news-img {
   display: block;
   position: absolute;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
   top: -20px;
 }
 body .news .big-new .news-img:hover {
   transition-duration: 1s;
-  background-size: auto;
+  background-size: 110%;
 }
 body .news .big-new div.news-body {
   height: 380px;
@@ -416,9 +418,17 @@ body .news .big-new div.news-body .new-content h2.title {
   font-weight: 400;
   letter-spacing: -0.055em;
   color: #000000;
+  height: 160px;
 }
 body .news .big-new div.news-body .new-content h2.title:hover {
   color: #1dbac5;
+}
+body .news .big-new div.news-body .new-content .new-text-wrap .text {
+  font-family: SegoeUISemi;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  letter-spacing: -0.02em;
 }
 body .news .smoll-news .new-wrapper {
   float: left;
