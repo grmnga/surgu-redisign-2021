@@ -401,6 +401,7 @@ body {
                 display: block;
                 position: absolute;
                 background-position: center;
+                background-repeat: no-repeat;
                 background-size: 100%;
                 top: -20px;
                 &:hover {
@@ -442,10 +443,16 @@ body {
                     }
                     .new-text-wrap {
                         .date {
+                            font-family: SegoeUI;
+                            font-size: 0.9em;
+                            height: 30px;
+                            font-weight: 600;
+                            letter-spacing: -0.02em;
+                            color: #b3b3b3;
                         }
                         .text {
-                            font-family: SegoeUISemi;
-                            font-size: 14px;
+                            font-family: SegoeUI;
+                            font-size: 0.9em;
                             line-height: 17px;
                             font-weight: 300;
                             letter-spacing: -0.02em;
@@ -457,31 +464,79 @@ body {
         .smoll-news {
             .new-wrapper {
                 float: left;
-                width: 30%;
+                width: 33%;
                 padding: 0 15px;
+                &:nth-child(1) {
+                    .background {
+                        background-image: url(../img/new_back_1.jpg);
+                    }
+                }
+                &:nth-child(2) {
+                    .background {
+                        background-image: url(../img/new_back_2.jpg);
+                    }
+                }
+                &:nth-child(3) {
+                    .background {
+                        background-image: url(../img/new_back_3.jpg);
+                    }
+                }
                 a.news-body {
                     display: block;
-                    &:hover {}
 
-                    .background {}
+                    .background {
+                        height: 230px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
 
                     .data {}
 
-                    p.title {}
+                    p.title {
+                        font-family: SegoeUI;
+                        font-size: 0.9em;
+                        line-height: 1.2;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: #333333;
+                        margin: 10px 0;
+                    }
 
-                    .text {}
+                    .text {
+                        font-family: SegoeUISemi;
+                        font-size: 1em;
+                        line-height: 22px;
+                        font-weight: 300;
+                        color: #999999;
+                    }
                 }
             }
+        }
+        .more-button {
+        }
 
-            .more-button {}
-
-            button {}
+        button {
+            font-family: SegoeUI;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #000000;
+            border: none;
+            background: #aaa;
+            padding: 10px 20px;
+            margin-top: 30px;
+            float: right;
         }
     }
     
     .tour {
         padding: 50px 0;
-        background: #aaa;
+        background-image: url(../img/tour_back.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         .tour-link {
         }
         .icon {
