@@ -414,17 +414,21 @@ body .news .big-new div.news-body .new-content {
   height: 100%;
   padding: 35px 55px;
 }
-body .news .big-new div.news-body .new-content h2.title {
+body .news .big-new div.news-body .new-content h3.title {
   font-family: Bahnschrift;
   font-size: 3.3em;
   line-height: 52px;
   font-weight: 400;
   letter-spacing: -0.055em;
-  color: #000000;
   height: 160px;
 }
-body .news .big-new div.news-body .new-content h2.title:hover {
+body .news .big-new div.news-body .new-content h3.title a {
+  color: #000000;
+  transition-duration: 0.3s;
+}
+body .news .big-new div.news-body .new-content h3.title a:hover {
   color: #1dbac5;
+  transition-duration: 0.3s;
 }
 body .news .big-new div.news-body .new-content .new-text-wrap .date {
   font-family: SegoeUI;
@@ -543,12 +547,17 @@ body .tour a {
   line-height: 40px;
   font-weight: 700;
   padding: 0 30px;
-  color: #ffffff;
-  background-color: #01566c;
-  width: 420px;
+  color: #01566c;
+  background-color: #6eeee4;
   text-align: center;
-  text-transform: uppercase;
   margin: auto;
+  transition-duration: 0.3s;
+  width: max-content;
+}
+body .tour a:hover {
+  background: #01566c;
+  color: #ffffff;
+  transition-duration: 0.3s;
 }
 body .people {
   background: #ffffff;
