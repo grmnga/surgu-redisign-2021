@@ -50,6 +50,16 @@ body a {
   color: inherit;
   text-decoration: none;
 }
+body .background-with-hover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  transition-duration: 0.3s;
+}
+body .background-with-hover:hover {
+  background-size: 110%;
+  transition-duration: 0.3s;
+}
 body .main-screen {
   width: 100%;
   height: 100vh;
@@ -561,6 +571,8 @@ body .tour a:hover {
 }
 body .people {
   background: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 body .people .people-wrapper .people-big {
   position: sticky;
@@ -569,17 +581,17 @@ body .people .people-wrapper .people-big {
   height: 600px;
   top: 0;
   height: 100vh;
-  padding: 100px 50px 0 85px;
+  padding: 50px 50px 0 100px;
   padding-bottom: calc(100vh - 35vw - 200px);
 }
 body .people .people-wrapper .people-big h2 {
   font-family: Bahnschrift;
   font-size: 45px;
-  line-height: 28px;
   height: 100px;
   font-weight: 400;
   text-transform: uppercase;
   color: #505050;
+  margin-right: 100px;
 }
 body .people .people-wrapper .people-big h2::after {
   content: '';
@@ -591,22 +603,112 @@ body .people .people-wrapper .people-big h2::after {
   text-align: right;
   margin-right: 200px;
 }
-body .people .people-wrapper .people-big .people-big-img {
-  height: 35vw;
-  background: #aaa;
+body .people .people-wrapper .people-big .people-big-wrap {
+  height: 38vw;
+  width: 57vw;
+  margin-top: 50px;
+  position: relative;
+  padding-top: 30px;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-border {
+  border: 4px solid #fce38a;
+  height: calc(38vw - 60px);
+  margin-left: -20px;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img {
+  display: block;
+  background-image: url(../img/people-big-img.jpg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img .person-content {
+  width: 240px;
+  padding-top: 150px;
+  padding-left: 30px;
+  height: 100%;
+  position: relative;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img .title {
+  font-family: Bahnschrift;
+  font-size: 29.9px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  color: #000000;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img .text {
+  font-family: SegoeUISemi;
+  font-size: 18px;
+  font-weight: 300;
+  color: #585757;
+  width: 250px;
+  background-color: rgba(118, 244, 234, 0.8);
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 34px;
+  margin-left: -34px;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img .link-text {
+  opacity: 0.76;
+  font-family: MyriadPro;
+  font-size: 15.1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  position: absolute;
+  bottom: 40px;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img .link-text:hover {
+  text-shadow: 0 0 #eeeeee;
 }
 body .people .people-wrapper .people-scroll {
   padding-top: 200px;
-  padding-bottom: calc(100vh - 35vw - 200px);
+  padding-bottom: calc(100vh - 38vw - 200px);
   float: left;
   width: 30vw;
 }
-body .people .people-wrapper .people-scroll .people-smoll {
+body .people .people-wrapper .people-scroll .people-small {
+  display: block;
   float: left;
   width: 15vw;
-  border: 2px solid #fff;
   height: 10vw;
-  background: #aaa;
+  background-color: #aaa;
+}
+body .people .people-wrapper .people-scroll .people-small:hover {
+  filter: brightness(0.9);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(1) {
+  background-image: url(../img/people-scroll-img-1.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(2) {
+  background-image: url(../img/people-scroll-img-2.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(3) {
+  background-image: url(../img/people-scroll-img-3.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(4) {
+  background-image: url(../img/people-scroll-img-4.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(5) {
+  background-image: url(../img/people-scroll-img-5.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(6) {
+  background-image: url(../img/people-scroll-img-6.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(7) {
+  background-image: url(../img/people-scroll-img-7.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(8) {
+  background-image: url(../img/people-scroll-img-8.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(9) {
+  background-image: url(../img/people-scroll-img-9.jpg);
+}
+body .people .people-wrapper .people-scroll .people-small:nth-child(10) {
+  background-image: url(../img/people-scroll-img-10.jpg);
 }
 body .galery .col {
   float: left;
