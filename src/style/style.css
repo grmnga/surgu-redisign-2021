@@ -638,6 +638,9 @@ body .people .people-wrapper .people-big .people-big-wrap .people-big-img .title
   letter-spacing: -0.055em;
   color: #000000;
 }
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img .title:hover {
+  color: #1dbac5;
+}
 body .people .people-wrapper .people-big .people-big-wrap .people-big-img .text {
   font-family: SegoeUISemi;
   font-size: 18px;
@@ -649,6 +652,10 @@ body .people .people-wrapper .people-big .people-big-wrap .people-big-img .text 
   padding: 10px;
   padding-left: 34px;
   margin-left: -34px;
+}
+body .people .people-wrapper .people-big .people-big-wrap .people-big-img .text:hover {
+  background: #01566c;
+  color: #ffffff;
 }
 body .people .people-wrapper .people-big .people-big-wrap .people-big-img .link-text {
   opacity: 0.76;
