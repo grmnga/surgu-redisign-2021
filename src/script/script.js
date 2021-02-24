@@ -5,6 +5,7 @@ var bgColor2 = {r:29,g:186,b:197,a:1}//В какой цвет
 
 window.onload = function(){
 	window.dispatchEvent(new Event("scroll"));
+    initMenu();
 }
 window.addEventListener("scroll",function(){
 var scrollTop = window.pageYOffset || document.documentElement.scrollTop;//текущая позиция скролла
@@ -23,9 +24,15 @@ if (color.a > 0.99 || color.a < -0.5) {
 document.getElementById("ship_color_background").style.opacity = color.a;
 document.getElementById("ship_text_background").style.opacity = color.a;
 document.getElementById("ship_bar").style.opacity = color.a;
-    console.log(innerHeight*(1-percent)+160);
+//    console.log(innerHeight*(1-percent)+160);
 document.getElementById("ship").style.bottom = innerHeight*(1-percent)+160;
 
 });
+
+function initMenu() {
+    $('.menu-buttons button').on('click', function() {
+        $('.menu-block').toggleClass('hide');
+    });
+}
 
 
