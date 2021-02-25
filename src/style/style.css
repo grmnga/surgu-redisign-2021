@@ -97,10 +97,12 @@ body .menu-block {
   width: 100%;
   z-index: 1;
   transition-duration: 0.5s;
+  display: block;
 }
 body .menu-block.hide {
   background-color: rgba(0, 0, 0, 0);
   transition-duration: 0.5s;
+  z-index: -1;
 }
 body .menu-block.hide .menu-wrapper {
   margin-right: -100vw;
