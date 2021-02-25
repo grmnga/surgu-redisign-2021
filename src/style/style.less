@@ -1,5 +1,10 @@
 @import "vars";
 
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     * {
@@ -8,11 +13,20 @@ body {
         box-sizing: border-box;
     }
     .clear {
-        clear: both;
+        clear: both!important;
     }
     .content {
         width: 1160px;
         margin: auto;
+    }    
+    .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
     }
     a {
         color: inherit;
@@ -61,11 +75,13 @@ body {
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.8);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         z-index: 1;
         transition-duration: 0.5s;
         display: block;
+        min-height: 100vh;
+        overflow: auto;
         &.hide {            
             background-color: rgba(0, 0, 0, 0);
             transition-duration: 0.5s;
@@ -77,50 +93,186 @@ body {
         }
         .menu-wrapper {
             margin-right: 0;
-            width: 1040px;
+            width: 1140px;
             background-color: @white;
-            height: 100%;
+            min-height: 100vh;
+            height: auto;
             float: right;
             transition-duration: 0.5s;
 //            transition-delay: 0.5s;
             padding: 40px;
+            position: relative;
+            
+            .logo {
+                background-color: #00556d;
+                height: 123px;
+                width: 120px;
+                top: 0;
+//                margin-top: -40px;
+                display: block;
+//                float: left;
+                position: absolute;
+            }
+            
+            ul {
+                list-style: none;
+            }
             .main-menu {
                 .top-links {
+                    margin: 0 100px 0 160px;
                 }
-                .logo {
-                    background-color: #00556d;
-                    height: 123px;
-                    width: 120px;
-                    margin-top: -40px;
-                    display: block;
-                    float: left;
-                }
-                .main-top {                    
-                    float: left;
+                .main-top {
+                    border-bottom: 2px solid #e6e6e6;
                     a {
                         font-family: SegoeUI;
-                        font-size: 10px;
+                        font-size: 12px;
                         line-height: 24px;
                         font-weight: 400;
                         text-transform: uppercase;
                         letter-spacing: -0.02em;
                         color: #c6c6c6;
-                        text-decoration: none;
-                    }
-                }
-                a {
-                    &:hover{
+                        padding: 25px 29px 15px;
                     }
                 }
                 .main-links {
+                    margin-top: 100px;
+                    .dropdown-links, .quick-links {                        
+                        float: left;
+                    }
+                    .dropdown-links {
+                        width: 40%;
+                        padding: 50px 50px 0 100px;
+                        .sub {
+                            clear: both;
+                            button {
+                                width: 20px;
+                                height: 20px;
+                                background-color: #eff0f0;
+                                border: none;
+                                border-radius: 5px;
+                                display: block;
+                                float: left;
+                                margin: 17px 10px 0;
+                                cursor: pointer;
+                                transition-duration: 0.3s;
+                                &:hover {                                    
+                                    background-color: #d4d4d4;
+                                    transition-duration: 0.3s;
+                                }
+                            }
+                            &>a {
+                                font-family: SegoeUI;
+                                font-size: 1.2em;
+                                line-height: 48px;
+                                font-weight: 700;
+                                letter-spacing: -0.02em;
+                                display: block;
+                                float: left;
+                                color: #00556d;
+                                &:hover{
+                                }
+                            }
+                            .sub-list {
+                                margin-left: 15px;
+                                display: none;
+                                li {
+                                    a {
+                                        font-family: MyriadPro;
+                                        font-size: 1em;
+                                        line-height: 20px;
+                                        font-weight: 400;
+                                        letter-spacing: -0.02em;
+                                        color: #c6c6c6;
+                                        &:hover {
+                                            color: #585858;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .quick-links {
+                        width: 60%;
+                        padding: 50px 0 100px 100px;
+                        border-left: 2px solid #e6e6e6;
+                        aside {
+                        }
+                        .search {
+                            input {
+                            }
+                        }
+                        label {
+                        }
+                        #search_main_input {
+                            border: none;
+                            border-bottom: 2px solid #e6e6e6;
+                            padding: 10px;
+                            font-family: MyriadPro;
+                            font-size: 1.1em;
+                            font-weight: 400;
+                            letter-spacing: -0.02em;
+                            color: #c6c6c6;
+                            &::placeholder {
+                                color: #c6c6c6;
+                            }
+                        }
+                        button {
+                        }
+                        .sr-only {
+                        }
+                        .popular-links {
+                            margin-top: 50px;
+                            .title {
+                                font-family: MyriadPro;
+                                font-size: 1em;
+                                line-height: 27px;
+                                font-weight: 400;
+                                letter-spacing: -0.02em;
+                                color: #534c4c;
+                            }
+                            ul {
+                                margin-left: 10px;
+                                li {
+                                    a {
+                                        font-family: MyriadPro;
+                                        font-size: 15.3px;
+                                        line-height: 37px;
+                                        font-weight: 400;
+                                        letter-spacing: -0.02em;
+                                        color: #c6c6c6;
+                                        &:hover {
+                                            color: #585858;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                .dropdown-links {
-                }
-                .quick-links {
-                }
-                .buttons {
-                }
-                .button {
+                .bottom-links {
+                    margin-top: 100px;
+                    .button {
+                        float: left;
+                        width: 33%;
+                        height: 120px;
+                        padding: 0 10px;
+                    }
+                    a {
+                        display: table-cell;
+                        height: 120px;
+                        width: inherit;
+                        border: 2px solid #e6e6e6;
+                        font-family: SegoeUI;
+                        font-size: 20px;
+                        line-height: 64px;
+                        font-weight: 400;
+                        letter-spacing: -0.02em;
+                        color: #00556d;
+                        text-align: center;
+                        vertical-align: middle;
+                        &:hover{
+                        }
+                    }
                 }
             }
         }        

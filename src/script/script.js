@@ -33,6 +33,7 @@ function initMenu() {
     $('.menu-buttons button').on('click', function() {
         $('.menu-block').toggleClass('hide');
         $('.menu-black-background').toggleClass('hide');
+        $('html').toggleClass('overflow-hidden');
     });
 }
 

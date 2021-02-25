@@ -7,36 +7,117 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="src/script/script.js"></script>
 </head>
+
 <body>
-   <nav class="menu-buttons">
-       <button class="menu"></button>
-       <button class="category"></button>
-   </nav>
-   <div class="menu-block hide">
-       <div class="menu-wrapper">
-           <div class="main-menu">
-               <div class="top-links">
-                   <a class="logo"></a>
-                   <nav class="main-top">
-                       <a href="">Пресс-служба</a>
-                       <a href="">научная библиотека</a>
-                       <a href="">виртуальная экскурсия</a>
-                       <a href="">обратная связь</a>
-                   </nav>
-                   <div class="clear"></div>
-               </div>
-               <div class="main-links">
-                   <div class="dropdown-links"></div>
-                   <div class="quick-links"></div>
-               </div>
-               <div class="buttons">
-                   <div class="button"></div>
-                   <div class="button"></div>
-                   <div class="button"></div>
-               </div>
-           </div>
-       </div>
-   </div>
+    <nav class="menu-buttons">
+        <button class="menu" aria-controls="main-menu" aria-expanded="false"><span class="sr-only">Открыть основное меню</span></button>
+        <button class="category"></button>
+    </nav>
+    <div class="menu-block hide">
+        <div class="menu-wrapper">
+            <a class="logo"></a>
+            <div class="main-menu" id="main-menu">               
+                <div class="top-links">
+                    <nav class="main-top" aria-label="Быстрые ссылки">
+                        <a href="">Пресс-служба</a>
+                        <a href="">научная библиотека</a>
+                        <a href="">виртуальная экскурсия</a>
+                        <a href="">обратная связь</a>
+                        <div class="clear"></div>
+                    </nav>
+                    <div class="clear"></div>
+                </div>
+                <div class="main-links">
+                    <nav class="dropdown-links" aria-label="Меню по категориям" role="tablist">
+                        <ul>
+                            <li class="sub">
+                                <a href="">Университет</a>
+                                <button id="tab1" aria-controls="panel1" aria-expanded="false" aria-selected="false" role="tab"><span class="sr-only">Развернуть подменю</span></button>
+                                <ul class="sub-list" aria-hidden="true" aria-labelledby="tab1" id="panel1" role="tabpanel">
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="">Образование</a>
+                                <button id="tab2" aria-controls="panel2" aria-expanded="false" aria-selected="false" role="tab"><span class="sr-only">Развернуть подменю</span></button>
+                                <ul class="sub-list" aria-hidden="true" aria-labelledby="tab2" id="panel2" role="tabpanel">
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="">Наука и технологии</a>
+                                <button id="tab3" aria-controls="panel3" aria-expanded="false" aria-selected="false" role="tab"><span class="sr-only">Развернуть подменю</span></button>
+                                <ul class="sub-list" aria-hidden="true" aria-labelledby="tab3" id="panel3" role="tabpanel">
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="">Жизнь в СурГУ</a>
+                                <button id="tab4" aria-controls="panel4" aria-expanded="false" aria-selected="false" role="tab"><span class="sr-only">Развернуть подменю</span></button>
+                                <ul class="sub-list" aria-hidden="true" aria-labelledby="tab4" id="panel4" role="tabpanel">
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                    <li><a href="">Название раздела</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="quick-links">
+                       <aside role="search">
+                        <form action="/search" class="search" method="get">
+                           <label for="search_main_input" class="sr-only">Поле ввода для поиска</label>
+                            <input id="search_main_input" name="q" placeholder="Поиск" type="text">
+                            <button type="submit"><span class="sr-only">Кнопка поиска</span></button>
+                            <input name="lang" type="hidden" value="ru" aria-hidden="true">
+                        </form>
+                        </aside>
+                        <nav class="popular-links" aria-label="Часто посещаемые страницы">
+                            <p class="title">Популярные темы</p>
+                            <ul>
+                                <li><a href="">Moodle СурГУ</a></li>
+                                <li><a href="">#Стопкоронавирус</a></li>
+                                <li><a href="">Расписание</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="bottom-links">
+                    <div class="button">
+                        <a href="">Новости Университета</a>
+                    </div>
+                    <div class="button">
+                        <a href="">Заголовок</a>
+                    </div>
+                    <div class="button">
+                        <a href="">Заголовок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="main-screen section section_1 main__section main__current">
         <div class="top-sidebar">
             <div class="content">
@@ -54,7 +135,7 @@
         <div class="main-screen-background">
             <div class="video-container">
                 <video autoplay="" id="video" loop="" muted="muted" preload="auto">
-<!--                    <source src="http://netskillup.ru/surgu1.mp4" type="video/mp4">-->
+                    <!--                    <source src="http://netskillup.ru/surgu1.mp4" type="video/mp4">-->
                 </video>
                 <div class="color-background"></div>
             </div>
@@ -63,80 +144,80 @@
         </div>
     </section>
     <section class="ecosystem">
-       <div class="block-with-ship" id="ship_background">
-          <div class="ecosystem-background color" id="ship_color_background"></div>
-          <div class="ecosystem-background sursu-text" id="ship_text_background"></div>
-          <div class="ecosystem-background ship" id="ship"></div>
-           <div class="top-container" id="ship_bar">
-               <div class="content">
-                   <div class="target-audiences">
-                       <a href="#">
-                           <p>поступающим</p>
-                           <div class="ta-pic"></div>
-                       </a>
-                       <a href="#">
-                           <p>Студенту</p>
-                           <div class="ta-pic"></div>
-                       </a>
-                       <a href="#">
-                           <p>выпускнику</p>
-                           <div class="ta-pic"></div>
-                       </a>
-                       <a href="#">
-                           <p>сотруднику</p>
-                           <div class="ta-pic"></div>
-                       </a>
-                       <a href="#">
-                           <p>партнеру</p>
-                           <div class="ta-pic"></div>
-                       </a>
-                   </div>
-                   <div class="clear"></div>
-               </div>
-           </div>
-           <div class="bottom-container">
-              <table class="content departments">
-               <tr>
-                   <td class="department"><a href="">Институт государства и права</a></td>
-                   <td class="department"><a href="">Институт гуманитарного образования и спорта</a></td>
-                   <td class="department"><a href="">Институт естественных и технических наук</a></td>
-                   <td class="department"><a href="">Институт экономики и управления</a></td>
-                   <td class="department"><a href="">Политехнический институт</a></td>
-                   <td class="department"><a href="">Медицинский институт</a></td>
-                   <td class="department"><a href="">Медицинский колледж</a></td>
-               </tr>                  
-              </table>
-           </div>
-       </div>
-       <div class="link-big-blocks">
-           <div class="content">
-               <div class="big-link-wrapper">
-                  <a href="#" class="big-link">
-                   <h2 class="title">Поступай в СурГУ</h2>
-                   <p class="link-text">Программы подготовки</p>
-                  </a>
-               </div>
-               <div class="big-link-wrapper">
-                  <a href="#" class="big-link">
-                   <h2 class="title">Крупнейший университет Югры</h2>
-                   <p class="link-text">открыть</p>
-                  </a>
-               </div>
-               <div class="big-link-wrapper">
-                  <a href="#" class="big-link">
-                   <h2 class="title">Наука СурГУ</h2>
-                   <p class="link-text">подробно</p>
-                  </a>
-               </div>
-               <div class="big-link-wrapper">
-                  <a href="#" class="big-link">
-                   <h2 class="title">Студенческая жизнь</h2>
-                   <p class="link-text">Подробно</p>
-                  </a>
-               </div>
-           </div>
-           <div class="clear"></div>
-       </div>
+        <div class="block-with-ship" id="ship_background">
+            <div class="ecosystem-background color" id="ship_color_background"></div>
+            <div class="ecosystem-background sursu-text" id="ship_text_background"></div>
+            <div class="ecosystem-background ship" id="ship"></div>
+            <div class="top-container" id="ship_bar">
+                <div class="content">
+                    <div class="target-audiences">
+                        <a href="#">
+                            <p>поступающим</p>
+                            <div class="ta-pic"></div>
+                        </a>
+                        <a href="#">
+                            <p>Студенту</p>
+                            <div class="ta-pic"></div>
+                        </a>
+                        <a href="#">
+                            <p>выпускнику</p>
+                            <div class="ta-pic"></div>
+                        </a>
+                        <a href="#">
+                            <p>сотруднику</p>
+                            <div class="ta-pic"></div>
+                        </a>
+                        <a href="#">
+                            <p>партнеру</p>
+                            <div class="ta-pic"></div>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="bottom-container">
+                <table class="content departments">
+                    <tr>
+                        <td class="department"><a href="">Институт государства и права</a></td>
+                        <td class="department"><a href="">Институт гуманитарного образования и спорта</a></td>
+                        <td class="department"><a href="">Институт естественных и технических наук</a></td>
+                        <td class="department"><a href="">Институт экономики и управления</a></td>
+                        <td class="department"><a href="">Политехнический институт</a></td>
+                        <td class="department"><a href="">Медицинский институт</a></td>
+                        <td class="department"><a href="">Медицинский колледж</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="link-big-blocks">
+            <div class="content">
+                <div class="big-link-wrapper">
+                    <a href="#" class="big-link">
+                        <h2 class="title">Поступай в СурГУ</h2>
+                        <p class="link-text">Программы подготовки</p>
+                    </a>
+                </div>
+                <div class="big-link-wrapper">
+                    <a href="#" class="big-link">
+                        <h2 class="title">Крупнейший университет Югры</h2>
+                        <p class="link-text">открыть</p>
+                    </a>
+                </div>
+                <div class="big-link-wrapper">
+                    <a href="#" class="big-link">
+                        <h2 class="title">Наука СурГУ</h2>
+                        <p class="link-text">подробно</p>
+                    </a>
+                </div>
+                <div class="big-link-wrapper">
+                    <a href="#" class="big-link">
+                        <h2 class="title">Студенческая жизнь</h2>
+                        <p class="link-text">Подробно</p>
+                    </a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
     </section>
     <section class="booklet">
         <div class="content">
@@ -158,24 +239,24 @@
                         <h3 class="title"><a href="#">Аспирантская школа «Tabula Rasa»</a></h3>
                         <div class="new-text-wrap">
                             <p class="date">08.01.2021</p>
-                            <p class="text">В Сургутском госуниверситете 30 ноября дан старт образовательному проекту 
-                            «Tabula Rasa» в рамках деятельности Сургутского ядра Центра Развития 
-                            Компетенций Западно-Сибирского НОЦ, реализуемый в формате модульной 
-                            школы по подготовке аспирантов к современным формам научной деятельности. 
-                            Проект реализуется на базе одного из самых крупных университетов Югры.</p>
+                            <p class="text">В Сургутском госуниверситете 30 ноября дан старт образовательному проекту
+                                «Tabula Rasa» в рамках деятельности Сургутского ядра Центра Развития
+                                Компетенций Западно-Сибирского НОЦ, реализуемый в формате модульной
+                                школы по подготовке аспирантов к современным формам научной деятельности.
+                                Проект реализуется на базе одного из самых крупных университетов Югры.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="smoll-news">
-               <div class="new-wrapper">
+                <div class="new-wrapper">
                     <a href="" class="news-body">
                         <div class="background"></div>
                         <p class="date"><span class="day">15</span> <span class="month">Янв</span></p>
                         <p class="title">Молодежное предпринимательство</p>
                         <p class="text">В эпоху цифры и развития технологий изменяются требования к квалификации молодых специалистов.</p>
                     </a>
-               </div>
+                </div>
                 <div class="new-wrapper">
                     <a href="" class="news-body">
                         <div class="background"></div>
@@ -211,16 +292,16 @@
     <section class="people">
         <div class="people-wrapper">
             <div class="people-big">
-               
+
                 <h2 style="text-align: right;">Крутой заголовок</h2>
                 <div class="people-big-wrap">
                     <div class="people-border"></div>
                     <a href="#" class="people-big-img background-with-hover">
-                       <div class="person-content">
+                        <div class="person-content">
                             <h3 class="title">Цветкова Анна&nbsp;Андреевна</h3>
                             <p class="text">Соучредитель и исполнительный директор</p>
                             <p class="link-text">подробнее</p>
-                       </div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -235,14 +316,14 @@
                 <a href="#" class="people-small background-with-hover"></a>
                 <a href="#" class="people-small background-with-hover"></a>
                 <a href="#" class="people-small background-with-hover"></a>
-                
+
                 <a href="#" class="people-small background-with-hover"></a>
                 <a href="#" class="people-small background-with-hover"></a>
                 <a href="#" class="people-small background-with-hover"></a>
                 <a href="#" class="people-small background-with-hover"></a>
                 <a href="#" class="people-small background-with-hover"></a>
                 <a href="#" class="people-small background-with-hover"></a>
-<!--
+                <!--
                 <div class="people-small background-with-hover"></div>
                 <div class="people-small background-with-hover"></div>
                 <div class="people-small background-with-hover"></div>
@@ -267,50 +348,70 @@
             <div class="row">
                 <span class="title">Это пространство</span>
                 <p class="text">В котором<br>возможно все</p>
-            </div></div>
-            <div class="clear"></div>
-    </section>
-    <section class="contacts">
-       <div class="content">
-        <h2>КОНТАКТЫ</h2>
-        <div class="row">
-            <div class="col"><p>ПРИЕМНАЯ РЕКТОРА</p>
-                <p>8(3462) 76-29-00</p>
-                <p>8(3462)76-29-29 (факс)</p>
-                <a>secretar@surgu.ru</a></div>
-            <div class="col"><p>ПРИЕМНАЯ КОМИССИЯ</p>
-                <p>8(3462) 76-29-14</p>
-                <a>pr_kom@surgu.ru</a></div>
-        </div>
-        <div class="row">
-            <div class="col"><p>СТУДЕНЧЕСКИЙ</p>
-                <p>ОТДЕЛ КАДРОВ</p>
-                <p>8(3462) 76-29-33</p></div>
-            <div class="col"><p>КАНЦЕЛЯРИЯ</p>
-                <p>8(3462) 76-30-02</p></div>
-            <div class="col"><p>ОТДЕЛ ПО УПРАВЛЕНИЮ</p>
-                <p>ИМУЩЕСТВОМ</p>
-                <p>8(3462) 76-29-66</p></div>
-        </div>
-        <div class="row">
-            <div class="col"><p>ЗАОЧНАЯ ФОРМА</p>
-                <p>ОБУЧЕНИЯ</p>
-                <p>8(3462) 76-31-90</p></div>
-            <div class="col"><p>АСПИРАНТУРА</p>
-                <p>8(3462) 76-29-57</p></div>
-            <div class="col">ОРДИНАТУРА
-                <p>8(3462) 76-30-52</p></div>
-        </div>
-        <div class="row">
-            <div class="col"><p>МЕЖДУНАРОДНЫЙ ОТДЕЛ</p>
-                <p>8(3462) 76-31-82</p></div>
-            <div class="col"><p>ПРЕСС-СЛУЖБА</p>
-                <p>8(3462) 76-31-73</p>
-                <p>8(3462)76-31-77</p>
-                <a>pr@surgu.ru</a></div>
+            </div>
         </div>
         <div class="clear"></div>
-       </div>
+    </section>
+    <section class="contacts">
+        <div class="content">
+            <h2>КОНТАКТЫ</h2>
+            <div class="row">
+                <div class="col">
+                    <p>ПРИЕМНАЯ РЕКТОРА</p>
+                    <p>8(3462) 76-29-00</p>
+                    <p>8(3462)76-29-29 (факс)</p>
+                    <a>secretar@surgu.ru</a>
+                </div>
+                <div class="col">
+                    <p>ПРИЕМНАЯ КОМИССИЯ</p>
+                    <p>8(3462) 76-29-14</p>
+                    <a>pr_kom@surgu.ru</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>СТУДЕНЧЕСКИЙ</p>
+                    <p>ОТДЕЛ КАДРОВ</p>
+                    <p>8(3462) 76-29-33</p>
+                </div>
+                <div class="col">
+                    <p>КАНЦЕЛЯРИЯ</p>
+                    <p>8(3462) 76-30-02</p>
+                </div>
+                <div class="col">
+                    <p>ОТДЕЛ ПО УПРАВЛЕНИЮ</p>
+                    <p>ИМУЩЕСТВОМ</p>
+                    <p>8(3462) 76-29-66</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>ЗАОЧНАЯ ФОРМА</p>
+                    <p>ОБУЧЕНИЯ</p>
+                    <p>8(3462) 76-31-90</p>
+                </div>
+                <div class="col">
+                    <p>АСПИРАНТУРА</p>
+                    <p>8(3462) 76-29-57</p>
+                </div>
+                <div class="col">ОРДИНАТУРА
+                    <p>8(3462) 76-30-52</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>МЕЖДУНАРОДНЫЙ ОТДЕЛ</p>
+                    <p>8(3462) 76-31-82</p>
+                </div>
+                <div class="col">
+                    <p>ПРЕСС-СЛУЖБА</p>
+                    <p>8(3462) 76-31-73</p>
+                    <p>8(3462)76-31-77</p>
+                    <a>pr@surgu.ru</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
     </section>
     <footer>
         <div class="content">
@@ -326,16 +427,16 @@
                     <a href="">СТУДЕНЧЕСКАЯ ЖИЗНЬ</a>
                 </div>
                 <div class="col logo"></div>
-            <div class="clear"></div>
+                <div class="clear"></div>
             </div>
             <div class="bottom-footer">
                 <div class="col info">
-                    <p>Бюджетное учреждение высшего образования 
-Ханты-Мансийского автономного округа – Югры</p>
+                    <p>Бюджетное учреждение высшего образования
+                        Ханты-Мансийского автономного округа – Югры</p>
                     <p>«Сургутский государственный университет»</p>
                     <p>Юридический адрес: 628408, Ханты-мансийский автономный
-округ — Югра, город Сургут,
-пр. Ленина, д. 1</p>
+                        округ — Югра, город Сургут,
+                        пр. Ленина, д. 1</p>
                 </div>
                 <div class="col links">
                     <a href="">Сведения об образовательной организации</a>
@@ -347,10 +448,9 @@
                     <button></button>
                     <button></button>
                 </div>
-            <div class="clear"></div>
+                <div class="clear"></div>
             </div>
             <p class="copyright">Copyright 2021, Сургутский государственный университет. Все права защищены</p>
         </div>
     </footer>
-</body>
-</html>
+</body></html>
