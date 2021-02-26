@@ -31,9 +31,9 @@ document.getElementById("ship").style.bottom = innerHeight*(1-percent)+160;
 
 function initMenu() {
     $('.menu-buttons button').on('click', function() {
-        $('.menu-block').toggleClass('hide');
-        $('.menu-black-background').toggleClass('hide');
         $('html').toggleClass('overflow-hidden');
+        $('.menu-block').toggleClass('hide');
+        $('.menu-dark-background').toggleClass('hide');
     });
 }
 
