@@ -72,6 +72,7 @@ body {
     }
     .menu-block {        
         z-index: 1;
+        visibility: visible;
         position: fixed;
         top: 0;
         left: 0;
@@ -79,22 +80,30 @@ body {
         width: 100%;
         display: block;
         min-height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+            background-color: rgba(0, 0, 0, 0.8);
+                transition-duration: 0.5s;
         &.hide {            
-            z-index: -1;
-            transition-delay: 0.5s;
+//            z-index: -1;
+            visibility: hidden;
+                background-color: rgba(0, 0, 0, 0);
+                transition-duration: 0.5s;
+//            transition-delay: 0.5s;
             .menu-wrapper {
                 right: -100vw;
                 transition-duration: 0.5s;
             }  
         }
         .menu-dark-background {
-            background-color: rgba(0, 0, 0, 0.8);
+//            background-color: rgba(0, 0, 0, 0.8);
             transition-duration: 0.5s;
             height: 100%;
             width: 100%;
+            position: fixed;
 
             &.hide {
-                background-color: rgba(0, 0, 0, 0);
+//                background-color: rgba(0, 0, 0, 0);
                 transition-duration: 0.5s;
             }
         }
@@ -109,6 +118,7 @@ body {
             transition-duration: 0.5s;
             padding: 40px;
             position: absolute;
+            z-index: 1;
             
             .logo {
                 background-color: #00556d;
@@ -125,6 +135,12 @@ body {
                 list-style: none;
             }
             .main-menu {
+//                visibility: hidden;
+                z-index: -100;
+                background: #eee;
+                &.active {
+                    z-index: 100;
+                }
                 .top-links {
                     margin: 0 100px 0 160px;
                 }
@@ -151,6 +167,14 @@ body {
                         padding: 50px 50px 0 100px;
                         .sub {
                             clear: both;
+                            opacity: 0; 
+                            transform: translateY(10px);
+                            transition: all 0.8s ease-in;
+                            &.show {
+                                opacity: 1; 
+                                transform: translateY(0px);
+                                transition: all 0.8s ease-in;
+                            }
                             button {
                                 width: 20px;
                                 height: 20px;
@@ -182,6 +206,10 @@ body {
                             .sub-list {
                                 margin-left: 15px;
                                 display: none;
+                                clear: both;
+                                &.active {
+                                    display: block;
+                                }
                                 li {
                                     a {
                                         font-family: MyriadPro;
@@ -263,29 +291,42 @@ body {
                         width: 33%;
                         height: 120px;
                         padding: 0 10px;
+                        .link-wrap {
+                        }
                     }
                     a {
-                        display: table-cell;
                         height: 120px;
-                        width: inherit;
+                        width: 100%;
                         border: 2px solid #e6e6e6;
+                        display: table-cell;
+                        width: inherit;
                         font-family: SegoeUI;
                         font-size: 20px;
-                        line-height: 64px;
                         font-weight: 400;
                         letter-spacing: -0.02em;
                         color: #00556d;
                         text-align: center;
                         vertical-align: middle;
+                        p {
+                            
+                        }
                         &:hover{
                         }
                     }
                 }
             }
+            .category-menu {
+                background: #1dbac5;
+                height: 100%;                
+                visibility: hidden;
+                &.active {
+                    visibility: visible;
+                }
+            }
         }        
     }
     .main-screen {
-        width: 100%;
+//        width: 100%;
         height: 100vh;
 
         .top-sidebar {
@@ -335,7 +376,7 @@ body {
             animation: show 2s 1;
             animation-fill-mode: forwards;            
             z-index: -1;
-            width: 100%;
+//            width: 100%;
             height: 100%;
             .video-container {
                 background-image: url(../img/main_back.jpeg);
@@ -369,7 +410,7 @@ body {
             position: relative;
             height: 100vh;
             background-position: center;
-            margin-top: -400px;
+            margin-top: -200px;
             
             
             .ecosystem-background {

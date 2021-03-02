@@ -102,6 +102,7 @@ body .menu-buttons .category:hover {
 }
 body .menu-block {
   z-index: 1;
+  visibility: visible;
   position: fixed;
   top: 0;
   left: 0;
@@ -109,23 +110,27 @@ body .menu-block {
   width: 100%;
   display: block;
   min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition-duration: 0.5s;
 }
 body .menu-block.hide {
-  z-index: -1;
-  transition-delay: 0.5s;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 0.5s;
 }
 body .menu-block.hide .menu-wrapper {
   right: -100vw;
   transition-duration: 0.5s;
 }
 body .menu-block .menu-dark-background {
-  background-color: rgba(0, 0, 0, 0.8);
   transition-duration: 0.5s;
   height: 100%;
   width: 100%;
+  position: fixed;
 }
 body .menu-block .menu-dark-background.hide {
-  background-color: rgba(0, 0, 0, 0);
   transition-duration: 0.5s;
 }
 body .menu-block .menu-wrapper {
@@ -139,6 +144,7 @@ body .menu-block .menu-wrapper {
   transition-duration: 0.5s;
   padding: 40px;
   position: absolute;
+  z-index: 1;
 }
 body .menu-block .menu-wrapper .logo {
   background-color: #00556d;
@@ -150,6 +156,13 @@ body .menu-block .menu-wrapper .logo {
 }
 body .menu-block .menu-wrapper ul {
   list-style: none;
+}
+body .menu-block .menu-wrapper .main-menu {
+  z-index: -100;
+  background: #eee;
+}
+body .menu-block .menu-wrapper .main-menu.active {
+  z-index: 100;
 }
 body .menu-block .menu-wrapper .main-menu .top-links {
   margin: 0 100px 0 160px;
@@ -180,6 +193,14 @@ body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links {
 }
 body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub {
   clear: both;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.8s ease-in;
+}
+body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub.show {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.8s ease-in;
 }
 body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub button {
   width: 20px;
@@ -210,6 +231,10 @@ body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub > a {
 body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-list {
   margin-left: 15px;
   display: none;
+  clear: both;
+}
+body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-list.active {
+  display: block;
 }
 body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-list li a {
   font-family: MyriadPro;
@@ -275,21 +300,28 @@ body .menu-block .menu-wrapper .main-menu .bottom-links .button {
   padding: 0 10px;
 }
 body .menu-block .menu-wrapper .main-menu .bottom-links a {
-  display: table-cell;
   height: 120px;
-  width: inherit;
+  width: 100%;
   border: 2px solid #e6e6e6;
+  display: table-cell;
+  width: inherit;
   font-family: SegoeUI;
   font-size: 20px;
-  line-height: 64px;
   font-weight: 400;
   letter-spacing: -0.02em;
   color: #00556d;
   text-align: center;
   vertical-align: middle;
 }
+body .menu-block .menu-wrapper .category-menu {
+  background: #1dbac5;
+  height: 100%;
+  visibility: hidden;
+}
+body .menu-block .menu-wrapper .category-menu.active {
+  visibility: visible;
+}
 body .main-screen {
-  width: 100%;
   height: 100vh;
 }
 body .main-screen .top-sidebar {
@@ -331,7 +363,6 @@ body .main-screen .main-screen-background {
   animation: show 2s 1;
   animation-fill-mode: forwards;
   z-index: -1;
-  width: 100%;
   height: 100%;
 }
 body .main-screen .main-screen-background .video-container {
@@ -357,7 +388,7 @@ body .ecosystem .block-with-ship {
   position: relative;
   height: 100vh;
   background-position: center;
-  margin-top: -400px;
+  margin-top: -200px;
 }
 body .ecosystem .block-with-ship .ecosystem-background {
   width: 100%;

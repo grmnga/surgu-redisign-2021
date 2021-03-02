@@ -6,6 +6,9 @@ var bgColor2 = {r:29,g:186,b:197,a:1}//В какой цвет
 window.onload = function(){
 	window.dispatchEvent(new Event("scroll"));
     initMenu();
+    $('.sub button').on('click', dropdownMenu);
+    $('.menu').on('click', menuButtonClick);
+    $('.category').on('click', categoryButtonClick);
 }
 window.addEventListener("scroll",function(){
 var scrollTop = window.pageYOffset || document.documentElement.scrollTop;//текущая позиция скролла
@@ -30,11 +33,48 @@ document.getElementById("ship").style.bottom = innerHeight*(1-percent)+160;
 });
 
 function initMenu() {
-    $('.menu-buttons button').on('click', function() {
-        $('html').toggleClass('overflow-hidden');
-        $('.menu-block').toggleClass('hide');
-        $('.menu-dark-background').toggleClass('hide');
-    });
+//    $('.menu-buttons button').on('click', function() {
+//        $('html').toggleClass('overflow-hidden');
+//        $('.menu-block').toggleClass('hide');
+//        $('.menu-dark-background').toggleClass('hide');
+//        $('nav.dropdown-links .sub').toggleClass('show');
+//    });
 }
 
+function dropdownMenu() {
+    $(this).next('ul').slideToggle();
+}
+
+function menuButtonClick() {
+    if ($('.menu-block').hasClass('hide')) {
+        $('.menu-block').removeClass('hide');
+        $('.main-menu').addClass('active');
+        $('nav.dropdown-links .sub').addClass('show');
+    } else if ($('.main-menu').hasClass('active')) {
+        $('.main-menu').removeClass('active');
+        $('.menu-block').addClass('hide');
+        $('nav.dropdown-links .sub').removeClass('show');
+    } else {
+        $('.main-menu').addClass('active');
+        $('.category-menu').removeClass('active');
+        $('nav.dropdown-links .sub').addClass('show');
+    }
+}
+
+function categoryButtonClick() {
+    if ($('.menu-block').hasClass('hide')) {
+        $('html').addClass('overflow-hidden');
+        $('.menu-block').removeClass('hide');
+        $('.category-menu').addClass('active');
+        $('nav.dropdown-links .sub').removeClass('show');
+    } else if ($('.category-menu').hasClass('active')) {
+        $('.category-menu').removeClass('active');
+        $('.menu-block').addClass('hide');
+        $('nav.dropdown-links .sub').addClass('show');
+    } else {
+        $('.category-menu').addClass('active');
+        $('.main-menu').removeClass('active');
+        $('nav.dropdown-links .sub').removeClass('show');
+    }
+}
 
