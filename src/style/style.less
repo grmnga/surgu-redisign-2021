@@ -82,8 +82,9 @@ body {
         min-height: 100vh;
         overflow-y: auto;
         overflow-x: hidden;
-            background-color: rgba(0, 0, 0, 0.8);
-                transition-duration: 0.5s;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition-duration: 0.5s;
+        
         &.hide {            
 //            z-index: -1;
             visibility: hidden;
@@ -94,6 +95,23 @@ body {
                 right: -100vw;
                 transition-duration: 0.5s;
             }  
+        }
+        
+        &.main-menu-show {
+            .menu-wrapper .main-menu {
+                visibility: visible;
+//                z-index: 3;
+                .main-links .dropdown-links .sub {
+                    opacity: 1; 
+                    transform: translateY(0px);
+                    transition: all 0.5s ease-in;
+                }
+            }
+        }
+        &.category-menu-show {
+            .menu-wrapper .category-menu {
+                visibility: visible;
+            }
         }
         .menu-dark-background {
 //            background-color: rgba(0, 0, 0, 0.8);
@@ -135,12 +153,12 @@ body {
                 list-style: none;
             }
             .main-menu {
-//                visibility: hidden;
-                z-index: -100;
-                background: #eee;
-                &.active {
-                    z-index: 100;
-                }
+                visibility: hidden;
+//                z-index: -100;
+//                background: #eee;
+//                &.active {
+//                    z-index: 100;
+//                }
                 .top-links {
                     margin: 0 100px 0 160px;
                 }
@@ -168,8 +186,8 @@ body {
                         .sub {
                             clear: both;
                             opacity: 0; 
-                            transform: translateY(10px);
-                            transition: all 0.8s ease-in;
+                            transform: translateY(7px);
+//                            transition: all 0.8s ease-in;
                             &.show {
                                 opacity: 1; 
                                 transform: translateY(0px);
@@ -316,12 +334,18 @@ body {
                 }
             }
             .category-menu {
-                background: #1dbac5;
-                height: 100%;                
+//                background: #1dbac5;
+                height: 600px;                
                 visibility: hidden;
-                &.active {
-                    visibility: visible;
-                }
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                margin: 40px;
+                z-index: -1;
+//                &.active {
+//                    visibility: visible;
+//                }
             }
         }        
     }

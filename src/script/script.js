@@ -46,35 +46,60 @@ function dropdownMenu() {
 }
 
 function menuButtonClick() {
+//    if ($('.menu-block').hasClass('hide')) {
+//        $('.menu-block').removeClass('hide');
+//        $('.main-menu').addClass('active');
+//        $('nav.dropdown-links .sub').addClass('show');
+//    } else if ($('.main-menu').hasClass('active')) {
+//        $('.main-menu').removeClass('active');
+//        $('.menu-block').addClass('hide');
+//        $('nav.dropdown-links .sub').removeClass('show');
+//    } else {
+//        $('.main-menu').addClass('active');
+//        $('.category-menu').removeClass('active');
+//        $('nav.dropdown-links .sub').addClass('show');
+//    }
+    // Если меню скрыто - открыть и показать основное меню
     if ($('.menu-block').hasClass('hide')) {
-        $('.menu-block').removeClass('hide');
-        $('.main-menu').addClass('active');
-        $('nav.dropdown-links .sub').addClass('show');
-    } else if ($('.main-menu').hasClass('active')) {
-        $('.main-menu').removeClass('active');
-        $('.menu-block').addClass('hide');
-        $('nav.dropdown-links .sub').removeClass('show');
-    } else {
-        $('.main-menu').addClass('active');
-        $('.category-menu').removeClass('active');
-        $('nav.dropdown-links .sub').addClass('show');
+        $('.menu-block').removeClass('hide').addClass('main-menu-show');
+    } 
+    // Если основное меню показывается - скрыть его и закрыть блок
+    else if ($('.menu-block').hasClass('main-menu-show')) {
+        $('.menu-block').addClass('hide').removeClass('main-menu-show');
+    } 
+    // Если показывается меню по категориям - скрыть его и показать основное
+    else {
+        $('.menu-block').removeClass('category-menu-show').addClass('main-menu-show');
     }
 }
 
 function categoryButtonClick() {
+//    if ($('.menu-block').hasClass('hide')) {
+//        $('html').addClass('overflow-hidden');
+//        $('.menu-block').removeClass('hide');
+//        $('.category-menu').addClass('active');
+//        $('nav.dropdown-links .sub').removeClass('show');
+//    } else if ($('.category-menu').hasClass('active')) {
+//        $('.category-menu').removeClass('active');
+//        $('.menu-block').addClass('hide');
+//        $('nav.dropdown-links .sub').addClass('show');
+//    } else {
+//        $('.category-menu').addClass('active');
+//        $('.main-menu').removeClass('active');
+//        $('nav.dropdown-links .sub').removeClass('show');
+//    }
+    
+    // Если меню скрыто - открыть и показать меню по категориям
     if ($('.menu-block').hasClass('hide')) {
-        $('html').addClass('overflow-hidden');
-        $('.menu-block').removeClass('hide');
-        $('.category-menu').addClass('active');
-        $('nav.dropdown-links .sub').removeClass('show');
-    } else if ($('.category-menu').hasClass('active')) {
-        $('.category-menu').removeClass('active');
-        $('.menu-block').addClass('hide');
-        $('nav.dropdown-links .sub').addClass('show');
-    } else {
-        $('.category-menu').addClass('active');
-        $('.main-menu').removeClass('active');
-        $('nav.dropdown-links .sub').removeClass('show');
+        $('.menu-block').removeClass('hide').addClass('category-menu-show');
+    } 
+    // Если меню по категориям показывается - скрыть его и закрыть блок
+    else if ($('.menu-block').hasClass('category-menu-show')) {
+        $('.menu-block').addClass('hide').removeClass('category-menu-show');
+    } 
+    // Если показывается основное меню - скрыть его и показать по категориям
+    else {
+        $('.menu-block').removeClass('main-menu-show').addClass('category-menu-show');
     }
 }
 
