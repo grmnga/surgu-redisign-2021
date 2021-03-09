@@ -63,10 +63,12 @@ function mainMenuButtonClick() {
     // Если меню скрыто - открыть и показать основное меню
     if ($('.menu-block').hasClass('hide')) {
         $('.menu-block').removeClass('hide').addClass('main-menu-show');
+        $('html').addClass('overflow-hidden');
     } 
     // Если основное меню показывается - скрыть его и закрыть блок
     else if ($('.menu-block').hasClass('main-menu-show')) {
         $('.menu-block').addClass('hide').removeClass('main-menu-show');
+        $('html').removeClass('overflow-hidden');
     } 
     // Если показывается меню по категориям - скрыть его и показать основное
     else {
@@ -93,10 +95,12 @@ function categoryMenuButtonClick() {
     // Если меню скрыто - открыть и показать меню по категориям
     if ($('.menu-block').hasClass('hide')) {
         $('.menu-block').removeClass('hide').addClass('category-menu-show');
+        $('html').addClass('overflow-hidden');
     } 
     // Если меню по категориям показывается - скрыть его и закрыть блок
     else if ($('.menu-block').hasClass('category-menu-show')) {
         $('.menu-block').addClass('hide').removeClass('category-menu-show');
+        $('html').removeClass('overflow-hidden');
     } 
     // Если показывается основное меню - скрыть его и показать по категориям
     else {

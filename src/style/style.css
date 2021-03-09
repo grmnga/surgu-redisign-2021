@@ -493,6 +493,7 @@ body .main-screen .main-screen-background {
   animation: show 2s 1;
   animation-fill-mode: forwards;
   z-index: -1;
+  width: 100%;
   height: 100%;
 }
 body .main-screen .main-screen-background .video-container {
