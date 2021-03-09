@@ -135,6 +135,9 @@ body .menu-block.main-menu-show .menu-wrapper .main-menu .main-links .dropdown-l
 body .menu-block.category-menu-show .menu-wrapper .category-menu {
   visibility: visible;
 }
+body .menu-block.category-menu-show .menu-wrapper .category-menu .category-content-wrapper .category-content.active {
+  visibility: visible;
+}
 body .menu-block .menu-dark-background {
   transition-duration: 0.5s;
   height: 100%;
@@ -174,10 +177,10 @@ body .menu-block .menu-wrapper .main-menu {
 body .menu-block .menu-wrapper .main-menu .top-links {
   margin: 0 100px 0 160px;
 }
-body .menu-block .menu-wrapper .main-menu .main-top {
+body .menu-block .menu-wrapper .main-menu .top-links .main-top {
   border-bottom: 2px solid #e6e6e6;
 }
-body .menu-block .menu-wrapper .main-menu .main-top a {
+body .menu-block .menu-wrapper .main-menu .top-links .main-top a {
   font-family: SegoeUI;
   font-size: 12px;
   line-height: 24px;
@@ -320,14 +323,133 @@ body .menu-block .menu-wrapper .main-menu .bottom-links a {
   vertical-align: middle;
 }
 body .menu-block .menu-wrapper .category-menu {
-  height: 600px;
   visibility: hidden;
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   margin: 40px;
-  z-index: -1;
+}
+body .menu-block .menu-wrapper .category-menu .categories {
+  margin: 0 100px 0 160px;
+  font-size: 0;
+}
+body .menu-block .menu-wrapper .category-menu .categories button {
+  display: inline-block;
+  width: 16.66666667%;
+  border: none;
+  height: 60px;
+  font-family: MyriadPro;
+  font-size: 14px;
+  line-height: 33px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9a9a9a;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:hover {
+  color: #ffffff;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active::after {
+  transform: translate3d(-50%, 11px, 0);
+  position: absolute;
+  left: 50%;
+  content: " ";
+  bottom: -2px;
+  border-width: 9px 15px 0 15px;
+  border-style: solid;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:first-child {
+  border-bottom: 4px solid #72eee4;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:first-child:hover {
+  background: #72eee4;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(2) {
+  border-bottom: 4px solid #008b98;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(2):hover {
+  background: #008b98;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(3) {
+  border-bottom: 4px solid #26cbda;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(3):hover {
+  background: #26cbda;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(4) {
+  border-bottom: 4px solid #f8df8a;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(4):hover {
+  background: #f8df8a;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(5) {
+  border-bottom: 4px solid #ff6471;
+}
+body .menu-block .menu-wrapper .category-menu .categories button:nth-child(5):hover {
+  background: #ff6471;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(1) {
+  background-color: #72eee4;
+  color: #ffffff;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(1)::after {
+  border-color: #72eee4 transparent transparent;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(2) {
+  background-color: #008b98;
+  color: #ffffff;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(2)::after {
+  border-color: #008b98 transparent transparent;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(3) {
+  background-color: #26cbda;
+  color: #ffffff;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(3)::after {
+  border-color: #26cbda transparent transparent;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(4) {
+  background-color: #f8df8a;
+  color: #ffffff;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(4)::after {
+  border-color: #f8df8a transparent transparent;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(5) {
+  background-color: #ff6471;
+  color: #ffffff;
+}
+body .menu-block .menu-wrapper .category-menu .categories button.active:nth-child(5)::after {
+  border-color: #ff6471 transparent transparent;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper {
+  position: relative;
+  margin-top: 50px;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 600px;
+  width: 100%;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(2) {
+  background-color: aquamarine;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(3) {
+  background-color: blueviolet;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(4) {
+  background-color: #01566c;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(5) {
+  background-color: #1dbac5;
 }
 body .main-screen {
   height: 100vh;

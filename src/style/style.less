@@ -111,6 +111,11 @@ body {
         &.category-menu-show {
             .menu-wrapper .category-menu {
                 visibility: visible;
+                .category-content-wrapper .category-content {   
+                    &.active {
+                        visibility: visible;
+                    }
+                }
             }
         }
         .menu-dark-background {
@@ -154,25 +159,20 @@ body {
             }
             .main-menu {
                 visibility: hidden;
-//                z-index: -100;
-//                background: #eee;
-//                &.active {
-//                    z-index: 100;
-//                }
                 .top-links {
                     margin: 0 100px 0 160px;
-                }
-                .main-top {
-                    border-bottom: 2px solid #e6e6e6;
-                    a {
-                        font-family: SegoeUI;
-                        font-size: 12px;
-                        line-height: 24px;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                        letter-spacing: -0.02em;
-                        color: #c6c6c6;
-                        padding: 25px 29px 15px;
+                    .main-top {
+                        border-bottom: 2px solid #e6e6e6;
+                        a {
+                            font-family: SegoeUI;
+                            font-size: 12px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            letter-spacing: -0.02em;
+                            color: #c6c6c6;
+                            padding: 25px 29px 15px;
+                        }
                     }
                 }
                 .main-links {
@@ -335,17 +335,135 @@ body {
             }
             .category-menu {
 //                background: #1dbac5;
-                height: 600px;                
+//                height: 600px;                
                 visibility: hidden;
                 position: absolute;
                 width: 100%;
                 top: 0;
                 left: 0;
                 margin: 40px;
-                z-index: -1;
-//                &.active {
-//                    visibility: visible;
-//                }
+//                z-index: -1;
+                .categories {
+                    margin: 0 100px 0 160px;
+                    font-size: 0;
+                    button {
+                        display: inline-block;
+                        width: 100%/6;
+                        border: none;
+                        height: 60px;
+                        font-family: MyriadPro;
+                        font-size: 14px;
+                        line-height: 33px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                        color: #9a9a9a;
+                        background: @white;
+                        cursor: pointer;
+                        position: relative;
+                        &:hover {
+                            color: @white;
+                        }
+                        &.active::after {                            
+                            transform: translate3d(-50%, 11px, 0);
+                            position: absolute;
+                            left: 50%;
+                            content: " ";
+                            bottom: -2px;
+                            border-width: 9px 15px 0 15px;
+                            border-style: solid;
+                        }
+                    }
+                    button:first-child {
+                        border-bottom: 4px solid #72eee4;
+                        &:hover {
+                            background: #72eee4;
+                        }
+                    }
+                    button:nth-child(2) {
+                        border-bottom: 4px solid #008b98;
+                        &:hover {
+                            background: #008b98;
+                        }
+                    }
+                    button:nth-child(3) {
+                        border-bottom: 4px solid #26cbda;
+                        &:hover {
+                            background: #26cbda;
+                        }
+                    }
+                    button:nth-child(4) {
+                        border-bottom: 4px solid #f8df8a;
+                        &:hover {
+                            background: #f8df8a;
+                        }
+                    }
+                    button:nth-child(5) {
+                        border-bottom: 4px solid #ff6471;
+                        &:hover {
+                            background: #ff6471;
+                        }
+                    }
+                    button.active:nth-child(1) {
+                        background-color: #72eee4;
+                        color: @white;
+                        &::after {                            
+                            border-color: #72eee4 transparent transparent;
+                        }
+                    }
+                    button.active:nth-child(2) {
+                        background-color: #008b98;
+                        color: @white;
+                        &::after {                            
+                            border-color: #008b98 transparent transparent;
+                        }
+                    }
+                    button.active:nth-child(3) {
+                        background-color: #26cbda;
+                        color: @white;
+                        &::after {                            
+                            border-color: #26cbda transparent transparent;
+                        }
+                    }
+                    button.active:nth-child(4) {
+                        background-color: #f8df8a;
+                        color: @white;
+                        &::after {                            
+                            border-color: #f8df8a transparent transparent;
+                        }
+                    }
+                    button.active:nth-child(5) {
+                        background-color: #ff6471;
+                        color: @white;
+                        &::after {                            
+                            border-color: #ff6471 transparent transparent;
+                        }
+                    }
+                }
+                .category-content-wrapper {
+                    position: relative;
+                    margin-top: 50px;
+                    .category-content {
+                        visibility: hidden;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 600px;
+                        width: 100%;
+                        &:nth-child(2) {
+                            background-color: aquamarine;                            
+                        }
+                        &:nth-child(3) {
+                            background-color: blueviolet;                            
+                        }
+                        &:nth-child(4) {
+                            background-color: #01566c;                            
+                        }
+                        &:nth-child(5) {
+                            background-color: #1dbac5;                            
+                        }
+                    }
+                }
             }
         }        
     }

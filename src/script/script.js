@@ -7,8 +7,9 @@ window.onload = function(){
 	window.dispatchEvent(new Event("scroll"));
     initMenu();
     $('.sub button').on('click', dropdownMenu);
-    $('.menu').on('click', menuButtonClick);
-    $('.category').on('click', categoryButtonClick);
+    $('.menu').on('click', mainMenuButtonClick);
+    $('.category').on('click', categoryMenuButtonClick);
+    $('.category-menu .categories button').on('click', categoryButtonClick)
 }
 window.addEventListener("scroll",function(){
 var scrollTop = window.pageYOffset || document.documentElement.scrollTop;//текущая позиция скролла
@@ -45,7 +46,7 @@ function dropdownMenu() {
     $(this).next('ul').slideToggle();
 }
 
-function menuButtonClick() {
+function mainMenuButtonClick() {
 //    if ($('.menu-block').hasClass('hide')) {
 //        $('.menu-block').removeClass('hide');
 //        $('.main-menu').addClass('active');
@@ -73,7 +74,7 @@ function menuButtonClick() {
     }
 }
 
-function categoryButtonClick() {
+function categoryMenuButtonClick() {
 //    if ($('.menu-block').hasClass('hide')) {
 //        $('html').addClass('overflow-hidden');
 //        $('.menu-block').removeClass('hide');
@@ -103,3 +104,10 @@ function categoryButtonClick() {
     }
 }
 
+function categoryButtonClick() {
+    let control_id = this.getAttribute('aria-controls');
+    $('.category-content').removeClass('active');
+    $('#' + control_id).addClass('active');
+    $('.category-menu .categories button').removeClass('active');
+    $(this).addClass('active');
+}
