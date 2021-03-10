@@ -451,6 +451,48 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(5) {
   background-color: #1dbac5;
 }
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column {
+  float: left;
+  width: 60%;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper {
+  float: left;
+  width: 50%;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper h2 {
+  font-family: MyriadPro;
+  font-size: 15.9px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #008b98;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper li a {
+  font-family: MyriadPro;
+  font-size: 13.6px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #999999;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more {
+  width: 190px;
+  height: 35px;
+  background-color: #dfdcdc;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a {
+  font-family: MyriadPro;
+  font-size: 12.5px;
+  line-height: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #00556d;
+  text-align: center;
+  display: block;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column {
+  float: left;
+  width: 40%;
+}
 body .main-screen {
   height: 100vh;
 }
