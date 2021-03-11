@@ -1209,7 +1209,7 @@ body .contacts {
   background-color: #f1f2f2;
 }
 body .contacts h2 {
-  font-family: CenturyGothic;
+  font-family: MyriadPro;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
@@ -1221,7 +1221,7 @@ body .contacts h2 {
 body .contacts .row {
   float: left;
   width: 25%;
-  font-family: CenturyGothic;
+  font-family: MyriadPro;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
@@ -1231,7 +1231,7 @@ body .contacts .row {
 body .contacts .row .col {
   margin-top: 20px;
   padding-right: 30px;
-  font-family: CenturyGothic;
+  font-family: MyriadPro;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
