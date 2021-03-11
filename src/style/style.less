@@ -33,6 +33,22 @@ body {
         color: inherit;
         text-decoration: none;
     }
+    
+    
+    .social {
+        width: 200px;
+        float: right;
+        button {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(141, 141, 141, 0.34);
+            border: none;
+            cursor: pointer;
+            &:hover {
+                background-color: #71f6eb;
+            }
+        }
+    }
     .background-with-hover {        
         background-repeat: no-repeat;
         background-position: center;
@@ -326,11 +342,6 @@ body {
                         color: #00556d;
                         text-align: center;
                         vertical-align: middle;
-                        p {
-                            
-                        }
-                        &:hover{
-                        }
                     }
                 }
             }
@@ -451,6 +462,7 @@ body {
                         left: 0;
                         height: 600px;
                         width: 100%;
+                        padding-left: 160px;
                         &:nth-child(2) {
                             background-color: aquamarine;                            
                         }
@@ -466,12 +478,14 @@ body {
                         
                         .left-column {
                             float: left;
-                            width: 60%;
+                            width: calc((100% - 150px) * 0.6);
+                            border-right: 2px solid #e6e6e6;
                             .current-category-menu {
                             }
                             .menu-ul-wrapper {
                                 float: left;
                                 width: 50%;
+                                
                                 h2 {
                                     font-family: MyriadPro;
                                     font-size: 15.9px;
@@ -480,24 +494,30 @@ body {
                                     text-transform: uppercase;
                                     color: #008b98;
                                 }
-                                li {
-                                    a {
-                                        font-family: MyriadPro;
-                                        font-size: 13.6px;
-                                        line-height: 27px;
-                                        font-weight: 400;
-                                        color: #999999;
+                                ul {                                    
+                                    margin: 15px 0 0 15px;
+                                    li {
+                                        a {
+                                            font-family: MyriadPro;
+                                            font-size: 13.6px;
+                                            line-height: 27px;
+                                            font-weight: 400;
+                                            color: #999999;
+                                            &:hover {
+                                                color: #585858;
+                                            }
+                                        }
                                     }
-                                }
-                            }
-                            ul {
-                                li {
                                 }
                             }
                             .more {
                                 width: 190px;
                                 height: 35px;
-                                background-color: #dfdcdc;
+                                background-color: #eff0f0;
+                                margin: 70px 0 90px;
+                                &:hover {                                    
+                                    background-color: #dfdcdc;
+                                }
                                 a {
                                     font-family: MyriadPro;
                                     font-size: 12.5px;
@@ -509,33 +529,62 @@ body {
                                     display: block;
                                 }
                             }
-                            a {
-                                &:hover{
-                                }
-                            }
                             .bottom-block {
-                            }
-                            .img-block {
-                            }
-                            .content-block {
-                                h2 {
+                                width: 90%;
+                                .img-block {
+                                    background-color: #f8df8a;
+                                    width: 200px;
+                                    height: 216px;
+                                    position: absolute;
+                                    margin-top: -10px;
+                                    margin-left: 10px;
                                 }
-                            }
-                            .social {
-                            }
-                            button {
+                                .content-block {
+                                    background-color: #eff0f0;     
+                                    width: 100%;
+                                    height: 200px;
+                                    padding-left: 210px;
+                                    padding-top: 20px;
+                                    h2 {
+                                        font-family: MyriadPro;
+                                        font-size: 15.9px;
+                                        line-height: 1.2;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                        color: #333333;
+                                        text-align: center;
+                                        margin-bottom: 50px;
+                                    }
+                                }
                             }
                         }
                         .right-column {
                             float: left;
-                            width: 40%;
+                            width: calc((100% - 150px) * 0.4);
+                            padding: 0 100px 0 50px;
                             .sidebar-item {
+                                margin-top: 60px;
                             }
                             .img {
+                                width: 200px;
+                                height: 124px;
+                                background-color: #f8df8a;
                             }
                             h3 {
+                                font-family: MyriadPro;
+                                font-size: 15.9px;
+                                line-height: 1.2;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: #333333;
+                                margin: 10px 0;
                             }
                             .text {
+                                font-family: MyriadPro;
+                                font-size: 11.4px;
+                                line-height: 15px;
+                                font-weight: 400;
+                                color: #000000;
                             }
                         }
                     }
@@ -792,7 +841,7 @@ body {
                 &:nth-child(1) {
                     .big-link {
                         background-color: #72eee4;
-                        background-image: url('../img/enroll-back.png');
+                        background-image: url('../img/enroll-back.jpg');
                         .link-text {
                             color: #465c63;
                         }
@@ -801,19 +850,19 @@ body {
                 &:nth-child(2) {
                     .big-link {
                         background-color: #018e9a;
-                        background-image: url('../img/big-university.png');
+                        background-image: url('../img/big-university.jpg');
                     }
                 }
                 &:nth-child(3) {
                     .big-link {
                         background-color: #a3aaad;
-                        background-image: url('../img/science.png');
+                        background-image: url('../img/science.jpg');
                     }
                 }
                 &:nth-child(4) {
                     .big-link {
                         background-color: #6fdbe2;
-                        background-image: url('../img/stud-life.png');
+                        background-image: url('../img/stud-life.jpg');
                         .link-text {
                             color: #465c63;
                         }
@@ -821,7 +870,6 @@ body {
                 }
                 
                 .big-link {
-                    background: #aaa;
                     height: 100%;
                     padding: 30px 20px 20px;
                     position: relative;
@@ -1436,20 +1484,6 @@ body {
             }
             a {
                 text-decoration: underline;
-            }
-            .social {
-                width: 200px;
-                float: right;
-                button {
-                    width: 40px;
-                    height: 40px;
-                    background-color: rgba(141, 141, 141, 0.34);
-                    border: none;
-                    cursor: pointer;
-                    &:hover {
-                        background-color: #71f6eb;
-                    }
-                }
             }
         }
         .copyright {
