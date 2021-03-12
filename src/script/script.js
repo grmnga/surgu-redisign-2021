@@ -11,29 +11,54 @@ window.onload = function () {
     $('.category').on('click', categoryMenuButtonClick);
     $('.category-menu .categories button').on('click', categoryButtonClick);
 
-    $(window).bind('mousewheel', function(event) {
-        var top = $('.ecosystem').offset().top;
-        let current_bottom = window.pageYOffset + document.documentElement.clientHeight;
-        let current_top = window.pageYOffset;
-        console.log(top, '>', current_top);
-        if (top + 400 > current_bottom &&
-            top > current_top &&
-            event.originalEvent.wheelDelta < 0) {
-            $("html, body").stop().animate({
-                scrollTop: top
-            }, 500);
-            console.log('im here');
-        } 
-        else if (top >= current_top &&
-                 top < current_bottom &&
-                event.originalEvent.wheelDelta > 0) {
-            $("html, body").stop().animate({
-                scrollTop: 0
-            });            
+    var tick = false;
+    $(window).bind('mousewheel', _.throttle(function(event) {
+        if (tick != true) {
+            tick = true;
+            var top = $('.ecosystem').offset().top;
+            let current_bottom = window.pageYOffset + document.documentElement.clientHeight;
+            let current_top = window.pageYOffset;
+            console.log(top, '>', current_top);
+            if (top + 400 > current_bottom &&
+                top > current_top &&
+                event.originalEvent.wheelDelta < 0) {
+                $("html, body").stop().animate({
+                    scrollTop: top
+                }, 500);
+//                shipBackgroundOpacity();
+                $("#ship_color_background, #ship_text_background").stop().animate({
+                    opacity: 1
+                }, 1000);
+                $("#ship_bar").stop().animate({
+                    opacity: 0.99
+                }, 1000);
+                
+                console.log('im here');
+            } 
+            else if (top >= current_top &&
+                     top < current_bottom &&
+                    event.originalEvent.wheelDelta > 0) {
+                $("html, body").stop().animate({
+                    scrollTop: 0
+                }, 500);  
+                $("#ship_color_background, #ship_text_background").stop().animate({
+                    opacity: 0
+                }, 700);
+                $("#ship_bar").stop().animate({
+                    opacity: 0
+                }, 700);
+            }
+              setTimeout(function() {
+                tick = false;
+              }, 700);
         }
-    });
+        
+    }, 100));
 }
-window.addEventListener("scroll", function(){
+
+//window.addEventListener("scroll", shipBackgroundOpacity);
+
+function shipBackgroundOpacity() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;//текущая позиция скролла
     var scrollHeight = innerHeight;
     var percent = scrollTop/scrollHeight;
@@ -53,10 +78,7 @@ window.addEventListener("scroll", function(){
         return;
     }
     document.getElementById("ship_bar").style.opacity = color.a;
-    //    console.log(innerHeight*(1-percent)+160);
-    //document.getElementById("ship").style.bottom = innerHeight*(1-percent)+160;
-
-});
+}
 
 function initMenu() {
 //    $('.menu-buttons button').on('click', function() {
