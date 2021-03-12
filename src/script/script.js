@@ -3,13 +3,35 @@ var bgColor2 = {r:29,g:186,b:197,a:1}//В какой цвет
 
 
 
-window.onload = function(){
-	window.dispatchEvent(new Event("scroll"));
+window.onload = function () {
+    window.dispatchEvent(new Event("scroll"));
     initMenu();
     $('.sub button').on('click', dropdownMenu);
     $('.menu').on('click', mainMenuButtonClick);
     $('.category').on('click', categoryMenuButtonClick);
-    $('.category-menu .categories button').on('click', categoryButtonClick)
+    $('.category-menu .categories button').on('click', categoryButtonClick);
+
+    $(window).bind('mousewheel', function(event) {
+        var top = $('.ecosystem').offset().top;
+        let current_bottom = window.pageYOffset + document.documentElement.clientHeight;
+        let current_top = window.pageYOffset;
+        console.log(top, '>', current_top);
+        if (top + 400 > current_bottom &&
+            top > current_top &&
+            event.originalEvent.wheelDelta < 0) {
+            $("html, body").stop().animate({
+                scrollTop: top
+            }, 500);
+            console.log('im here');
+        } 
+        else if (top >= current_top &&
+                 top < current_bottom &&
+                event.originalEvent.wheelDelta > 0) {
+            $("html, body").stop().animate({
+                scrollTop: 0
+            });            
+        }
+    });
 }
 window.addEventListener("scroll", function(){
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;//текущая позиция скролла
@@ -18,7 +40,7 @@ window.addEventListener("scroll", function(){
     var color = {r:0,g:0,b:0,a:0};
 
     //tmp = Math.abs(bgColor1.a - bgColor2.a)*percent;
-    tmp = 3*percent - 0.9;
+    tmp = 3*percent - 1;
     color.a =  bgColor1.a > bgColor2.a ? bgColor1.a - tmp : bgColor1.a + tmp;
     color.a = color.a.toFixed(2);
     color.b = color.a;

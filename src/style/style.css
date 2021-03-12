@@ -645,7 +645,6 @@ body .ecosystem .block-with-ship {
   position: relative;
   height: 100vh;
   background-position: center;
-  margin-top: -200px;
 }
 body .ecosystem .block-with-ship .ecosystem-background {
   width: 100%;
