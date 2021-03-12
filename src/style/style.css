@@ -633,13 +633,22 @@ body .main-screen .main-screen-background .video-container #video {
   min-height: 100%;
 }
 body .main-screen .main-screen-background .color-background {
-  background: #01566c;
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   opacity: 0.3;
+}
+body .main-screen .main-screen-background .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+body .main-screen .main-screen-background .logo img {
+  width: 100%;
 }
 body .ecosystem .block-with-ship {
   position: relative;
