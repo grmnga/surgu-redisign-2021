@@ -77,6 +77,13 @@ body .social button {
 body .social button:hover {
   background-color: #71f6eb;
 }
+body .social button:hover i {
+  color: #000000;
+}
+body .social button i {
+  color: #a3ccd0;
+  font-size: 20px;
+}
 body .background-with-hover {
   background-repeat: no-repeat;
   background-position: center;
@@ -89,7 +96,7 @@ body .background-with-hover:hover {
 }
 body .menu-buttons {
   position: fixed;
-  top: 14px;
+  top: 0;
   right: 0;
   z-index: 2;
 }
@@ -98,10 +105,19 @@ body .menu-buttons button {
   cursor: pointer;
   display: block;
 }
+body .menu-buttons button i {
+  color: #ffffff;
+  font-size: 26px;
+  margin-right: 30px;
+}
 body .menu-buttons .menu {
   background-color: #00556d;
-  height: 60px;
-  width: 80px;
+  height: 75px;
+  width: 90px;
+}
+body .menu-buttons .menu i {
+  display: block;
+  margin-top: 35px;
 }
 body .menu-buttons .menu:hover {
   background-color: #000000;
@@ -109,7 +125,7 @@ body .menu-buttons .menu:hover {
 body .menu-buttons .category {
   margin-top: 15px;
   height: 40px;
-  width: 80px;
+  width: 90px;
   background-color: rgba(2, 22, 35, 0.5);
 }
 body .menu-buttons .category:hover {
@@ -544,6 +560,18 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   text-align: center;
   margin-bottom: 50px;
 }
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button {
+  background-color: #c7c7c7;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover {
+  background-color: #00d9e0;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover i {
+  color: #000000;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button i {
+  color: #7a8a8f;
+}
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column {
   float: left;
   width: calc((100% - 150px) * 0.4);
@@ -591,7 +619,7 @@ body .main-screen .top-sidebar a:hover {
 }
 body .main-screen .top-sidebar i {
   color: #ffffff;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 body .main-screen .top-sidebar .left-column {
   float: left;
@@ -859,6 +887,14 @@ body .booklet {
   background-position: center;
   background-size: cover;
 }
+body .booklet i {
+  text-align: center;
+  display: block;
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0 0 17px;
+}
 body .booklet a {
   display: block;
   font-family: SegoeUI;
@@ -1072,6 +1108,16 @@ body .tour {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+body .tour .icon {
+  text-align: center;
+}
+body .tour .icon i {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 17px;
+  display: block;
 }
 body .tour a {
   display: block;
@@ -1367,6 +1413,18 @@ body footer .bottom-footer .col {
   float: left;
   width: calc(50% - 130px);
   padding-right: 30px;
+}
+body footer .bottom-footer .social button {
+  background-color: rgba(141, 141, 141, 0.34);
+}
+body footer .bottom-footer .social button:hover {
+  background-color: #71f6eb;
+}
+body footer .bottom-footer .social button:hover i {
+  color: #000000;
+}
+body footer .bottom-footer .social button i {
+  color: #a3ccd0;
 }
 body footer .bottom-footer a {
   text-decoration: underline;
