@@ -1008,6 +1008,65 @@ body {
                 margin: 30px auto 40px;
             }
         }
+        ul.slick-dots {
+            bottom: 60px;
+            li  {
+                background: #d0d0d0;
+                height: 10px;
+                width: 10px;
+                border-radius: 10px;
+                button {
+                    display: none;
+                }
+            }
+            li.slick-active  {
+                background: #71f6eb;
+            }
+        }
+        button.slick-arrow {
+            position: absolute;
+            bottom: 0;
+            left: unset;
+            top: unset;
+            width: 40px;
+            height: 40px;
+            font-size: 0;
+
+            &::before {
+                font-family: 'icons' !important;
+                speak: never;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                font-size: 44px;
+
+                /* Better Font Rendering =========== */
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+
+                color: @black;
+
+                &:hover {
+                    color: #17e2e4;
+                }
+            }
+            &.slick-prev {
+                right: 120px;
+                &::before {
+                    content: "\e90c";
+                }
+            }
+            &.slick-next {
+                right: 60px;
+
+                &::before {
+                    content: "\e90b";
+
+                }
+            }
+        }
         .big-new {
             height: 590px;
             position: relative;
@@ -1017,7 +1076,8 @@ body {
                 height: 440px;
                 width: 755px;
                 border: 4px solid #6eeee4;
-                margin-left: -20px;
+                margin-top: 20px;
+//                margin-left: -20px;
             }
             .news-img {
                 height: 500px;
@@ -1030,6 +1090,7 @@ body {
                 background-repeat: no-repeat;
                 background-size: 100%;
                 top: -20px;
+                margin-left: 20px;
                 &:hover {
                     transition-duration: 1s;
                     background-size: 110%;
@@ -1041,7 +1102,7 @@ body {
                 box-shadow: 5px 8px 8px 0px rgba(0,3,1,0.02);
                 position: absolute;
                 top: 40px;
-                right: 0;
+                right: 20px;
                 .color-background {
                     width: 100%;
                     height: 100%;
@@ -1177,25 +1238,26 @@ body {
             }
         }
         .more-button {
-        }
+            button {
+                font-family: SegoeUI;
+                font-size: 0.9em;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                color: #7f7f7f;
+                background: @white;
+                border: 1px solid #7f7f7f;
+                padding: 10px 20px;
+                margin-top: 30px;
+                float: right;
+                cursor: pointer;
 
-        button {
-            font-family: SegoeUI;
-            font-size: 0.9em;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            color: #7f7f7f;
-            background: @white;
-            border: 1px solid #7f7f7f;
-            padding: 10px 20px;
-            margin-top: 30px;
-            float: right;
-            cursor: pointer;
-            &:hover {                
-                background: #baf9f4;
+                &:hover {
+                    background: #baf9f4;
+                }
             }
         }
+
     }
     
     .tour {

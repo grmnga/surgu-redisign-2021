@@ -935,6 +935,59 @@ body .news h2::after {
   display: block;
   margin: 30px auto 40px;
 }
+body .news ul.slick-dots {
+  bottom: 60px;
+}
+body .news ul.slick-dots li {
+  background: #d0d0d0;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+}
+body .news ul.slick-dots li button {
+  display: none;
+}
+body .news ul.slick-dots li.slick-active {
+  background: #71f6eb;
+}
+body .news button.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  left: unset;
+  top: unset;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+}
+body .news button.slick-arrow::before {
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 44px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+}
+body .news button.slick-arrow::before:hover {
+  color: #17e2e4;
+}
+body .news button.slick-arrow.slick-prev {
+  right: 120px;
+}
+body .news button.slick-arrow.slick-prev::before {
+  content: "\e90c";
+}
+body .news button.slick-arrow.slick-next {
+  right: 60px;
+}
+body .news button.slick-arrow.slick-next::before {
+  content: "\e90b";
+}
 body .news .big-new {
   height: 590px;
   position: relative;
@@ -943,7 +996,7 @@ body .news .big-new .news-border {
   height: 440px;
   width: 755px;
   border: 4px solid #6eeee4;
-  margin-left: -20px;
+  margin-top: 20px;
 }
 body .news .big-new .news-img {
   height: 500px;
@@ -956,6 +1009,7 @@ body .news .big-new .news-img {
   background-repeat: no-repeat;
   background-size: 100%;
   top: -20px;
+  margin-left: 20px;
 }
 body .news .big-new .news-img:hover {
   transition-duration: 1s;
@@ -967,7 +1021,7 @@ body .news .big-new div.news-body {
   box-shadow: 5px 8px 8px 0px rgba(0, 3, 1, 0.02);
   position: absolute;
   top: 40px;
-  right: 0;
+  right: 20px;
 }
 body .news .big-new div.news-body .color-background {
   width: 100%;
@@ -1085,7 +1139,7 @@ body .news .smoll-news .new-wrapper a.news-body .text {
   font-weight: 300;
   color: #999999;
 }
-body .news button {
+body .news .more-button button {
   font-family: SegoeUI;
   font-size: 0.9em;
   font-weight: 600;
@@ -1099,7 +1153,7 @@ body .news button {
   float: right;
   cursor: pointer;
 }
-body .news button:hover {
+body .news .more-button button:hover {
   background: #baf9f4;
 }
 body .tour {
