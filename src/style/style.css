@@ -1379,33 +1379,32 @@ body .galery .col:nth-child(3) {
   background-repeat: no-repeat;
 }
 body .galery .col:nth-child(4) .row:first-child {
+  background-image: linear-gradient(0deg, #2c808b 0%, #3ae6e4 100%);
+}
+body .galery .col:nth-child(4) .row:last-child {
   background-image: url(../img/galery_4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-body .galery .col:nth-child(4) .row:last-child {
-  background-image: linear-gradient(0deg, #2c808b 0%, #3ae6e4 100%);
-}
 body .galery .col .row {
   font-family: Bahnschrift;
   font-weight: 400;
-  letter-spacing: -0.05em;
   color: #ffffff;
-  text-transform: uppercase;
   height: 50%;
-  text-align: right;
-  padding-top: 100px;
+  text-align: left;
+  padding-top: 20px;
   padding-right: 15px;
 }
 body .galery .col .row .title {
-  font-size: 2.5em;
-  line-height: 82px;
-  border-bottom: 1px solid #ffffff;
+  font-size: 4.2em;
+  letter-spacing: -0.05em;
+  transform: scaleX(0.8);
 }
 body .galery .col .row .text {
-  font-size: 1.5em;
-  padding-left: 20%;
+  font-size: 2em;
+  text-transform: uppercase;
+  transform: scaleX(0.8);
 }
 body .contacts {
   padding: 40px 0;
