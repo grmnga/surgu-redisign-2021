@@ -165,13 +165,17 @@ body .menu-block.hide .menu-wrapper {
   right: -100vw;
   transition-duration: 0.5s;
 }
+body .menu-block.hide .menu-wrapper .logo {
+  top: -100px;
+  transition-duration: 0.5s;
+}
 body .menu-block.main-menu-show .menu-wrapper .main-menu {
   visibility: visible;
 }
 body .menu-block.main-menu-show .menu-wrapper .main-menu .main-links .dropdown-links .sub {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 0.5s ease-in;
+  transition: all 0.7s ease-in;
 }
 body .menu-block.category-menu-show .menu-wrapper .category-menu {
   visibility: visible;
@@ -204,11 +208,32 @@ body .menu-block .menu-wrapper {
 }
 body .menu-block .menu-wrapper .logo {
   background-color: #00556d;
-  height: 123px;
+  height: 110px;
   width: 120px;
-  top: 0;
+  top: -10px;
   display: block;
   position: absolute;
+  z-index: 1;
+  transition-duration: 0.7s;
+}
+body .menu-block .menu-wrapper .logo::before {
+  transform: translate3d(-50%, 20px, 0);
+  position: absolute;
+  left: 50%;
+  content: " ";
+  bottom: 0;
+  border-width: 20px 60px 0 60px;
+  border-style: solid;
+  border-color: #00556d transparent transparent;
+}
+body .menu-block .menu-wrapper .logo:hover {
+  top: 0;
+  transition-duration: 0.3s;
+}
+body .menu-block .menu-wrapper .logo img {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
 }
 body .menu-block .menu-wrapper ul {
   list-style: none;
