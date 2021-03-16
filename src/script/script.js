@@ -10,6 +10,7 @@ window.onload = function () {
     $('.menu').on('click', mainMenuButtonClick);
     $('.category').on('click', categoryMenuButtonClick);
     $('.category-menu .categories button').on('click', categoryButtonClick);
+    $('.menu-dark-background').on('click', closeMenu);
 
     var tick = false;
     $(window).bind('mousewheel', _.throttle(function(event) {
@@ -91,6 +92,8 @@ function initMenu() {
 
 function dropdownMenu() {
     $(this).next('ul').slideToggle();
+    console.log($(this).find('i'));
+    $(this).find('i').toggleClass('icon-plus').toggleClass('icon-close');
 }
 
 function mainMenuButtonClick() {
@@ -161,6 +164,12 @@ function categoryMenuButtonClick() {
         $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
         $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
     }
+}
+
+function closeMenu() {
+    $('.menu-block').removeClass('category-menu-show').removeClass('main-menu-show').addClass('hide');
+    $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
+    $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
 }
 
 function categoryButtonClick() {

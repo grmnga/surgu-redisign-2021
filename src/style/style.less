@@ -4,6 +4,16 @@
 .overflow-hidden {
     overflow: hidden;
 }
+.no-focus-border {
+    button, input {
+        &:active, &:focus {
+          outline: none !important;
+        }
+    }
+    button::-moz-focus-inner, input::-moz-focus-inner {
+      border: 0 !important;
+    }
+}
 
 body {
     margin: 0;
@@ -70,7 +80,7 @@ body {
 //        top: 14px;
         top: 0;
         right: 0;
-        z-index: 2;
+        z-index: 100;
         button {
             border: none;
             cursor: pointer;
@@ -104,7 +114,7 @@ body {
         }
     }
     .menu-block {        
-        z-index: 1;
+        z-index: 10;
         visibility: visible;
         position: fixed;
         top: 0;
@@ -157,6 +167,7 @@ body {
             height: 100%;
             width: 100%;
             position: fixed;
+            cursor: url('../img/cursor-close.png'), auto;
 
             &.hide {
 //                background-color: rgba(0, 0, 0, 0);
@@ -1009,7 +1020,7 @@ body {
             }
         }
         ul.slick-dots {
-            bottom: 60px;
+            bottom: 20px;
             li  {
                 background: #d0d0d0;
                 height: 10px;
@@ -1025,12 +1036,18 @@ body {
         }
         button.slick-arrow {
             position: absolute;
-            bottom: 0;
+            bottom: 40px;
             left: unset;
             top: unset;
             width: 40px;
             height: 40px;
             font-size: 0;
+            z-index: 1;
+            &:hover {
+                &::before {
+                    color: #17e2e4;
+                }
+            }
 
             &::before {
                 font-family: 'icons' !important;
@@ -1048,9 +1065,6 @@ body {
 
                 color: @black;
 
-                &:hover {
-                    color: #17e2e4;
-                }
             }
             &.slick-prev {
                 right: 120px;
@@ -1522,9 +1536,8 @@ body {
             font-size: 20px;
             line-height: 30px;
             font-weight: 400;
-            text-decoration: underline;
             letter-spacing: -0.025em;
-            color: #4f5151;
+            color: @black;
             text-transform: uppercase;
         }
         .row {
@@ -1535,7 +1548,6 @@ body {
             line-height: 30px;
             font-weight: 400;
             letter-spacing: -0.025em;
-            color: #4f5151;
             .col {
                 margin-top: 20px;
                 padding-right: 30px;
@@ -1544,11 +1556,27 @@ body {
                 line-height: 30px;
                 font-weight: 400;
                 letter-spacing: -0.025em;
-                color: #b5b5b5;
+                p {
+                    text-transform: uppercase;
+                    color: #2d838f;
+                }
                 a {
                     text-decoration: underline;
                     color: #2d838f;
+                    display: block;
+                    &[href^="tel:"] {
+                        color: #b9b9b9;
+                        text-decoration: none;
+                    }
+                    &[href^="mailto:"] {
+                        color: #2d838f;
+                    }
                 }
+//                
+//                a[href^="tel:"] {
+//                    color: #b9b9b9;
+//                    text-decoration: none;
+//                }
             }
         }
     }
