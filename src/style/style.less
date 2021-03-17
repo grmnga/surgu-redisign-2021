@@ -790,6 +790,9 @@ body {
             .top-container {
                 opacity: 0;
                 .target-audiences {
+                    @media(max-width: 1440px) {
+                        width: 1080px;
+                    }
                     a {                        
                         width: 16.5%;
                         font-family: MyriadPro;
@@ -974,8 +977,10 @@ body {
                         font-size: 0.8em;
                         font-weight: 400;
                         text-transform: uppercase;
+                        opacity: 0.7;
                         &:hover {
-                            text-shadow: 1px 1px #aaa;
+//                            text-shadow: 1px 1px #aaa;
+                            opacity: 1;
                         }
                     }
                 }                
@@ -1435,8 +1440,10 @@ body {
                             color: #ffffff;
                             position: absolute;
                             bottom: 40px;
+                            opacity: 0.7;
                             &:hover {
-                                text-shadow: 0 0 #eeeeee;
+//                                text-shadow: 0 0 #eeeeee;
+                                opacity: 1;
                             }
                         }
                     }

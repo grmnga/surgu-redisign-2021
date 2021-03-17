@@ -750,6 +750,11 @@ body .ecosystem .block-with-ship .ship {
 body .ecosystem .block-with-ship .top-container {
   opacity: 0;
 }
+@media (max-width: 1440px) {
+  body .ecosystem .block-with-ship .top-container .target-audiences {
+    width: 1080px;
+  }
+}
 body .ecosystem .block-with-ship .top-container .target-audiences a {
   width: 16.5%;
   font-family: MyriadPro;
@@ -912,9 +917,10 @@ body .ecosystem .link-big-blocks .big-link-wrapper .big-link .link-text {
   font-size: 0.8em;
   font-weight: 400;
   text-transform: uppercase;
+  opacity: 0.7;
 }
 body .ecosystem .link-big-blocks .big-link-wrapper .big-link .link-text:hover {
-  text-shadow: 1px 1px #aaa;
+  opacity: 1;
 }
 body .booklet {
   padding: 50px 0;
@@ -1328,9 +1334,10 @@ body .people .people-wrapper .people-big .people-big-wrap .people-big-img .link-
   color: #ffffff;
   position: absolute;
   bottom: 40px;
+  opacity: 0.7;
 }
 body .people .people-wrapper .people-big .people-big-wrap .people-big-img .link-text:hover {
-  text-shadow: 0 0 #eeeeee;
+  opacity: 1;
 }
 body .people .people-wrapper .people-scroll {
   padding-top: 200px;
