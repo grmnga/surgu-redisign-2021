@@ -214,7 +214,8 @@ body .menu-block .menu-wrapper .logo {
   display: block;
   position: absolute;
   z-index: 1;
-  transition-duration: 0.7s;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 }
 body .menu-block .menu-wrapper .logo::before {
   transform: translate3d(-50%, 20px, 0);
@@ -709,7 +710,7 @@ body .main-screen .main-screen-background .logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 50%;
 }
 body .main-screen .main-screen-background .logo img {
   width: 100%;
