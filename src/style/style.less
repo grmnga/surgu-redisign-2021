@@ -310,7 +310,7 @@ body {
                             }
                             &>a {
                                 font-family: SegoeUI;
-                                font-size: 1.2em;
+                                font-size: 1.4em;
                                 line-height: 48px;
                                 font-weight: 700;
                                 letter-spacing: -0.02em;
@@ -330,7 +330,7 @@ body {
                                 li {
                                     a {
                                         font-family: MyriadPro;
-                                        font-size: 1em;
+                                        font-size: 1.2em;
                                         line-height: 20px;
                                         font-weight: 400;
                                         letter-spacing: -0.02em;
@@ -363,20 +363,17 @@ body {
                             font-size: 1.1em;
                             font-weight: 400;
                             letter-spacing: -0.02em;
-                            color: #c6c6c6;
                             &::placeholder {
                                 color: #c6c6c6;
                             }
                         }
                         button {
                         }
-                        .sr-only {
-                        }
                         .popular-links {
                             margin-top: 50px;
                             .title {
                                 font-family: MyriadPro;
-                                font-size: 1em;
+                                font-size: 1.2em;
                                 line-height: 27px;
                                 font-weight: 400;
                                 letter-spacing: -0.02em;
@@ -387,8 +384,8 @@ body {
                                 li {
                                     a {
                                         font-family: MyriadPro;
-                                        font-size: 15.3px;
-                                        line-height: 37px;
+                                        font-size: 1.1em;
+                                        line-height: 1.2em;
                                         font-weight: 400;
                                         letter-spacing: -0.02em;
                                         color: #c6c6c6;
@@ -403,7 +400,7 @@ body {
                 }
                 .bottom-links {
                     margin-top: 100px;
-                    .button {
+                    .big-button {
                         float: left;
                         width: 33%;
                         height: 120px;
@@ -415,15 +412,23 @@ body {
                         height: 120px;
                         width: 100%;
                         border: 2px solid #e6e6e6;
-                        display: table-cell;
-                        width: inherit;
+                        display: block;
                         font-family: SegoeUI;
                         font-size: 20px;
                         font-weight: 400;
                         letter-spacing: -0.02em;
                         color: #00556d;
-                        text-align: center;
-                        vertical-align: middle;
+                        position: relative;
+                        &:hover {
+                            border-color: #568e9c;
+                        }
+                        p {
+                            position: absolute;
+                            width: 100%;
+                            text-align: center;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
                     }
                 }
             }
