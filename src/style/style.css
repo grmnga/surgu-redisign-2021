@@ -140,6 +140,17 @@ body .menu-buttons .category {
 }
 body .menu-buttons .category:hover {
   background-color: rgba(2, 22, 35, 0.8);
+  margin-left: -10px;
+  width: 100px;
+}
+body .menu-buttons.category-menu-active .menu:hover {
+  background: #018b98;
+}
+body .menu-buttons.category-menu-active .category {
+  background: #72eee4;
+}
+body .menu-buttons.category-menu-active .category:hover {
+  background: #28d8e7;
 }
 body .menu-block {
   z-index: 10;

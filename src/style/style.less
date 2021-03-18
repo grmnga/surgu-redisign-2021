@@ -109,8 +109,31 @@ body {
             width: 90px;
             background-color: rgba(2, 22, 35, 0.5);            
             &:hover {                
-                background-color: rgba(2, 22, 35, 0.8);  
+                background-color: rgba(2, 22, 35, 0.8);
+                margin-left: -10px;
+                width: 100px;
             }
+        }
+        &.main-menu-active {
+            .menu {
+                
+            }
+            .category {
+                
+            }
+        }
+        &.category-menu-active {
+            .menu {
+                &:hover {                    
+                    background: #018b98;
+                }
+            }
+            .category {
+                background: #72eee4;
+                &:hover {
+                    background: #28d8e7;
+                }
+            }            
         }
     }
     .menu-block {        

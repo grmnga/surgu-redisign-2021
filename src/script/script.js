@@ -115,18 +115,21 @@ function mainMenuButtonClick() {
         $('.menu-block').removeClass('hide').addClass('main-menu-show');
         $('html').addClass('overflow-hidden');
         $('.menu-buttons button.menu i').removeClass('icon-menu').addClass('icon-close');
+        $('.menu-buttons').addClass('main-menu-active');
     } 
     // Если основное меню показывается - скрыть его и закрыть блок
     else if ($('.menu-block').hasClass('main-menu-show')) {
         $('.menu-block').addClass('hide').removeClass('main-menu-show');
         $('html').removeClass('overflow-hidden');
         $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
+        $('.menu-buttons').removeClass('main-menu-active');
     } 
     // Если показывается меню по категориям - скрыть его и показать основное
     else {
         $('.menu-block').removeClass('category-menu-show').addClass('main-menu-show');
         $('.menu-buttons button.menu i').removeClass('icon-menu').addClass('icon-close');
         $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
+        $('.menu-buttons').removeClass('category-menu-active').addClass('main-menu-active');
     }
 }
 
@@ -151,18 +154,21 @@ function categoryMenuButtonClick() {
         $('.menu-block').removeClass('hide').addClass('category-menu-show');
         $('html').addClass('overflow-hidden');
         $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
+         $('.menu-buttons').addClass('category-menu-active');
     } 
     // Если меню по категориям показывается - скрыть его и закрыть блок
     else if ($('.menu-block').hasClass('category-menu-show')) {
         $('.menu-block').addClass('hide').removeClass('category-menu-show');
         $('html').removeClass('overflow-hidden');        
         $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
+        $('.menu-buttons').removeClass('category-menu-active');
     } 
     // Если показывается основное меню - скрыть его и показать по категориям
     else {
         $('.menu-block').removeClass('main-menu-show').addClass('category-menu-show');
         $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
         $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
+        $('.menu-buttons').removeClass('main-menu-active').addClass('category-menu-active');
     }
 }
 
@@ -170,6 +176,7 @@ function closeMenu() {
     $('.menu-block').removeClass('category-menu-show').removeClass('main-menu-show').addClass('hide');
     $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
     $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
+    $('.menu-buttons').removeClass('main-menu-active, category-menu-active')
 }
 
 function categoryButtonClick() {
