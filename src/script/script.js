@@ -5,7 +5,6 @@ var bgColor2 = {r:29,g:186,b:197,a:1}//В какой цвет
 
 window.onload = function () {
     window.dispatchEvent(new Event("scroll"));
-    initMenu();
     $('.sub button').on('click', dropdownMenu);
     $('.menu').on('click', mainMenuButtonClick);
     $('.category').on('click', categoryMenuButtonClick);
@@ -20,22 +19,19 @@ window.onload = function () {
             var top = $('.ecosystem').offset().top;
             let current_bottom = window.pageYOffset + document.documentElement.clientHeight;
             let current_top = window.pageYOffset;
-            console.log(top, '>', current_top);
             if (top + 400 > current_bottom &&
                 top > current_top &&
                 event.originalEvent.wheelDelta < 0) {
                 $("html, body").stop().animate({
                     scrollTop: top
                 }, 500);
-//                shipBackgroundOpacity();
+//              shipBackgroundOpacity();
                 $("#ship_color_background, #ship_text_background").stop().animate({
                     opacity: 1
                 }, 1000);
                 $("#ship_bar").stop().animate({
                     opacity: 0.99
                 }, 1000);
-                
-                console.log('im here');
             } 
             else if (top >= current_top &&
                      top < current_bottom &&
@@ -57,8 +53,6 @@ window.onload = function () {
         
     }, 100));
 }
-
-//window.addEventListener("scroll", shipBackgroundOpacity);
 
 function shipBackgroundOpacity() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;//текущая позиция скролла
@@ -82,35 +76,12 @@ function shipBackgroundOpacity() {
     document.getElementById("ship_bar").style.opacity = color.a;
 }
 
-function initMenu() {
-//    $('.menu-buttons button').on('click', function() {
-//        $('html').toggleClass('overflow-hidden');
-//        $('.menu-block').toggleClass('hide');
-//        $('.menu-dark-background').toggleClass('hide');
-//        $('nav.dropdown-links .sub').toggleClass('show');
-//    });
-}
-
 function dropdownMenu() {
     $(this).next('ul').slideToggle();
-    console.log($(this).find('i'));
     $(this).find('i').toggleClass('icon-plus').toggleClass('icon-close');
 }
 
 function mainMenuButtonClick() {
-//    if ($('.menu-block').hasClass('hide')) {
-//        $('.menu-block').removeClass('hide');
-//        $('.main-menu').addClass('active');
-//        $('nav.dropdown-links .sub').addClass('show');
-//    } else if ($('.main-menu').hasClass('active')) {
-//        $('.main-menu').removeClass('active');
-//        $('.menu-block').addClass('hide');
-//        $('nav.dropdown-links .sub').removeClass('show');
-//    } else {
-//        $('.main-menu').addClass('active');
-//        $('.category-menu').removeClass('active');
-//        $('nav.dropdown-links .sub').addClass('show');
-//    }
     // Если меню скрыто - открыть и показать основное меню
     if ($('.menu-block').hasClass('hide')) {
         $('.menu-block').removeClass('hide').addClass('main-menu-show');
@@ -134,22 +105,7 @@ function mainMenuButtonClick() {
     }
 }
 
-function categoryMenuButtonClick() {
-//    if ($('.menu-block').hasClass('hide')) {
-//        $('html').addClass('overflow-hidden');
-//        $('.menu-block').removeClass('hide');
-//        $('.category-menu').addClass('active');
-//        $('nav.dropdown-links .sub').removeClass('show');
-//    } else if ($('.category-menu').hasClass('active')) {
-//        $('.category-menu').removeClass('active');
-//        $('.menu-block').addClass('hide');
-//        $('nav.dropdown-links .sub').addClass('show');
-//    } else {
-//        $('.category-menu').addClass('active');
-//        $('.main-menu').removeClass('active');
-//        $('nav.dropdown-links .sub').removeClass('show');
-//    }
-    
+function categoryMenuButtonClick() {    
     // Если меню скрыто - открыть и показать меню по категориям
     if ($('.menu-block').hasClass('hide')) {
         $('.menu-block').removeClass('hide').addClass('category-menu-show');
