@@ -726,6 +726,20 @@ body .main-screen .main-screen-background .logo {
 body .main-screen .main-screen-background .logo img {
   width: 100%;
 }
+body .main-screen .play-button {
+  position: fixed;
+  bottom: 40px;
+  left: 50px;
+  font-size: 60px;
+  background: none;
+  color: #969f9f;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+body .main-screen .play-button:hover {
+  opacity: 1;
+}
 body .ecosystem .block-with-ship {
   position: relative;
   height: 100vh;
@@ -748,8 +762,7 @@ body .ecosystem .block-with-ship .sursu-text {
   background-image: url(../img/sursu.png);
   top: 0;
   background-position: center;
-  margin-top: -80px;
-  height: 100%;
+  height: 90%;
   opacity: 0;
 }
 body .ecosystem .block-with-ship .ship {

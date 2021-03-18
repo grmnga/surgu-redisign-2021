@@ -770,8 +770,20 @@ body {
                     width: 100%;
                 }
             }
-
-            .play-button {}
+        }
+        .play-button {
+            position: fixed;
+            bottom: 40px;
+            left: 50px;
+            font-size: 60px;
+            background: none;
+            color: #969f9f;
+            border: none;
+            opacity: 0.5;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
         }
     }
     
@@ -800,8 +812,8 @@ body {
                 background-image: url(../img/sursu.png);
                 top: 0;
                 background-position: center;
-                margin-top: -80px;
-                height: 100%;
+//                margin-top: -80px;
+                height: 90%;
                 opacity: 0;
             }
             .ship {                

@@ -11,6 +11,7 @@ window.onload = function () {
     $('.category').on('click', categoryMenuButtonClick);
     $('.category-menu .categories button').on('click', categoryButtonClick);
     $('.menu-dark-background').on('click', closeMenu);
+    $('#play-button').on('click', playButtonClick);
 
     var tick = false;
     $(window).bind('mousewheel', _.throttle(function(event) {
@@ -185,4 +186,10 @@ function categoryButtonClick() {
     $('#' + control_id).addClass('active');
     $('.category-menu .categories button').removeClass('active');
     $(this).addClass('active');
+}
+
+function playButtonClick() {
+    $(this).find('i').toggleClass('icon-pause-outline, icon-play-outline');
+    let video = $('#video')[0];
+    video.paused ? video.play() : video.pause();
 }
