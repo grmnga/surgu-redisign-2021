@@ -259,15 +259,21 @@ body .menu-block .menu-wrapper .main-menu .top-links {
 body .menu-block .menu-wrapper .main-menu .top-links .main-top {
   border-bottom: 2px solid #e6e6e6;
 }
+body .menu-block .menu-wrapper .main-menu .top-links .main-top ul li {
+  display: inline-block;
+  padding: 25px 20px 15px;
+}
 body .menu-block .menu-wrapper .main-menu .top-links .main-top a {
   font-family: SegoeUI;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   color: #c6c6c6;
-  padding: 25px 29px 15px;
+}
+body .menu-block .menu-wrapper .main-menu .top-links .main-top a:hover {
+  color: #000000;
 }
 body .menu-block .menu-wrapper .main-menu .main-links {
   margin-top: 100px;
