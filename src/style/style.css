@@ -557,7 +557,7 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper h2 {
   font-family: MyriadPro;
-  font-size: 15.9px;
+  font-size: 1.2em;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
@@ -568,7 +568,7 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper ul li a {
   font-family: MyriadPro;
-  font-size: 13.6px;
+  font-size: 1em;
   line-height: 27px;
   font-weight: 400;
   color: #999999;
@@ -579,27 +579,30 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more {
   width: 190px;
   height: 35px;
-  background-color: #eff0f0;
-  margin: 70px 0 90px;
-}
-body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more:hover {
-  background-color: #dfdcdc;
+  margin: 20px 0 90px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a {
   font-family: MyriadPro;
-  font-size: 12.5px;
+  font-size: 14px;
   line-height: 35px;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
   color: #00556d;
   text-align: center;
   display: block;
+  background-color: #72eee4;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a:hover {
+  background-color: #01566b;
+  color: #ffffff;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block {
   width: 90%;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .img-block {
-  background-color: #f8df8a;
+  background-image: url(../img/menu-social-student.jpg);
+  background-size: cover;
+  background-position: center;
   width: 200px;
   height: 216px;
   position: absolute;
@@ -627,10 +630,10 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   background-color: #c7c7c7;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover {
-  background-color: #00d9e0;
+  background-color: #72eee4;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover i {
-  color: #000000;
+  color: #00556d;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button i {
   color: #7a8a8f;
@@ -642,24 +645,40 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item {
   margin-top: 60px;
+  display: block;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item:first-child .img {
+  background-image: url(../img/menu-bar-student-0.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item:nth-child(2) .img {
+  background-image: url(../img/menu-bar-student-1.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item:hover .img {
+  background-size: 110%;
+  transition-duration: 0.3s;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .img {
   width: 200px;
   height: 124px;
-  background-color: #f8df8a;
+  background-size: 100%;
+  background-position: center;
+  transition-duration: 0.3s;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column h3 {
   font-family: MyriadPro;
-  font-size: 15.9px;
+  font-size: 1.1em;
   line-height: 1.2;
   font-weight: 600;
   text-transform: uppercase;
   color: #333333;
   margin: 10px 0;
 }
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column h3:hover {
+  color: #01566b;
+}
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .text {
   font-family: MyriadPro;
-  font-size: 11.4px;
+  font-size: 0.85em;
   line-height: 15px;
   font-weight: 400;
   color: #000000;
