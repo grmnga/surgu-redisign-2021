@@ -187,11 +187,6 @@ body {
         &.category-menu-show {
             .menu-wrapper .category-menu {
                 visibility: visible;
-                .category-content-wrapper .category-content {   
-                    &.active {
-                        visibility: visible;
-                    }
-                }
             }
         }
         .menu-dark-background {
@@ -544,16 +539,13 @@ body {
                     position: relative;
                     margin-top: 50px;
                     .category-content {
-                        visibility: hidden;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 600px;
+//                        visibility: hidden;
+//                        position: absolute;
+                        display: none;
+//                        top: 0;
+//                        left: 0;
                         width: 100%;
                         padding-left: 160px;
-                        &:nth-child(2) {
-                            background-color: aquamarine;                            
-                        }
                         &:nth-child(3) {
                             background-color: blueviolet;                            
                         }
@@ -562,6 +554,11 @@ body {
                         }
                         &:nth-child(5) {
                             background-color: #1dbac5;                            
+                        }                        
+                         
+                        &.active {
+//                            visibility: visible;
+                            display: block;
                         }
                         
                         .left-column {
@@ -584,11 +581,13 @@ body {
                                 }
                                 ul {                                    
                                     margin: 15px 0 0 15px;
+                                    width: 50%;
                                     li {
+                                        margin: 10px 0;
                                         a {
                                             font-family: MyriadPro;
                                             font-size: 1em;
-                                            line-height: 27px;
+                                            line-height: 1em;
                                             font-weight: 400;
                                             color: #999999;
                                             &:hover {
@@ -647,6 +646,8 @@ body {
                                         margin-bottom: 50px;
                                     }
                                     .social {
+                                        float: none;
+                                        padding-left: 25px;
                                         button {
                                             background-color: #c7c7c7;
                                             &:hover {
@@ -660,30 +661,32 @@ body {
                                             }
                                         }
                                     }
+                                    .contact {
+                                        padding-top: 10px;
+                                        padding-left: 25px;
+                                        a {
+                                            display: block;
+                                            font-family: MyriadPro;
+                                            font-size: 1em;
+                                            line-height: 1.2;
+                                            font-weight: 400;
+                                            color: #333333;
+                                        }
+                                    }
                                 }
                             }
                         }
                         .right-column {
                             float: left;
                             width: calc((100% - 150px) * 0.4);
-                            padding: 0 100px 0 50px;
+                            padding: 0 100px 0 25px;
                             .sidebar-item {
                                 margin-top: 60px;
                                 display: block;
-                                &:first-child {
-                                    .img {                                        
-                                        background-image: url(../img/menu-bar-student-0.jpg);
-                                    }
-                                }
-                                &:nth-child(2) {
-                                    .img {                                        
-                                        background-image: url(../img/menu-bar-student-1.jpg);
-                                    }
-                                }
                                 &:hover {
                                     .img {
                                         background-size: 110%;
-                                        transition-duration: 0.3s;
+                                        transition: background-size 0.3s;
                                     }
                                 }
                             }
@@ -692,12 +695,12 @@ body {
                                 height: 124px;
                                 background-size: 100%;
                                 background-position: center;
-                                transition-duration: 0.3s;
+                                transition: background-size 0.3s;
                             }
                             h3 {
                                 font-family: MyriadPro;
-                                font-size: 1.1em;
-                                line-height: 1.2;
+                                font-size: 1em;
+                                line-height: 1.1;
                                 font-weight: 600;
                                 text-transform: uppercase;
                                 color: #333333;
@@ -712,6 +715,40 @@ body {
                                 line-height: 15px;
                                 font-weight: 400;
                                 color: #000000;
+                            }
+                        }
+                    }
+                    #category_1 {
+                        .bottom-block .img-block {
+                            background-image: url(../img/menu-social-abitur.jpg);
+                        }
+                        .sidebar-item {
+                            &:first-child {
+                                .img {                                        
+                                    background-image: url(../img/menu-bar-abitur-0.jpg);
+                                }
+                            }
+                            &:nth-child(2) {
+                                .img {                                        
+                                    background-image: url(../img/menu-bar-abitur-1.jpg);
+                                }
+                            }
+                        }
+                    }
+                    #category_2 {
+                        .bottom-block .img-block {
+                            background-image: url(../img/menu-social-student.jpg);
+                        }
+                        .sidebar-item {
+                            &:first-child {
+                                .img {                                        
+                                    background-image: url(../img/menu-bar-student-0.jpg);
+                                }
+                            }
+                            &:nth-child(2) {
+                                .img {                                        
+                                    background-image: url(../img/menu-bar-student-1.jpg);
+                                }
                             }
                         }
                     }

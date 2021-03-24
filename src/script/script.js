@@ -152,14 +152,15 @@ function mainMenuButtonClick() {
     }
 }
 
-// мню по целевым аудиториям
+// меню по целевым аудиториям
 function categoryMenuButtonClick() {    
     // Если меню скрыто - открыть и показать меню по категориям
     if ($('.menu-block').hasClass('hide')) {
+        setCategoryMenuHeight();
         $('.menu-block').removeClass('hide').addClass('category-menu-show');
         $('html').addClass('overflow-hidden');
         $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
-         $('.menu-buttons').addClass('category-menu-active');
+        $('.menu-buttons').addClass('category-menu-active');
     } 
     // Если меню по категориям показывается - скрыть его и закрыть блок
     else if ($('.menu-block').hasClass('category-menu-show')) {
@@ -170,6 +171,7 @@ function categoryMenuButtonClick() {
     } 
     // Если показывается основное меню - скрыть его и показать по категориям
     else {
+        setCategoryMenuHeight();
         $('.menu-block').removeClass('main-menu-show').addClass('category-menu-show');
         $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
         $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
@@ -193,6 +195,12 @@ function categoryButtonClick() {
     $('#' + control_id).addClass('active');
     $('.category-menu .categories button').removeClass('active');
     $(this).addClass('active');
+//    console.log($('.category-menu').height());
+    setCategoryMenuHeight();
+}
+
+function setCategoryMenuHeight() {
+    $('.menu-wrapper').height($('.category-menu').height());
 }
 
 // кнопка управления видео фоном

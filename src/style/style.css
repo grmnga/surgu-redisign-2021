@@ -196,9 +196,6 @@ body .menu-block.main-menu-show .menu-wrapper .main-menu .main-links .dropdown-l
 body .menu-block.category-menu-show .menu-wrapper .category-menu {
   visibility: visible;
 }
-body .menu-block.category-menu-show .menu-wrapper .category-menu .category-content-wrapper .category-content.active {
-  visibility: visible;
-}
 body .menu-block .menu-dark-background {
   background-color: rgba(0, 0, 0, 0.8);
   transition-duration: 0.5s;
@@ -527,16 +524,9 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper {
   margin-top: 50px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content {
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 600px;
+  display: none;
   width: 100%;
   padding-left: 160px;
-}
-body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(2) {
-  background-color: aquamarine;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(3) {
   background-color: blueviolet;
@@ -546,6 +536,9 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(5) {
   background-color: #1dbac5;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content.active {
+  display: block;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column {
   float: left;
@@ -566,11 +559,15 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper ul {
   margin: 15px 0 0 15px;
+  width: 50%;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper ul li {
+  margin: 10px 0;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper ul li a {
   font-family: MyriadPro;
   font-size: 1em;
-  line-height: 27px;
+  line-height: 1em;
   font-weight: 400;
   color: #999999;
 }
@@ -627,6 +624,10 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   text-align: center;
   margin-bottom: 50px;
 }
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social {
+  float: none;
+  padding-left: 25px;
+}
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button {
   background-color: #c7c7c7;
 }
@@ -639,36 +640,42 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button i {
   color: #7a8a8f;
 }
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .contact {
+  padding-top: 10px;
+  padding-left: 25px;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .contact a {
+  display: block;
+  font-family: MyriadPro;
+  font-size: 1em;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333333;
+}
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column {
   float: left;
   width: calc((100% - 150px) * 0.4);
-  padding: 0 100px 0 50px;
+  padding: 0 100px 0 25px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item {
   margin-top: 60px;
   display: block;
 }
-body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item:first-child .img {
-  background-image: url(../img/menu-bar-student-0.jpg);
-}
-body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item:nth-child(2) .img {
-  background-image: url(../img/menu-bar-student-1.jpg);
-}
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .sidebar-item:hover .img {
   background-size: 110%;
-  transition-duration: 0.3s;
+  transition: background-size 0.3s;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column .img {
   width: 200px;
   height: 124px;
   background-size: 100%;
   background-position: center;
-  transition-duration: 0.3s;
+  transition: background-size 0.3s;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .right-column h3 {
   font-family: MyriadPro;
-  font-size: 1.1em;
-  line-height: 1.2;
+  font-size: 1em;
+  line-height: 1.1;
   font-weight: 600;
   text-transform: uppercase;
   color: #333333;
@@ -683,6 +690,24 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   line-height: 15px;
   font-weight: 400;
   color: #000000;
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_1 .bottom-block .img-block {
+  background-image: url(../img/menu-social-abitur.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_1 .sidebar-item:first-child .img {
+  background-image: url(../img/menu-bar-abitur-0.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_1 .sidebar-item:nth-child(2) .img {
+  background-image: url(../img/menu-bar-abitur-1.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_2 .bottom-block .img-block {
+  background-image: url(../img/menu-social-student.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_2 .sidebar-item:first-child .img {
+  background-image: url(../img/menu-bar-student-0.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_2 .sidebar-item:nth-child(2) .img {
+  background-image: url(../img/menu-bar-student-1.jpg);
 }
 body .main-screen {
   height: 100vh;
