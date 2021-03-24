@@ -166,13 +166,16 @@ body .menu-block {
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
   transition-duration: 0.5s;
 }
 body .menu-block.hide {
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0);
   transition-duration: 0.5s;
+}
+body .menu-block.hide .menu-dark-background {
+  background-color: rgba(0, 0, 0, 0);
+  transition-duration: 0.2s;
 }
 body .menu-block.hide .menu-wrapper {
   right: -100vw;
@@ -197,14 +200,12 @@ body .menu-block.category-menu-show .menu-wrapper .category-menu .category-conte
   visibility: visible;
 }
 body .menu-block .menu-dark-background {
+  background-color: rgba(0, 0, 0, 0.8);
   transition-duration: 0.5s;
   height: 100%;
   width: 100%;
   position: fixed;
   cursor: url('../img/cursor-close.png'), auto;
-}
-body .menu-block .menu-dark-background.hide {
-  transition-duration: 0.5s;
 }
 body .menu-block .menu-wrapper {
   top: 0;

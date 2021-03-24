@@ -150,7 +150,7 @@ body {
         min-height: 100vh;
         overflow-y: auto;
         overflow-x: hidden;
-        background-color: rgba(0, 0, 0, 0.8);
+//        background-color: rgba(0, 0, 0, 0.8);
         transition-duration: 0.5s;
         
         &.hide {            
@@ -159,6 +159,10 @@ body {
                 background-color: rgba(0, 0, 0, 0);
                 transition-duration: 0.5s;
 //            transition-delay: 0.5s;
+            .menu-dark-background {
+                background-color: rgba(0, 0, 0, 0);
+                transition-duration: 0.2s;
+            }
             .menu-wrapper {
                 right: -100vw;
                 transition-duration: 0.5s;
@@ -191,7 +195,7 @@ body {
             }
         }
         .menu-dark-background {
-//            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.8);
             transition-duration: 0.5s;
             height: 100%;
             width: 100%;
@@ -199,8 +203,6 @@ body {
             cursor: url('../img/cursor-close.png'), auto;
 
             &.hide {
-//                background-color: rgba(0, 0, 0, 0);
-                transition-duration: 0.5s;
             }
         }
         .menu-wrapper {
