@@ -127,6 +127,7 @@ function dropdownMenu() {
     $(this).find('i').toggleClass('icon-plus').toggleClass('icon-close');
 }
 
+// гамбургер
 function mainMenuButtonClick() {
     // Если меню скрыто - открыть и показать основное меню
     if ($('.menu-block').hasClass('hide')) {
@@ -151,6 +152,7 @@ function mainMenuButtonClick() {
     }
 }
 
+// мню по целевым аудиториям
 function categoryMenuButtonClick() {    
     // Если меню скрыто - открыть и показать меню по категориям
     if ($('.menu-block').hasClass('hide')) {
@@ -175,13 +177,16 @@ function categoryMenuButtonClick() {
     }
 }
 
+// клик по затемненной области при открытом меню
 function closeMenu() {
     $('.menu-block').removeClass('category-menu-show').removeClass('main-menu-show').addClass('hide');
     $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
     $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
-    $('.menu-buttons').removeClass('main-menu-active, category-menu-active')
+    $('.menu-buttons').removeClass('main-menu-active, category-menu-active');
+    $('html').removeClass('overflow-hidden');
 }
 
+// управление вкладками меню по ЦА
 function categoryButtonClick() {
     let control_id = this.getAttribute('aria-controls');
     $('.category-content').removeClass('active');
@@ -190,6 +195,7 @@ function categoryButtonClick() {
     $(this).addClass('active');
 }
 
+// кнопка управления видео фоном
 function playButtonClick() {
     $(this).find('i').toggleClass('icon-pause-outline, icon-play-outline');
     let video = $('#video')[0];
