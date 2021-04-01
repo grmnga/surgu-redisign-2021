@@ -528,9 +528,6 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   width: 100%;
   padding-left: 160px;
 }
-body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(3) {
-  background-color: blueviolet;
-}
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content:nth-child(4) {
   background-color: #01566c;
 }
@@ -708,6 +705,15 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper #categor
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_2 .sidebar-item:nth-child(2) .img {
   background-image: url(../img/menu-bar-student-1.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_3 .bottom-block .img-block {
+  background-image: url(../img/menu-social-graduate.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_3 .sidebar-item:first-child .img {
+  background-image: url(../img/menu-bar-graduate-0.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_3 .sidebar-item:nth-child(2) .img {
+  background-image: url(../img/menu-bar-graduate-1.jpg);
 }
 body .main-screen {
   height: 100vh;
