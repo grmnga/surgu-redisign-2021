@@ -731,6 +731,15 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper #categor
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_4 .sidebar-item:nth-child(2) .img {
   background-image: url(../img/menu-bar-staff-1.jpg);
 }
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_5 .bottom-block .img-block {
+  background-image: url(../img/menu-social-partner.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_5 .sidebar-item:first-child .img {
+  background-image: url(../img/menu-bar-partner-0.jpg);
+}
+body .menu-block .menu-wrapper .category-menu .category-content-wrapper #category_5 .sidebar-item:nth-child(2) .img {
+  background-image: url(../img/menu-bar-partner-1.jpg);
+}
 body .main-screen {
   height: 100vh;
   position: relative;
