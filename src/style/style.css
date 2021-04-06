@@ -966,14 +966,19 @@ body .ecosystem .block-with-ship .bottom-container {
   width: 100%;
 }
 body .ecosystem .block-with-ship .bottom-container .departments {
-  border-collapse: collapse;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  list-style: none;
 }
 body .ecosystem .block-with-ship .bottom-container .department {
   padding: 35px 10px 0;
   border-left: 2px solid #000000;
-  border-right: 2px solid #000000;
-  height: 90px;
   position: relative;
+}
+body .ecosystem .block-with-ship .bottom-container .department:last-child {
+  border-right: 2px solid #000000;
 }
 body .ecosystem .block-with-ship .bottom-container .department a {
   font-family: Bahnschrift;
@@ -981,9 +986,15 @@ body .ecosystem .block-with-ship .bottom-container .department a {
   font-size: 1em;
   text-transform: uppercase;
   color: #000000;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 body .ecosystem .block-with-ship .bottom-container .department a:hover {
   color: #57b2ba;
+}
+body .ecosystem .block-with-ship .bottom-container .department a:hover:before {
+  background: #01566c;
 }
 body .ecosystem .block-with-ship .bottom-container .department a:before {
   content: '';

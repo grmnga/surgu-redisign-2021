@@ -447,7 +447,7 @@ body {
                 margin: 40px;
                 .categories {
                     margin: 0 160px;
-                    font-size: 0;  
+                    font-size: 0;
                     display: flex;
                     flex-direction: row;
                     flex-wrap: nowrap;
@@ -1059,17 +1059,20 @@ body {
                 bottom: 0;
                 width: 100%;
                 
-                .departments {                    
-                    border-collapse: collapse;
+                .departments {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    list-style: none;
                 }
                 .department {
-//                    float: left;
-//                    width: 14.27%;
                     padding: 35px 10px 0;
                     border-left: 2px solid @black;
-                    border-right: 2px solid @black;
-                    height: 90px;
                     position: relative;
+                    &:last-child {
+                        border-right: 2px solid @black;
+                    }
                     
                     a {
                         font-family: Bahnschrift;
@@ -1077,8 +1080,14 @@ body {
                         font-size: 1em;
                         text-transform: uppercase;
                         color: @black;
+                        height: 100%;
+                        width: 100%;
+                        display: block;
                         &:hover{
                             color: #57b2ba;
+                            &:before {                                
+                                background: #01566c;
+                            }
                         }
                         &:before {
                             content: '';
