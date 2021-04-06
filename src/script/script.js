@@ -131,24 +131,17 @@ function dropdownMenu() {
 function mainMenuButtonClick() {
     // Если меню скрыто - открыть и показать основное меню
     if ($('.menu-block').hasClass('hide')) {
-        $('.menu-block').removeClass('hide').addClass('main-menu-show');
-        $('html').addClass('overflow-hidden');
-        $('.menu-buttons button.menu i').removeClass('icon-menu').addClass('icon-close');
-        $('.menu-buttons').addClass('main-menu-active');
+        showMenuBlock();
+        showMainMenu();
     } 
     // Если основное меню показывается - скрыть его и закрыть блок
     else if ($('.menu-block').hasClass('main-menu-show')) {
-        $('.menu-block').addClass('hide').removeClass('main-menu-show');
-        $('html').removeClass('overflow-hidden');
-        $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
-        $('.menu-buttons').removeClass('main-menu-active');
+        closeMenu();
     } 
     // Если показывается меню по категориям - скрыть его и показать основное
     else {
-        $('.menu-block').removeClass('category-menu-show').addClass('main-menu-show');
-        $('.menu-buttons button.menu i').removeClass('icon-menu').addClass('icon-close');
-        $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
-        $('.menu-buttons').removeClass('category-menu-active').addClass('main-menu-active');
+        hideCategoryMenu();
+        showMainMenu();
     }
 }
 
@@ -157,35 +150,26 @@ function categoryMenuButtonClick() {
     // Если меню скрыто - открыть и показать меню по категориям
     if ($('.menu-block').hasClass('hide')) {
         setCategoryMenuHeight();
-        $('.menu-block').removeClass('hide').addClass('category-menu-show');
-        $('html').addClass('overflow-hidden');
-        $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
-        $('.menu-buttons').addClass('category-menu-active');
+        showMenuBlock();
+        showCategoryMenu();
     } 
     // Если меню по категориям показывается - скрыть его и закрыть блок
     else if ($('.menu-block').hasClass('category-menu-show')) {
-        $('.menu-block').addClass('hide').removeClass('category-menu-show');
-        $('html').removeClass('overflow-hidden');        
-        $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
-        $('.menu-buttons').removeClass('category-menu-active');
+        closeMenu();
     } 
     // Если показывается основное меню - скрыть его и показать по категориям
     else {
         setCategoryMenuHeight();
-        $('.menu-block').removeClass('main-menu-show').addClass('category-menu-show');
-        $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
-        $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
-        $('.menu-buttons').removeClass('main-menu-active').addClass('category-menu-active');
+        hideMainMenu();
+        showCategoryMenu();
     }
 }
 
 // клик по затемненной области при открытом меню
 function closeMenu() {
-    $('.menu-block').removeClass('category-menu-show').removeClass('main-menu-show').addClass('hide');
-    $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
-    $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
-    $('.menu-buttons').removeClass('main-menu-active, category-menu-active');
-    $('html').removeClass('overflow-hidden');
+    hideMainMenu();
+    hideCategoryMenu();
+    hideMenuBlock();
 }
 
 // управление вкладками меню по ЦА
@@ -195,7 +179,6 @@ function categoryButtonClick() {
     $('#' + control_id).addClass('active');
     $('.category-menu .categories button').removeClass('active');
     $(this).addClass('active');
-//    console.log($('.category-menu').height());
     setCategoryMenuHeight();
 }
 
@@ -208,4 +191,38 @@ function playButtonClick() {
     $(this).find('i').toggleClass('icon-pause-outline, icon-play-outline');
     let video = $('#video')[0];
     video.paused ? video.play() : video.pause();
+}
+
+function showMenuBlock() {
+    $('.menu-block').removeClass('hide');
+    $('html').addClass('overflow-hidden');
+}
+
+function hideMenuBlock() {
+    $('.menu-block').addClass('hide');
+    $('html').removeClass('overflow-hidden');
+}
+
+function showMainMenu() {
+    $('.menu-block').addClass('main-menu-show');
+    $('.menu-buttons button.menu i').removeClass('icon-menu').addClass('icon-close');
+    $('.menu-buttons').addClass('main-menu-active');    
+}
+
+function hideMainMenu() {
+    $('.menu-block').removeClass('main-menu-show');
+    $('.menu-buttons button.menu i').removeClass('icon-close').addClass('icon-menu');
+    $('.menu-buttons').removeClass('main-menu-active');
+}
+
+function showCategoryMenu() {    
+    $('.menu-block').addClass('category-menu-show');
+    $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
+    $('.menu-buttons').addClass('category-menu-active');
+}
+
+function hideCategoryMenu() {
+    $('.menu-block').removeClass('category-menu-show');
+    $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
+    $('.menu-buttons').removeClass('category-menu-active');
 }
