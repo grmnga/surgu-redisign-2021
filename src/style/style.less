@@ -968,8 +968,13 @@ body {
             .top-container {
                 opacity: 0;
                 .target-audiences {
-                    @media(max-width: 1440px) {
-                        width: 1080px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    @media(max-width: 1360px) {
+                        width: 1000px;
+                        margin: auto;
                     }
                     a {                        
                         width: 16.5%;
@@ -977,8 +982,8 @@ body {
                         text-transform: uppercase;
                         font-size: 1em;
                         height: 35px;
-                        margin: 0 2%;
-                        display: inline-block;
+//                        margin: 0 2%;
+//                        display: inline-block;
                         text-align: center;
                         line-height: 35px;
                         color: @white;
@@ -986,7 +991,7 @@ body {
                         transition-duration: 0.5s;
                         
                         &:first-child {
-                            margin-left: 0;
+//                            margin-left: 0;
                             background: #72eee4;
                             .ta-pic {
                                 background-image: url(../img/abitur.png);

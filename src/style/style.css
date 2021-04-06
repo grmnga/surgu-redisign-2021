@@ -876,9 +876,16 @@ body .ecosystem .block-with-ship .ship {
 body .ecosystem .block-with-ship .top-container {
   opacity: 0;
 }
-@media (max-width: 1440px) {
+body .ecosystem .block-with-ship .top-container .target-audiences {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media (max-width: 1360px) {
   body .ecosystem .block-with-ship .top-container .target-audiences {
-    width: 1080px;
+    width: 1000px;
+    margin: auto;
   }
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a {
@@ -887,8 +894,6 @@ body .ecosystem .block-with-ship .top-container .target-audiences a {
   text-transform: uppercase;
   font-size: 1em;
   height: 35px;
-  margin: 0 2%;
-  display: inline-block;
   text-align: center;
   line-height: 35px;
   color: #ffffff;
@@ -896,7 +901,6 @@ body .ecosystem .block-with-ship .top-container .target-audiences a {
   transition-duration: 0.5s;
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a:first-child {
-  margin-left: 0;
   background: #72eee4;
 }
 body .ecosystem .block-with-ship .top-container .target-audiences a:first-child .ta-pic {
