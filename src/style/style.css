@@ -593,7 +593,7 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more {
   width: 190px;
   height: 35px;
-  margin: 20px 0 90px;
+  margin: 20px 0 20px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a {
   font-family: MyriadPro;
@@ -611,6 +611,7 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   color: #ffffff;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block {
+  margin-top: 70px;
   width: 90%;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .img-block {
