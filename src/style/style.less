@@ -256,9 +256,14 @@ body {
                     margin: 0 100px 0 160px;
                     .main-top {
                         border-bottom: 2px solid #e6e6e6;
-                        ul li {
-                            display: inline-block;
-                            padding: 25px 20px 15px;
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+                            li {
+                                padding: 25px 0 15px;
+                            }
                         }
                         a {
                             font-family: SegoeUI;

@@ -260,9 +260,14 @@ body .menu-block .menu-wrapper .main-menu .top-links {
 body .menu-block .menu-wrapper .main-menu .top-links .main-top {
   border-bottom: 2px solid #e6e6e6;
 }
+body .menu-block .menu-wrapper .main-menu .top-links .main-top ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 body .menu-block .menu-wrapper .main-menu .top-links .main-top ul li {
-  display: inline-block;
-  padding: 25px 20px 15px;
+  padding: 25px 0 15px;
 }
 body .menu-block .menu-wrapper .main-menu .top-links .main-top a {
   font-family: SegoeUI;
