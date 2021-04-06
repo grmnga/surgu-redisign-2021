@@ -176,6 +176,7 @@ body .menu-block.hide {
 body .menu-block.hide .menu-dark-background {
   background-color: rgba(0, 0, 0, 0);
   transition-duration: 0.2s;
+  cursor: default;
 }
 body .menu-block.hide .menu-wrapper {
   right: -100vw;
