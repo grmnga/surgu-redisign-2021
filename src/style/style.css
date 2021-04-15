@@ -1354,34 +1354,30 @@ body .news .more-button button:hover {
 }
 body .tour {
   padding: 50px 0;
-  background-image: url(../img/tour_back.png);
+  background-image: url(../img/tour_back.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-body .tour .icon {
-  text-align: center;
-}
-body .tour .icon i {
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: 800;
-  margin: 0 0 17px;
-  display: block;
+body .tour .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 body .tour a {
   display: block;
   font-family: SegoeUI;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 1.3em;
+  line-height: 1.3em;
   font-weight: 700;
-  padding: 0 30px;
+  padding: 10px 20px;
   color: #01566c;
   background-color: #6eeee4;
   text-align: center;
   margin: auto;
   transition-duration: 0.3s;
-  width: max-content;
+  width: 300px;
 }
 body .tour a:hover {
   background: #01566c;
