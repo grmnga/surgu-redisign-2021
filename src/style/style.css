@@ -124,12 +124,11 @@ body .menu-buttons button i {
 }
 body .menu-buttons .menu {
   background-color: #00556d;
-  height: 75px;
+  height: 60px;
   width: 90px;
 }
 body .menu-buttons .menu i {
   display: block;
-  margin-top: 35px;
 }
 body .menu-buttons .menu:hover {
   background-color: #000000;
@@ -761,13 +760,13 @@ body .main-screen {
 body .main-screen .top-sidebar {
   position: relative;
   z-index: 1;
-  height: 80px;
+  height: 60px;
   background-color: rgba(2, 22, 35, 0.3);
   box-shadow: 0px 0px 30px 0px rgba(21, 21, 21, 0.11);
   color: #ffffff;
   font-family: MyriadPro;
   font-size: 1.3em;
-  line-height: 80px;
+  line-height: 60px;
   font-weight: 600;
 }
 body .main-screen .top-sidebar a:hover {
