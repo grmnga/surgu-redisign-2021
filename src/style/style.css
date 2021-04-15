@@ -1597,7 +1597,7 @@ body .contacts h2 {
   line-height: 30px;
   font-weight: 400;
   letter-spacing: -0.025em;
-  color: #000000;
+  color: #4f5151;
   text-transform: uppercase;
 }
 body .contacts .row {
@@ -1605,7 +1605,6 @@ body .contacts .row {
   width: 25%;
   font-family: MyriadPro;
   font-size: 20px;
-  line-height: 30px;
   font-weight: 400;
   letter-spacing: -0.025em;
 }
@@ -1614,17 +1613,15 @@ body .contacts .row .col {
   padding-right: 30px;
   font-family: MyriadPro;
   font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.025em;
 }
 body .contacts .row .col p {
   text-transform: uppercase;
-  color: #2d838f;
+  color: #018e9a;
 }
 body .contacts .row .col a {
-  text-decoration: underline;
-  color: #2d838f;
+  color: #018e9a;
   display: block;
 }
 body .contacts .row .col a[href^="tel:"] {
@@ -1632,7 +1629,7 @@ body .contacts .row .col a[href^="tel:"] {
   text-decoration: none;
 }
 body .contacts .row .col a[href^="mailto:"] {
-  color: #2d838f;
+  color: #018e9a;
 }
 body footer {
   background-color: #01566c;
@@ -1680,9 +1677,6 @@ body footer .bottom-footer .social button:hover i {
 }
 body footer .bottom-footer .social button i {
   color: #a3ccd0;
-}
-body footer .bottom-footer a {
-  text-decoration: underline;
 }
 body footer .copyright {
   padding-top: 50px;
