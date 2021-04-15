@@ -28,28 +28,13 @@ $(document).ready(function() {
             }
         ]
     });
-//    $('.partners-items').slick({
-//        infinite: true,
-//        dots: true,
-//        slidesToShow: 2,
-//        slidesToScroll: 2,
-//        responsive: [
-//            {
-//                breakpoint: 1024,
-//                settings: {
-//                    slidesToShow: 1,
-//                    slidesToScroll: 1,
-//                    infinite: true,
-//                    dots: true
-//                }
-//            },
-//            {
-//                breakpoint: 768,
-//                settings: {
-//                    slidesToShow: 1,
-//                    slidesToScroll: 1
-//                }
-//            }
-//        ]
-//    });
+    $('.galery-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        speed: 1000,
+        fade: true,
+        cssEase: 'linear'
+    });
 });

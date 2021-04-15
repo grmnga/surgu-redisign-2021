@@ -1533,6 +1533,9 @@ body .people .people-wrapper .people-scroll .people-small:nth-child(9) {
 body .people .people-wrapper .people-scroll .people-small:nth-child(10) {
   background-image: url(../img/people-scroll-img-10.jpg);
 }
+body .galery {
+  background-color: #ffffff;
+}
 body .galery .col {
   float: left;
   width: 25%;
