@@ -117,6 +117,10 @@ body .menu-buttons button {
   cursor: pointer;
   display: block;
 }
+body .menu-buttons button:hover {
+  margin-left: -10px;
+  width: 100px;
+}
 body .menu-buttons button i {
   color: #ffffff;
   font-size: 26px;
@@ -141,8 +145,6 @@ body .menu-buttons .category {
 }
 body .menu-buttons .category:hover {
   background-color: rgba(2, 22, 35, 0.8);
-  margin-left: -10px;
-  width: 100px;
 }
 body .menu-buttons.category-menu-active .menu:hover {
   background: #018b98;
