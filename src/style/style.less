@@ -30,9 +30,6 @@ body {
     .content {
         width: 1160px;
         margin: auto;
-        @media (max-width: 1200px) {
-            width: 100%;
-        }
     }    
     .sr-only {
             position: absolute;
@@ -987,10 +984,6 @@ body {
                     flex-direction: row;
                     flex-wrap: nowrap;
                     justify-content: space-between;
-                    @media(max-width: 1360px) {
-                        width: 1000px;
-                        margin: auto;
-                    }
                     a {                        
                         width: 16.5%;
                         font-family: MyriadPro;
@@ -1111,8 +1104,6 @@ body {
         .link-big-blocks {
             background: @white;
             padding: 70px 0;
-            .content {
-            }
             .big-link-wrapper {
                 height: 320px;
                 float: left;
@@ -1840,6 +1831,14 @@ body {
                 float: left;
                 width: 33%;
                 padding-right: 20px;
+            }
+            .logo {
+                width: 100px;
+                height: 100px;
+                background-image: url(../img/logo-without-text.svg);
+                background-position: center;
+                background-size: contain;
+                float: right;
             }
         }
         .bottom-footer {
