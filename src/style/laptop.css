@@ -126,4 +126,59 @@
     font-size: 0.6em;
     line-height: inherit;
   }
+  body .people {
+    padding-bottom: 30px;
+  }
+  body .people .people-wrapper .people-big {
+    position: relative;
+    float: none;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+  body .people .people-wrapper .people-big h2 {
+    text-align: center;
+    margin: 0;
+  }
+  body .people .people-wrapper .people-big h2::after {
+    margin: 30px auto;
+  }
+  body .people .people-wrapper .people-big .people-big-wrap {
+    height: 50vw;
+    width: 74vw;
+    margin: 50px auto 0;
+  }
+  body .people .people-wrapper .people-big .people-big-wrap .people-border {
+    height: calc(50vw - 60px);
+  }
+  body .people .people-wrapper .people-big .people-big-wrap .people-big-img .person-content {
+    padding-top: 50px;
+  }
+  body .people .people-wrapper .people-scroll {
+    display: flex;
+    flex-flow: column wrap;
+    float: none;
+    width: auto;
+    height: 200px;
+    overflow: auto;
+    padding: 0;
+  }
+  body .people .people-wrapper .people-scroll .people-small {
+    height: 100px;
+    width: 150px;
+  }
+  body .galery .col {
+    float: left;
+    width: 25%;
+    height: 300px;
+  }
+  body .galery .col .row .title {
+    font-size: 2em;
+  }
+  body .galery .col .row .text {
+    font-size: 1em;
+  }
+  body .contacts .row .col {
+    font-size: 14px;
+  }
 }

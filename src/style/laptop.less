@@ -73,25 +73,6 @@
             }
         }
         .news {
-            h2 {
-
-                &::after {
-                }
-            }
-            ul.slick-dots {
-                li  {
-                    button {
-                    }
-                }
-                li.slick-active  {
-                }
-            }
-            button.slick-arrow {
-                &.slick-prev {
-                }
-                &.slick-next {
-                }
-            }
             .big-new {
                 .news-border {
                     height: 250px;
@@ -114,9 +95,6 @@
                             font-size: 2em;
                             line-height: 30px;
                             height: auto;
-                            a {
-
-                            }
                         }
                         .new-text-wrap {
                             .date {
@@ -130,42 +108,74 @@
                     }
                 }
             }
-            .smoll-news {
-                .new-wrapper {
-                    &:nth-child(1) {
-                        .background {
-                        }
-                    }
-                    &:nth-child(2) {
-                        .background {
-                        }
-                    }
-                    &:nth-child(3) {
-                        .background {
-                        }
-                    }
-                    a.news-body {
+        }
+        .people {
+            padding-bottom: 30px;
+            .people-wrapper {
+                .people-big {
+                    position: relative;
+                    float: none;
+                    width: 100%;
+                    height: auto;
+                    padding: 50px;
 
-                        .background {
+                    h2 {
+                        text-align: center;
+                        margin: 0;
+                        &::after {
+                            margin: 30px auto;
                         }
-
-                        .date {
-                            .day {                          
+                    }
+                    .people-big-wrap {
+                        height: 50vw;
+                        width: 74vw;
+                        margin: 50px auto 0;
+                        .people-border {
+                            height: calc(50vw - 60px);
+                        }
+                        .people-big-img {
+                            .person-content {
+                                padding-top: 50px;
                             }
-                            .month {
-                            }
-                        }
-
-                        p.title {
-                        }
-
-                        .text {
                         }
                     }
                 }
+                .people-scroll {
+                    display: flex;
+                    flex-flow: column wrap;
+                    float: none;
+                    width: auto;
+                    height: 200px;
+                    overflow: auto;
+                    padding: 0;
+                    .people-small { 
+                        height: 100px;
+                        width: 150px;
+                    }
+                }
             }
-            .more-button {
-                button {
+        }
+        
+        .galery {
+            .col {
+                float: left;
+                width: 25%;
+                height: 300px;
+                .row {
+                    .title {
+                        font-size: 2em;
+                    }
+                    .text {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+        
+        .contacts {
+            .row {
+                .col {
+                    font-size: 14px;
                 }
             }
         }
