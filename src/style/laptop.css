@@ -95,4 +95,35 @@
     font-size: 2em;
     line-height: 35px;
   }
+  body .news .big-new .news-border {
+    height: 250px;
+    width: 60%;
+  }
+  body .news .big-new .news-img {
+    height: 320px;
+    width: 60%;
+  }
+  body .news .big-new div.news-body {
+    width: 50%;
+    height: 200px;
+  }
+  body .news .big-new div.news-body .color-background {
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  body .news .big-new div.news-body .new-content {
+    padding: 20px 30px;
+  }
+  body .news .big-new div.news-body .new-content h3.title {
+    font-size: 2em;
+    line-height: 30px;
+    height: auto;
+  }
+  body .news .big-new div.news-body .new-content .new-text-wrap .date {
+    font-size: 0.5em;
+  }
+  body .news .big-new div.news-body .new-content .new-text-wrap .text {
+    font-size: 0.6em;
+    line-height: inherit;
+  }
 }

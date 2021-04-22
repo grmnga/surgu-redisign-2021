@@ -1181,7 +1181,7 @@ body .news button.slick-arrow.slick-next::before {
   content: "\e90b";
 }
 body .news .big-new {
-  height: 590px;
+  padding-bottom: 100px;
   position: relative;
 }
 body .news .big-new .news-border {
