@@ -217,12 +217,12 @@ function hideMainMenu() {
 
 function showCategoryMenu() {    
     $('.menu-block').addClass('category-menu-show');
-    $('.menu-buttons button.category i').removeClass('icon-smile').addClass('icon-close');
+    $('.menu-buttons button.category i').removeClass('icon-info').addClass('icon-close');
     $('.menu-buttons').addClass('category-menu-active');
 }
 
 function hideCategoryMenu() {
     $('.menu-block').removeClass('category-menu-show');
-    $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-smile');
+    $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-info');
     $('.menu-buttons').removeClass('category-menu-active');
 }
