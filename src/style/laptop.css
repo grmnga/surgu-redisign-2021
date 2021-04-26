@@ -58,6 +58,93 @@
     margin-left: 0;
     width: 60px;
   }
+  body .menu-block .menu-wrapper {
+    width: 100%;
+    max-width: 600px;
+  }
+  body .menu-block .menu-wrapper .main-menu .top-links {
+    order: 2;
+    margin: 20px 0;
+  }
+  body .menu-block .menu-wrapper .main-menu .top-links .main-top {
+    border: none;
+  }
+  body .menu-block .menu-wrapper .main-menu .top-links .main-top ul {
+    flex-direction: column;
+    margin: 20px 0;
+    margin-left: 15px;
+  }
+  body .menu-block .menu-wrapper .main-menu .top-links .main-top ul li {
+    padding: 5px 0;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links {
+    padding: 0;
+    flex-basis: 100%;
+    border: none;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub {
+    flex-wrap: wrap;
+    border-top: 1px solid #afb3b4;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub:last-child {
+    border-bottom: 1px solid #afb3b4;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub > a {
+    flex-basis: calc(100% - 48px);
+    padding-left: 15px;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub button {
+    margin: 0;
+    height: 48px;
+    width: 48px;
+    font-size: 2em;
+    border-radius: 0;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-list li {
+    padding: 5px 0;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .quick-links {
+    padding: 0;
+    padding-bottom: 25px;
+    flex-basis: 100%;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .quick-links form {
+    display: flex;
+    justify-content: center;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .quick-links form #search_main_input {
+    flex-basis: 50%;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .quick-links form button {
+    width: 50px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #e6e6e6;
+    color: #e6e6e6;
+    font-size: 1.4em;
+  }
+  body .menu-block .menu-wrapper .main-menu .main-links .quick-links .popular-links {
+    display: none;
+  }
+  body .menu-block .menu-wrapper .main-menu .bottom-links {
+    order: 3;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  body .menu-block .menu-wrapper .main-menu .bottom-links .big-button {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+  }
+  body .menu-block .menu-wrapper .main-menu .bottom-links a {
+    height: auto;
+    padding: 20px 0;
+  }
   body .main-screen .top-sidebar {
     font-size: 0.95em;
   }

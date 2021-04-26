@@ -26,6 +26,98 @@
                 width: 60px;
             }
         }
+        
+        .menu-block {
+            .menu-wrapper {
+                width: 100%;
+                max-width: 600px;
+                .main-menu {
+                    .top-links {
+                        order: 2;
+                        margin: 20px 0;
+                        .main-top {
+                            border: none;
+                            ul {
+                                flex-direction: column;
+                                margin: 20px 0;
+                                margin-left: 15px;
+                                li {
+                                    padding: 5px 0;
+                                }
+                            }
+                        }
+                    }
+                    .main-links {
+                        order: 1;
+                        display: flex;
+                        flex-wrap: wrap-reverse;
+                        .dropdown-links {
+                            padding: 0;
+                            flex-basis: 100%;
+                            border: none;
+                            .sub {
+                                flex-wrap: wrap;
+                                border-top: 1px solid #afb3b4;
+                                &:last-child {
+                                    border-bottom: 1px solid #afb3b4;
+                                }
+                                > a {
+                                    flex-basis: calc(100% - 48px);
+                                    padding-left: 15px;
+                                }
+                                button {
+                                    margin: 0;
+                                    height: 48px;
+                                    width: 48px;
+                                    font-size: 2em;
+                                    border-radius: 0;
+                                }
+                                .sub-list li {
+                                    padding: 5px 0;
+                                }
+                            }
+                        }
+                        .quick-links {
+                            padding: 0;
+                            padding-bottom: 25px;
+                            flex-basis: 100%;
+                            form {
+                                display: flex;
+                                justify-content: center;
+                                #search_main_input {
+                                    flex-basis: 50%;
+                                }
+                                button {
+                                    width: 50px;
+                                    border: none;
+                                    background: none;
+                                    border-bottom: 2px solid #e6e6e6;
+                                    color: #e6e6e6;
+                                    font-size: 1.4em;
+                                }
+                            }
+                            .popular-links {
+                                display: none;
+                            }
+                        }
+                    }
+                    .bottom-links {
+                        order: 3;
+                        flex-direction: column;
+                        margin-top: 0;
+                        .big-button {
+                            width: 100%;
+                            margin: 10px 0;
+                            height: auto;
+                        }
+                        a {
+                            height: auto;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
         .main-screen {
             .top-sidebar {
                 font-size: 0.95em;
