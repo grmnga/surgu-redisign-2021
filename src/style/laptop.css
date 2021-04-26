@@ -61,6 +61,7 @@
   body .menu-block .menu-wrapper {
     width: 100%;
     max-width: 600px;
+    padding: 30px 60px;
   }
   body .menu-block .menu-wrapper .main-menu .top-links {
     order: 2;
