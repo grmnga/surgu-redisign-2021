@@ -206,7 +206,8 @@ function hideMenuBlock() {
 function showMainMenu() {
     $('.menu-block').addClass('main-menu-show');
     $('.menu-buttons button.menu i').removeClass('icon-menu').addClass('icon-close');
-    $('.menu-buttons').addClass('main-menu-active');    
+    $('.menu-buttons').addClass('main-menu-active');
+    $('.menu-wrapper').height('auto'); 
 }
 
 function hideMainMenu() {
@@ -219,6 +220,7 @@ function showCategoryMenu() {
     $('.menu-block').addClass('category-menu-show');
     $('.menu-buttons button.category i').removeClass('icon-info').addClass('icon-close');
     $('.menu-buttons').addClass('category-menu-active');
+    setCategoryMenuHeight();
 }
 
 function hideCategoryMenu() {
