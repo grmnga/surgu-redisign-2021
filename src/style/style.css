@@ -316,6 +316,7 @@ body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub butto
   margin: 17px 10px 0;
   cursor: pointer;
   transition-duration: 0.3s;
+  color: #585858;
 }
 body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub button:hover {
   background-color: #d4d4d4;
@@ -364,6 +365,22 @@ body .menu-block .menu-wrapper .main-menu .main-links .quick-links #search_main_
 }
 body .menu-block .menu-wrapper .main-menu .main-links .quick-links #search_main_input::placeholder {
   color: #c6c6c6;
+}
+body .menu-block .menu-wrapper .main-menu .main-links .quick-links form {
+  display: flex;
+  justify-content: flex-start;
+}
+body .menu-block .menu-wrapper .main-menu .main-links .quick-links button {
+  width: 50px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #e6e6e6;
+  color: #e6e6e6;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+body .menu-block .menu-wrapper .main-menu .main-links .quick-links button:hover {
+  color: #585858;
 }
 body .menu-block .menu-wrapper .main-menu .main-links .quick-links .popular-links {
   margin-top: 50px;

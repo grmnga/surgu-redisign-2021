@@ -115,19 +115,10 @@
     flex-basis: 100%;
   }
   body .menu-block .menu-wrapper .main-menu .main-links .quick-links form {
-    display: flex;
     justify-content: center;
   }
   body .menu-block .menu-wrapper .main-menu .main-links .quick-links form #search_main_input {
     flex-basis: 50%;
-  }
-  body .menu-block .menu-wrapper .main-menu .main-links .quick-links form button {
-    width: 50px;
-    border: none;
-    background: none;
-    border-bottom: 2px solid #e6e6e6;
-    color: #e6e6e6;
-    font-size: 1.4em;
   }
   body .menu-block .menu-wrapper .main-menu .main-links .quick-links .popular-links {
     display: none;
