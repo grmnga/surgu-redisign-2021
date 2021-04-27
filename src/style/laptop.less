@@ -113,42 +113,73 @@
                 }
                 .category-menu {
                     .categories {
-                        
-                    }
-                    .category-content-wrapper .category-content {
-                        padding: 0 20px;
-                        .left-column {
-                            width: 100%;
-                            border: none;
-                            .menu-ul-wrapper {
-                                width: 100%;
-                                margin-bottom: 30px;
+                        flex-direction: column;
+                        margin: 0 30px;
+                        position: absolute;
+                        width: 300px;
+                        z-index: 100;
+                        button {
+                            display: none;
+                            &.active {
+                                display: block;
+                                &::before {
+                                    content: "\e904";
+                                }
                             }
-                            .bottom-block {
-                                flex-wrap: wrap;
-                                width: 100%;
-                                .content-block {
-                                    flex-basis: 320px;
-                                    .social {
-                                        margin: auto;
-                                    }
-                                    .contact {
-                                        text-align: center;                                    
-                                    }
+                            &.show {
+                                display: block;
+                                border: 1px solid #e6e6e6;
+                            }
+                            &.active.show {
+                                &::before {
+                                    content: "\e903";
                                 }
-                                .img-block {
-                                    height: 324px;
-                                    width: 300px;
-                                    margin: -10px auto 0;
-                                }
+                            }
+                            &::before {                                
+                                font-family: 'icons' !important;
+                                font-size: 2em;
+                                position: absolute;
+                                right: 10px;
                             }
                         }
-                        .right-column {
-                            width: 100%;
-                            padding: 0;
-                            .img {
+                    }
+                    .category-content-wrapper {
+                        margin-top: 100px;
+                        .category-content {
+                            padding: 0 20px;
+                            .left-column {
                                 width: 100%;
-                                height: 180px;
+                                border: none;
+                                .menu-ul-wrapper {
+                                    width: 100%;
+                                    margin-bottom: 30px;
+                                }
+                                .bottom-block {
+                                    flex-wrap: wrap;
+                                    width: 100%;
+                                    .content-block {
+                                        flex-basis: 320px;
+                                        .social {
+                                            margin: auto;
+                                        }
+                                        .contact {
+                                            text-align: center;                                    
+                                        }
+                                    }
+                                    .img-block {
+                                        height: 324px;
+                                        width: 300px;
+                                        margin: -10px auto 0;
+                                    }
+                                }
+                            }
+                            .right-column {
+                                width: 100%;
+                                padding: 0;
+                                .img {
+                                    width: 100%;
+                                    height: 180px;
+                                }
                             }
                         }
                     }

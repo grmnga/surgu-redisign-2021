@@ -11,6 +11,7 @@ window.onload = function () {
     $('.category-menu .categories button').on('click', categoryButtonClick);
     $('.menu-dark-background').on('click', closeMenu);
     $('#play-button').on('click', playButtonClick);
+    $('.category-menu .categories button').on('click', categoryButtonClickForMobile)
 
     var tick = false;
     var scroll_direction = 'down';
@@ -227,4 +228,9 @@ function hideCategoryMenu() {
     $('.menu-block').removeClass('category-menu-show');
     $('.menu-buttons button.category i').removeClass('icon-close').addClass('icon-info');
     $('.menu-buttons').removeClass('category-menu-active');
+}
+
+// выпадающий список категорий в мобильном меню
+function categoryButtonClickForMobile() {
+    $('.category-menu .categories button').toggleClass('show');  
 }
