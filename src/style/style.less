@@ -48,7 +48,6 @@ body {
     
     .social {
         width: 200px;
-        float: right;
         button {
             width: 40px;
             height: 40px;
@@ -462,7 +461,7 @@ body {
                 width: 100%;
                 top: 0;
                 left: 0;
-                margin: 40px;
+                padding: 40px;
                 .categories {
                     margin: 0 160px;
                     font-size: 0;
@@ -653,22 +652,26 @@ body {
                             .bottom-block {
                                 margin-top: 70px;
                                 width: 90%;
+                                background-color: #eff0f0; 
+                                display: flex;
+                                flex-wrap: nowrap;
                                 .img-block {
                                     background-image: url(../img/menu-social-student.jpg);
                                     background-size: cover;
                                     background-position: center;
                                     width: 200px;
                                     height: 216px;
-                                    position: absolute;
+//                                    position: absolute;
                                     margin-top: -10px;
                                     margin-left: 10px;
                                 }
-                                .content-block {
-                                    background-color: #eff0f0;     
-                                    width: 100%;
+                                .content-block {  
+//                                    width: 100%;
                                     height: 200px;
-                                    padding-left: 210px;
-                                    padding-top: 20px;
+//                                    padding-left: 210px;
+//                                    padding-top: 20px;
+                                    flex-basis: calc(100% - 200px);
+                                    padding: 20px;
                                     h2 {
                                         font-family: MyriadPro;
                                         font-size: 15.9px;
@@ -680,8 +683,11 @@ body {
                                         margin-bottom: 50px;
                                     }
                                     .social {
-                                        float: none;
-                                        padding-left: 25px;
+//                                        float: none;
+//                                        padding-left: 25px;
+                                        display: flex;
+                                        flex-wrap: nowrap;
+                                        justify-content:space-between;
                                         button {
                                             background-color: #c7c7c7;
                                             &:hover {
@@ -696,8 +702,8 @@ body {
                                         }
                                     }
                                     .contact {
-                                        padding-top: 10px;
-                                        padding-left: 25px;
+                                        margin-top: 10px;
+//                                        padding-left: 25px;
                                         a {
                                             display: block;
                                             font-family: MyriadPro;
@@ -1869,6 +1875,7 @@ body {
                 padding-right: 30px;
             }
             .social {
+                float: right;
                 button {
                     background-color: rgba(141, 141, 141, 0.34);
                     &:hover {

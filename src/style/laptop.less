@@ -30,8 +30,11 @@
         .menu-block {
             .menu-wrapper {
                 width: 100%;
-                max-width: 600px;
+                max-width: 450px;
                 padding: 30px 60px;
+                .logo {
+                    display: none;
+                }
                 .main-menu {
                     .top-links {
                         order: 2;
@@ -108,9 +111,46 @@
                         }
                     }
                 }
-                .category-menu .category-content-wrapper .category-content {
-                    .left-column {
+                .category-menu {
+                    .categories {
                         
+                    }
+                    .category-content-wrapper .category-content {
+                        padding: 0 20px;
+                        .left-column {
+                            width: 100%;
+                            border: none;
+                            .menu-ul-wrapper {
+                                width: 100%;
+                                margin-bottom: 30px;
+                            }
+                            .bottom-block {
+                                flex-wrap: wrap;
+                                width: 100%;
+                                .content-block {
+                                    flex-basis: 320px;
+                                    .social {
+                                        margin: auto;
+                                    }
+                                    .contact {
+                                        text-align: center;                                    
+                                    }
+                                }
+                                .img-block {
+                                    height: 324px;
+                                    width: 300px;
+                                    margin: -10px auto 0;
+                                }
+                            }
+                        }
+                        .right-column {
+                            width: 100%;
+                            padding: 0;
+                            .img {
+                                width: 100%;
+                                height: 180px;
+                            }
+                        }
                     }
                 }
             }

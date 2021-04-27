@@ -77,7 +77,6 @@ body a {
 }
 body .social {
   width: 200px;
-  float: right;
 }
 body .social button {
   width: 40px;
@@ -446,7 +445,7 @@ body .menu-block .menu-wrapper .category-menu {
   width: 100%;
   top: 0;
   left: 0;
-  margin: 40px;
+  padding: 40px;
 }
 body .menu-block .menu-wrapper .category-menu .categories {
   margin: 0 160px;
@@ -630,6 +629,9 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block {
   margin-top: 70px;
   width: 90%;
+  background-color: #eff0f0;
+  display: flex;
+  flex-wrap: nowrap;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .img-block {
   background-image: url(../img/menu-social-student.jpg);
@@ -637,16 +639,13 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   background-position: center;
   width: 200px;
   height: 216px;
-  position: absolute;
   margin-top: -10px;
   margin-left: 10px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block {
-  background-color: #eff0f0;
-  width: 100%;
   height: 200px;
-  padding-left: 210px;
-  padding-top: 20px;
+  flex-basis: calc(100% - 200px);
+  padding: 20px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block h2 {
   font-family: MyriadPro;
@@ -659,8 +658,9 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   margin-bottom: 50px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social {
-  float: none;
-  padding-left: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button {
   background-color: #c7c7c7;
@@ -675,8 +675,7 @@ body .menu-block .menu-wrapper .category-menu .category-content-wrapper .categor
   color: #7a8a8f;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .contact {
-  padding-top: 10px;
-  padding-left: 25px;
+  margin-top: 10px;
 }
 body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .contact a {
   display: block;
@@ -1689,6 +1688,9 @@ body footer .bottom-footer .col {
   float: left;
   width: calc(50% - 130px);
   padding-right: 30px;
+}
+body footer .bottom-footer .social {
+  float: right;
 }
 body footer .bottom-footer .social button {
   background-color: rgba(141, 141, 141, 0.34);
