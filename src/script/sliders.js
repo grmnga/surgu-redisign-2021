@@ -2,23 +2,16 @@ $(document).ready(function() {
     $('.news-slider').slick({
         dots: true,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+        slidesToScroll: 1
+//        responsive: [
+//            {
+//                breakpoint: 480,
+//                settings: {
+//                    slidesToShow: 1,
+//                    slidesToScroll: 1
+//                }
+//            }
+//        ]
     });
     $('.galery-slider').slick({
         slidesToShow: 1,

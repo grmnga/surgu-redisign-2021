@@ -802,7 +802,7 @@ body .main-screen .top-sidebar .left-column span {
 body .main-screen .top-sidebar .right-column {
   float: right;
 }
-body .main-screen .top-sidebar .right-column span {
+body .main-screen .top-sidebar .right-column i {
   margin-left: 30px;
 }
 body .main-screen .top-sidebar .right-column .separator {
