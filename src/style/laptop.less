@@ -153,6 +153,9 @@
                                 .menu-ul-wrapper {
                                     width: 100%;
                                     margin-bottom: 30px;
+                                    ul {
+                                        width: 100%;
+                                    }
                                 }
                                 .bottom-block {
                                     flex-wrap: wrap;
@@ -356,7 +359,11 @@
     section.tour, section.galery {
         display: none;
     }
-    body .ecosystem .block-with-ship .top-container {
+    body .ecosystem .block-with-ship {
+        .ecosystem-background, .sursu-text {
+            background-size: contain;
+        }
+        .top-container {
         .content {
             padding: 0;
             overflow: auto;
@@ -378,7 +385,7 @@
                 }
             }
         }
-    }
+    }}
     body .ecosystem .block-with-ship .bottom-container {
         display: none;
     }

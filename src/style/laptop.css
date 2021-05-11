@@ -183,6 +183,9 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .menu-ul-wrapper ul {
+    width: 100%;
+  }
   body .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block {
     flex-wrap: wrap;
     width: 100%;
@@ -347,6 +350,10 @@
   section.tour,
   section.galery {
     display: none;
+  }
+  body .ecosystem .block-with-ship .ecosystem-background,
+  body .ecosystem .block-with-ship .sursu-text {
+    background-size: contain;
   }
   body .ecosystem .block-with-ship .top-container .content {
     padding: 0;
