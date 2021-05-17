@@ -806,8 +806,11 @@ body .main-screen .top-sidebar .left-column span {
 body .main-screen .top-sidebar .right-column {
   float: right;
 }
-body .main-screen .top-sidebar .right-column i {
-  margin-left: 30px;
+body .main-screen .top-sidebar .right-column .bvi {
+  margin-right: 20px;
+}
+body .main-screen .top-sidebar .right-column .lc {
+  margin-left: 20px;
 }
 body .main-screen .top-sidebar .right-column .separator {
   border: 1px solid #ffffff;

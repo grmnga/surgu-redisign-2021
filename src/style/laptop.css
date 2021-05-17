@@ -215,8 +215,17 @@
   body .main-screen .top-sidebar {
     font-size: 0.95em;
   }
+  body .main-screen .top-sidebar .left-column span {
+    margin-right: 30px;
+  }
   body .main-screen .top-sidebar .right-column {
     margin-right: 60px;
+  }
+  body .main-screen .top-sidebar .right-column .bvi {
+    margin-right: 20px;
+  }
+  body .main-screen .top-sidebar .right-column .lv {
+    margin-left: 20px;
   }
   body .main-screen .main-screen-background .logo {
     width: 75%;
@@ -348,6 +357,7 @@
   body .main-screen .top-sidebar {
     background: none;
     box-shadow: none;
+    font-size: 1.2em;
   }
   body .main-screen .top-sidebar .left-column,
   body .main-screen .top-sidebar .lc {
