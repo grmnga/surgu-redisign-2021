@@ -299,13 +299,26 @@ body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub {
   opacity: 0;
   transform: translateY(7px);
   display: flex;
+  flex-direction: column;
 }
 body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub.show {
   opacity: 1;
   transform: translateY(0px);
   transition: all 0.8s ease-in;
 }
-body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub button {
+body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title {
+  display: flex;
+}
+body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title > a {
+  font-family: SegoeUI;
+  font-size: 1.4em;
+  line-height: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: block;
+  color: #00556d;
+}
+body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
   width: 20px;
   height: 20px;
   background-color: #eff0f0;
@@ -317,18 +330,9 @@ body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub butto
   transition-duration: 0.3s;
   color: #585858;
 }
-body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub button:hover {
+body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button:hover {
   background-color: #d4d4d4;
   transition-duration: 0.3s;
-}
-body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub > a {
-  font-family: SegoeUI;
-  font-size: 1.4em;
-  line-height: 48px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  display: block;
-  color: #00556d;
 }
 body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-list {
   margin-left: 15px;

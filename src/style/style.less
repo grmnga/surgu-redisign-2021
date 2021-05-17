@@ -300,39 +300,42 @@ body {
                             opacity: 0; 
                             transform: translateY(7px);
                             display: flex;
+                            flex-direction: column;
 //                            transition: all 0.8s ease-in;
                             &.show {
                                 opacity: 1; 
                                 transform: translateY(0px);
                                 transition: all 0.8s ease-in;
                             }
-                            button {
-                                width: 20px;
-                                height: 20px;
-                                background-color: #eff0f0;
-                                border: none;
-                                border-radius: 5px;
-                                display: block;
-                                margin: 17px 10px 0;
-                                cursor: pointer;
-                                transition-duration: 0.3s;
-                                color: #585858;
-                                &:hover {                                    
-                                    background-color: #d4d4d4;
+                            .sub-title {
+                                display: flex;
+                                
+                                > a {
+                                    font-family: SegoeUI;
+                                    font-size: 1.4em;
+                                    line-height: 48px;
+                                    font-weight: 700;
+                                    letter-spacing: -0.02em;
+                                    display: block;
+    //                                float: left;
+                                    color: #00556d;
+                                }                                
+                                button {
+                                    width: 20px;
+                                    height: 20px;
+                                    background-color: #eff0f0;
+                                    border: none;
+                                    border-radius: 5px;
+                                    display: block;
+                                    margin: 17px 10px 0;
+                                    cursor: pointer;
                                     transition-duration: 0.3s;
-                                }
-                            }
-                            &>a {
-                                font-family: SegoeUI;
-                                font-size: 1.4em;
-                                line-height: 48px;
-                                font-weight: 700;
-                                letter-spacing: -0.02em;
-                                display: block;
-//                                float: left;
-                                color: #00556d;
-                                &:hover{
-                                }
+                                    color: #585858;
+                                    &:hover {                                    
+                                        background-color: #d4d4d4;
+                                        transition-duration: 0.3s;
+                                    }
+                                }                                    
                             }
                             .sub-list {
                                 margin-left: 15px;

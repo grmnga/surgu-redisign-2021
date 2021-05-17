@@ -98,11 +98,11 @@
   body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub:last-child {
     border-bottom: 1px solid #afb3b4;
   }
-  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub > a {
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title > a {
     flex-basis: calc(100% - 48px);
     padding-left: 15px;
   }
-  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub button {
+  body .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
     margin: 0;
     height: 48px;
     width: 48px;

@@ -124,7 +124,7 @@ function shipBackgroundOpacity() {
 }
 
 function dropdownMenu() {
-    $(this).next('ul').slideToggle();
+    $(this).parent().next('ul').slideToggle();
     $(this).find('i').toggleClass('icon-plus').toggleClass('icon-close');
 }
 
