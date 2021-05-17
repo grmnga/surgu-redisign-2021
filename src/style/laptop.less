@@ -351,11 +351,21 @@
 }
 
 @media(max-width: 768px) {
-    body .main-screen .top-sidebar {
-        .current-date, .schedule, .lc {
-            span {display: none;}
+body {
+    .menu-buttons {
+        display: none;
+    }
+    .main-screen .top-sidebar {
+        background: none;
+        box-shadow: none;
+        .left-column, .lc {
+            display: none;
+        }
+        .right-column {
+            float: none;
         }
     }
+}
     section.tour, section.galery {
         display: none;
     }

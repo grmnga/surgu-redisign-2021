@@ -342,10 +342,19 @@
   }
 }
 @media (max-width: 768px) {
-  body .main-screen .top-sidebar .current-date span,
-  body .main-screen .top-sidebar .schedule span,
-  body .main-screen .top-sidebar .lc span {
+  body .menu-buttons {
     display: none;
+  }
+  body .main-screen .top-sidebar {
+    background: none;
+    box-shadow: none;
+  }
+  body .main-screen .top-sidebar .left-column,
+  body .main-screen .top-sidebar .lc {
+    display: none;
+  }
+  body .main-screen .top-sidebar .right-column {
+    float: none;
   }
   section.tour,
   section.galery {
