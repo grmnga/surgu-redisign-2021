@@ -853,6 +853,9 @@ body .main-screen .main-screen-background .logo {
   transform: translate(-50%, -50%);
   width: 50%;
 }
+body .main-screen .main-screen-background .logo .mobile-logo {
+  display: none;
+}
 body .main-screen .main-screen-background .logo img {
   width: 100%;
 }

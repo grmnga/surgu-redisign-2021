@@ -366,15 +366,25 @@ body {
     .menu-buttons {
         display: none;
     }
-    .main-screen .top-sidebar {
-        background: none;
-        box-shadow: none;
-        font-size: 1.2em;
-        .left-column, .lc {
-            display: none;
+    .main-screen {
+        .top-sidebar {
+            background: none;
+            box-shadow: none;
+            font-size: 1.2em;
+            .left-column, .lc {
+                display: none;
+            }
+            .right-column {
+                float: none;
+            }
         }
-        .right-column {
-            float: none;
+        .main-screen-background .logo {
+            .desktop-logo {
+                display: none;
+            }
+            .mobile-logo {
+                display: block;
+            }
         }
     }
 }

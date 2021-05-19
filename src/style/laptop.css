@@ -366,6 +366,12 @@
   body .main-screen .top-sidebar .right-column {
     float: none;
   }
+  body .main-screen .main-screen-background .logo .desktop-logo {
+    display: none;
+  }
+  body .main-screen .main-screen-background .logo .mobile-logo {
+    display: block;
+  }
   section.tour,
   section.galery {
     display: none;
