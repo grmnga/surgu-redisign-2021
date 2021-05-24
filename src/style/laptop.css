@@ -354,6 +354,60 @@
   body .menu-buttons {
     display: none;
   }
+  body .mobile-menu {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    bottom: 0;
+    height: 68px;
+    background: #353535;
+    z-index: 10;
+  }
+  body .mobile-menu .mobile-menu-item {
+    padding: 10px;
+    flex-basis: 16.66666667%;
+  }
+  body .mobile-menu .mobile-menu-item a,
+  body .mobile-menu .mobile-menu-item button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+  body .mobile-menu .mobile-menu-item a i,
+  body .mobile-menu .mobile-menu-item button i {
+    font-size: 1.7em;
+    color: #ffffff;
+  }
+  body .mobile-menu .mobile-menu-item button {
+    border: none;
+  }
+  body .mobile-menu .mobile-menu-item button i {
+    font-size: 3em;
+  }
+  body .menu-block .menu-wrapper .close-mobile-menu {
+    display: block;
+    position: absolute;
+    background: none;
+    border: none;
+    right: 25px;
+    top: 25px;
+    z-index: 10;
+  }
+  body .menu-block .menu-wrapper .close-mobile-menu i {
+    color: #e6e6e6;
+    font-size: 3em;
+  }
+  body .menu-block .menu-wrapper .category-menu {
+    padding-top: 70px;
+  }
   body .main-screen .top-sidebar {
     background: none;
     box-shadow: none;
@@ -372,13 +426,23 @@
   body .main-screen .main-screen-background .logo .mobile-logo {
     display: block;
   }
-  section.tour,
-  section.galery {
-    display: none;
+  body .main-screen .play-button {
+    bottom: 100px;
+  }
+  body .ecosystem .block-with-ship {
+    height: 400px;
   }
   body .ecosystem .block-with-ship .ecosystem-background,
   body .ecosystem .block-with-ship .sursu-text {
     background-size: contain;
+  }
+  body .ecosystem .block-with-ship .sursu-text {
+    background-size: 70%;
+    background-position: bottom;
+  }
+  body .ecosystem .block-with-ship .ship {
+    height: 100%;
+    bottom: 0;
   }
   body .ecosystem .block-with-ship .top-container .content {
     padding: 0;
@@ -391,7 +455,7 @@
   }
   body .ecosystem .block-with-ship .top-container div.target-audiences a {
     width: calc(100%/3.5);
-    background: none!important;
+    background: none !important;
     position: relative;
   }
   body .ecosystem .block-with-ship .top-container div.target-audiences a p {
@@ -399,6 +463,10 @@
     bottom: 0;
     text-align: center;
     width: 100%;
+  }
+  section.tour,
+  section.galery {
+    display: none;
   }
   body .ecosystem .block-with-ship .bottom-container {
     display: none;

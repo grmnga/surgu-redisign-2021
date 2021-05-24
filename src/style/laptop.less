@@ -366,6 +366,60 @@ body {
     .menu-buttons {
         display: none;
     }
+    .mobile-menu {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        bottom: 0;
+        height: 68px;
+        background: #353535;
+        z-index: 10;
+        .mobile-menu-item {
+            padding: 10px;
+            flex-basis: 100/6%;
+            a, button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: 1px solid @white;
+                border-radius: 50%;
+                i {
+                    font-size: 1.7em;
+                    color: @white;
+                }
+            }
+            button {
+                border: none;
+                i {
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+    .menu-block .menu-wrapper {
+        .close-mobile-menu {
+            display: block;
+            position: absolute;
+            background: none;
+            border: none;
+            right: 25px;
+            top: 25px;
+            z-index: 10;
+            i {
+                color: #e6e6e6;            
+                font-size: 3em;
+            }
+        }
+        .category-menu {
+            padding-top: 70px;
+        }
+    }
     .main-screen {
         .top-sidebar {
             background: none;
@@ -385,39 +439,56 @@ body {
             .mobile-logo {
                 display: block;
             }
+        }        
+        .play-button {
+            bottom: 100px;
+        }
+    }
+    .ecosystem .block-with-ship {
+        height: 400px;
+        .ecosystem-background,
+        .sursu-text {
+            background-size: contain;
+        }        
+        .sursu-text {
+            background-size: 70%;
+            background-position: bottom;
+        }
+        .ship {
+            height: 100%;
+            bottom: 0;
+        }
+        .top-container {
+            .content {
+                padding: 0;
+                overflow: auto;
+            }
+
+            div.target-audiences {
+                margin: 0;
+                width: 500px;
+                padding-bottom: 10px;
+
+                a {
+                    width: calc(100%/3.5);
+                    background: none !important;
+                    position: relative;
+
+                    p {
+                        position: absolute;
+                        bottom: 0;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
     section.tour, section.galery {
         display: none;
     }
-    body .ecosystem .block-with-ship {
-        .ecosystem-background, .sursu-text {
-            background-size: contain;
-        }
-        .top-container {
-        .content {
-            padding: 0;
-            overflow: auto;
-        }
 
-        div.target-audiences {
-            margin: 0;
-            width: 500px;
-            padding-bottom: 10px;
-            a {
-                width: calc(100%/3.5);
-                background: none!important;
-                position: relative;
-                p {
-                    position: absolute;
-                    bottom: 0;
-                    text-align: center;
-                    width: 100%;
-                }
-            }
-        }
-    }}
     body .ecosystem .block-with-ship .bottom-container {
         display: none;
     }

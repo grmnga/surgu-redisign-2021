@@ -11,7 +11,8 @@ window.onload = function () {
     $('.category-menu .categories button').on('click', categoryButtonClick);
     $('.menu-dark-background').on('click', closeMenu);
     $('#play-button').on('click', playButtonClick);
-    $('.category-menu .categories button').on('click', categoryButtonClickForMobile)
+    $('.category-menu .categories button').on('click', categoryButtonClickForMobile);
+    $('.close-mobile-menu').on('click', closeMobileMenuButtonClick);
 
     var tick = false;
     var scroll_direction = 'down';
@@ -233,4 +234,10 @@ function hideCategoryMenu() {
 // выпадающий список категорий в мобильном меню
 function categoryButtonClickForMobile() {
     $('.category-menu .categories button').toggleClass('show');  
+}
+
+function closeMobileMenuButtonClick() {
+    hideMenuBlock();
+    hideMainMenu();
+    hideCategoryMenu();
 }

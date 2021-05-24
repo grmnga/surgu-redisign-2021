@@ -154,6 +154,9 @@ body .menu-buttons.category-menu-active .category {
 body .menu-buttons.category-menu-active .category:hover {
   background: #28d8e7;
 }
+body .mobile-menu {
+  display: none;
+}
 body .menu-block {
   z-index: 10;
   visibility: visible;
@@ -217,6 +220,9 @@ body .menu-block .menu-wrapper {
   padding: 40px;
   position: absolute;
   z-index: 1;
+}
+body .menu-block .menu-wrapper .close-mobile-menu {
+  display: none;
 }
 body .menu-block .menu-wrapper .logo {
   background-color: #00556d;
