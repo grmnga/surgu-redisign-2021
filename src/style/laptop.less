@@ -380,6 +380,9 @@ body {
         .mobile-menu-item {
             padding: 10px;
             flex-basis: 100/6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             a, button {
                 display: flex;
                 align-items: center;
@@ -389,6 +392,8 @@ body {
                 background: none;
                 border: 1px solid @white;
                 border-radius: 50%;
+                height: 40px;
+                width: 40px;
                 i {
                     font-size: 1.7em;
                     color: @white;
@@ -403,6 +408,8 @@ body {
         }
     }
     .menu-block .menu-wrapper {
+        overflow: hidden;
+        padding: 30px;
         .close-mobile-menu {
             display: block;
             position: absolute;
@@ -418,6 +425,16 @@ body {
         }
         .category-menu {
             padding-top: 70px;
+            .categories {
+                width: 80%;
+                margin: auto;
+            }
+            .category-content-wrapper .category-content .right-column {
+                padding: 30px 0;
+                .sidebar-item {
+                    margin-top: 30px;
+                }
+            }
         }
     }
     .main-screen {
@@ -483,13 +500,35 @@ body {
                 }
             }
         }
+        .bottom-container {
+            height: auto;
+            .departments {
+                display: none;
+            }
+            .mobile-departments {
+                display: block;
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                padding: 10px 20px;
+                list-style: none;
+                .sub {
+                    text-transform: uppercase;
+                    width: 50%;
+                    text-align: center;
+                    button {
+                        border: none;
+                    }
+                }
+                .sub-list {
+                    display: none;
+                }
+            }
+        }
     }
 }
     section.tour, section.galery {
-        display: none;
-    }
-
-    body .ecosystem .block-with-ship .bottom-container {
         display: none;
     }
     body .ecosystem .link-big-blocks .big-link-wrapper {

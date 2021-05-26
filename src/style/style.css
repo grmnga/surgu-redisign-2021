@@ -999,6 +999,9 @@ body .ecosystem .block-with-ship .bottom-container .departments {
   justify-content: space-between;
   list-style: none;
 }
+body .ecosystem .block-with-ship .bottom-container .mobile-departments {
+  display: none;
+}
 body .ecosystem .block-with-ship .bottom-container .department {
   padding: 35px 10px 0;
   border-left: 2px solid #000000;
