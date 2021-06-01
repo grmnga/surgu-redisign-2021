@@ -13,6 +13,9 @@ window.onload = function () {
     $('#play-button').on('click', playButtonClick);
     $('.category-menu .categories button').on('click', categoryButtonClickForMobile);
     $('.close-mobile-menu').on('click', closeMobileMenuButtonClick);
+    $('.mobile-departments .sub').on('click', function() {
+        $(this).find('.sub-title a').toggleClass('border-red');
+    });
 
     var tick = false;
     var scroll_direction = 'down';

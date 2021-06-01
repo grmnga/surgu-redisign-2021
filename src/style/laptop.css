@@ -497,17 +497,149 @@
     flex-wrap: nowrap;
     padding: 10px 20px;
     list-style: none;
+    background-color: #ffffff;
   }
   body .ecosystem .block-with-ship .bottom-container .mobile-departments .sub {
     text-transform: uppercase;
     width: 50%;
     text-align: center;
+    font-family: Bahnschrift;
   }
   body .ecosystem .block-with-ship .bottom-container .mobile-departments .sub button {
     border: none;
+    background-color: inherit;
+  }
+  body .ecosystem .block-with-ship .bottom-container .mobile-departments .sub .border-red {
+    border-bottom: 2px solid #e06470;
   }
   body .ecosystem .block-with-ship .bottom-container .mobile-departments .sub-list {
     display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #eff0f0;
+    left: 0px;
+    padding: 10px;
+    top: 40px;
+  }
+  body .ecosystem .block-with-ship .bottom-container .mobile-departments .sub-list li {
+    padding: 10px 0;
+  }
+  body .news {
+    padding: 30px 10px;
+  }
+  body .news h2 {
+    font-size: 1.5em;
+    text-align: left;
+    width: fit-content;
+    padding-bottom: 20px;
+  }
+  body .news h2::after {
+    margin: 0;
+    width: 100%;
+    height: 2px;
+  }
+  body .news button.slick-arrow.slick-prev {
+    left: 20px;
+    bottom: 10px;
+  }
+  body .news button.slick-arrow.slick-next {
+    left: 80px;
+    bottom: 10px;
+  }
+  body .news .slick-dots {
+    display: none!important;
+  }
+  body .news .big-new .news-border {
+    height: 210px;
+    border-width: 3px;
+  }
+  body .news .big-new .news-img {
+    width: 90%;
+    height: 250px;
+    top: 0;
+  }
+  body .news .big-new div.news-body .color-background {
+    height: 90px;
+    top: 75%;
+    width: 110%;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -5px;
+  }
+  body .news .big-new div.news-body .new-content {
+    padding: 10px;
+    height: 90px;
+    top: 75%;
+    width: 110%;
+  }
+  body .news .big-new div.news-body .new-content h3.title {
+    font-size: 1.2em;
+    line-height: inherit;
+  }
+  body .news .big-new div.news-body .new-content .new-text-wrap .text {
+    display: none;
+  }
+  body .news .smoll-news .new-wrapper {
+    width: 100%;
+  }
+  body .news .more-button button {
+    background-color: #018b98;
+    color: #ffffff;
+  }
+  body .people {
+    padding: 30px 10px;
+  }
+  body .people .people-wrapper .people-big {
+    padding: 0;
+  }
+  body .people .people-wrapper .people-big h2 {
+    font-size: 1.5em;
+    text-align: left;
+    width: fit-content;
+    padding-bottom: 20px;
+    height: auto;
+  }
+  body .people .people-wrapper .people-big h2::after {
+    margin: 0;
+    width: 100%;
+    height: 2px;
+  }
+  body .people .people-wrapper .people-big .people-big-wrap {
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    padding: 0;
+  }
+  body .people .people-wrapper .people-big .people-big-wrap .people-big-img .person-content {
+    padding: 20px;
+  }
+  body .people .people-wrapper .people-big .people-big-wrap .people-big-img .title {
+    font-size: 1.3em;
+  }
+  body .people .people-wrapper .people-big .people-big-wrap .people-big-img .text {
+    font-size: 1em;
+    width: 180px;
+  }
+  body .people .people-wrapper .people-big .people-big-wrap .people-big-img .link-text {
+    display: none;
+  }
+  body .people .people-wrapper .people-big .people-border {
+    display: none;
+  }
+  body .people .people-wrapper .people-scroll {
+    height: 100px;
+  }
+  body .contacts .row {
+    width: 50%;
+    min-height: 100px;
+  }
+  body footer {
+    padding-bottom: 100px;
+  }
+  body footer .bottom-footer .col {
+    padding-right: 30px;
+    float: none;
+    width: 100%;
   }
   section.tour,
   section.galery {
@@ -515,11 +647,5 @@
   }
   body .ecosystem .link-big-blocks .big-link-wrapper {
     width: 100%;
-  }
-  body .news .smoll-news .new-wrapper {
-    width: 100%;
-  }
-  body .contacts .row {
-    width: 50%;
   }
 }
