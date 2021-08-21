@@ -16,6 +16,8 @@ window.onload = function () {
     $('.mobile-departments .sub').on('click', function() {
         $(this).find('.sub-title a').toggleClass('border-red');
     });
+    $('button.bvi-button').on('click', toggleSVSettingsPanel);
+    $('button.bvi-close-button').on('click', toggleSVSettingsPanel);
 
     var tick = false;
     var scroll_direction = 'down';
@@ -243,4 +245,8 @@ function closeMobileMenuButtonClick() {
     hideMenuBlock();
     hideMainMenu();
     hideCategoryMenu();
+}
+
+function toggleSVSettingsPanel() {
+  $('.sv_settings').toggleClass('show');
 }
