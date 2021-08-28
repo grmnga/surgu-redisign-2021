@@ -201,12 +201,13 @@
       // $('.img-1').toggleClass('with_dark_overlay');
       // $('.black_calendar').removeClass('black_calendar').addClass('calendar-image');
       $('body').removeClass('black-on-white').removeClass('white-on-black');
-      $('body').removeClass('blue-on-blue').removeClass('brown-on-yellow').removeClass('green-on-brown');
+      $('body').removeClass('blue-on-blue').removeClass('brown-on-yellow');
+      $('body').removeClass('green-on-brown').removeClass('original');
       // $('.wrapper *').css('font-size', '');
       // $('.wrapper *').css('line-height', '');
       $('body').removeClass('ls-n').removeClass('ls-m').removeClass('ls-l');
       $('body').removeClass('arial').removeClass('tnr');
-      $('body').removeClass('img-on').removeClass('img-off');
+      $('body').removeClass('img-on').removeClass('img-off').removeClass('img-black-and-white');
     };
     if (window.bad_view_flag) {
       $.cookie('bad_view', true);
