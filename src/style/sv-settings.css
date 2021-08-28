@@ -1,0 +1,166 @@
+.text-center {
+  text-align: center;
+}
+
+.sv_settings {
+  padding: 10px;
+  min-height: 40px;
+  font-size: 18px;
+  color: #333;
+  background: white;
+  position: absolute;
+  top: -200px;
+  margin: auto;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid black;
+  transition-duration: 0.5s;
+}
+.sv_settings.show {
+  top: 0;
+  transition-duration: 0.5s;
+}
+.sv_settings .bvi-close-button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+.sv_settings .bvi-wrapper {
+  width: 1024px;
+  margin: auto;
+}
+.sv_settings > div {
+  margin-left: 20px;
+  display: inline-block;
+}
+.sv_settings > div div {
+  display: inline-block;
+}
+.sv_settings .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.sv_settings .btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  margin: 5px 0;
+}
+.sv_settings .fs-outer button {
+  display: inline-block;
+  background: white !important;
+  color: black !important;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+}
+.sv_settings .fs-outer .fs-n {
+  font-size: 18px !important;
+}
+.sv_settings .fs-outer .fs-m {
+  font-size: 22px !important;
+}
+.sv_settings .fs-outer .fs-l {
+  font-size: 26px !important;
+}
+.sv_settings .cs-outer button {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+}
+.sv_settings .cs-outer .cs-bw, .sv_settings .cs-outer .cs-bw:focus, .sv_settings .cs-outer .cs-bw:hover {
+  color: black !important;
+  background: white !important;
+}
+.sv_settings .cs-outer .cs-wb, .sv_settings .cs-outer .cs-wb:focus, .sv_settings .cs-outer .cs-wb:hover {
+  color: white !important;
+  background: black !important;
+}
+.sv_settings .cs-outer .cs-bb, .sv_settings .cs-outer .cs-bb:focus, .sv_settings .cs-outer .cs-bb:hover {
+  color: #063462 !important;
+  background: #9dd1ff !important;
+}
+.sv_settings .cs-outer .cs-by, .sv_settings .cs-outer .cs-by:focus, .sv_settings .cs-outer .cs-by:hover {
+  color: #4d4b43 !important;
+  background: #f7f3d6 !important;
+}
+.sv_settings .cs-outer .cs-gb, .sv_settings .cs-outer .cs-gb:focus, .sv_settings .cs-outer .cs-gb:hover {
+  color: #a9e44d !important;
+  background: #3b2717 !important;
+}
+.sv_settings .in-outer button {
+  display: inline-block;
+  height: 35px;
+  padding: 0px 10px;
+}
+.sv_settings .in-outer .ls-n {
+  letter-spacing: normal !important;
+}
+.sv_settings .in-outer .ls-m {
+  letter-spacing: 2px !important;
+}
+.sv_settings .in-outer .ls-l {
+  letter-spacing: 3px !important;
+}
+.sv_settings .font-outer .arial {
+  font-family: "Arial", sans-serif !important;
+}
+.sv_settings .font-outer .tnr {
+  font-family: "Times New Roman" !important;
+}
+
+.sv_settings * {
+  font-weight: bold;
+}
+
+.black_calendar {
+  display: block;
+  width: 265px;
+  height: 300px;
+  position: relative;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.black_calendar:before {
+  border-radius: 6px;
+  background: black;
+  color: white;
+  content: " ";
+  display: block;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .sv_settings .bvi-wrapper {
+    width: 100%;
+  }
+}
