@@ -17,6 +17,7 @@
   border-bottom: 1px solid black;
   transition-duration: 0.5s;
   &.show {
+    position: relative;
     top: 0;
     transition-duration: 0.5s;
   }
@@ -113,6 +114,10 @@
     .cs-gb, .cs-gb:focus, .cs-gb:hover {
       color: #a9e44d !important;
       background: #3b2717 !important;
+    }
+    .cs-original, .cs-original:focus, .cs-original:hover {
+      color: black !important;
+      background: linear-gradient(-45deg, #eeff00, #f976ef, rgb(0 188 255), rgb(1 255 168)) !important;
     }
   }
 

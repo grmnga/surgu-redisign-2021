@@ -1536,7 +1536,6 @@ body .people .people-wrapper .people-scroll .people-small {
   float: left;
   width: 15vw;
   height: 10vw;
-  background-color: #aaa;
 }
 body .people .people-wrapper .people-scroll .people-small:hover {
   filter: brightness(0.9);

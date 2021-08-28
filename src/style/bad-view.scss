@@ -1,0 +1,117 @@
+.focus {
+  box-shadow:
+          0 0 0 0px #ffffff,
+          0 0 0 3px #555555;
+}
+
+.bvi-on {
+  .menu-buttons { top: 160px }
+  .menu-block .menu-wrapper { position: absolute; top: 160px; }
+}
+
+$black: #000000;
+$white: #ffffff;
+
+.black-on-white {
+  a, a:hover, p, span, i, h2 { color: $black!important; }
+
+  .menu-buttons .menu,
+  .menu-buttons .menu:hover,
+  .menu-buttons .category,
+  .menu-buttons .category:hover,
+  .menu-buttons.category-menu-active .menu:hover,
+  .menu-buttons.category-menu-active .category,
+  .menu-buttons.category-menu-active .category:hover,
+  .ecosystem .block-with-ship .top-container .target-audiences a,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a { background: $white!important; border: 1px solid $black; }
+  
+  
+  #ship_color_background,
+  .ecosystem .block-with-ship .bottom-container,
+  .news .smoll-news .new-wrapper a.news-body .date,
+  .news .more-button button:hover,
+  .tour,
+  .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+  footer .bottom-footer .social button:hover,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover { background: $white; }
+
+  // .ecosystem .link-big-blocks .big-link-wrapper .big-link,
+  .tour a, .tour a:hover,
+  footer { background: $white!important; border: 2px solid $black; }
+
+  .ecosystem .block-with-ship .bottom-container .department a:before,
+  .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+  .news h2::after,
+  .news ul.slick-dots li.slick-active,
+  .news button.slick-arrow:hover::before,
+  .people .people-wrapper .people-big h2::after,
+  .menu-block .menu-wrapper .logo { background: $black; }
+
+  .news .big-new .news-border,
+  .people .people-wrapper .people-big .people-big-wrap .people-border,
+  .menu-block .menu-wrapper .main-menu .bottom-links a:hover { border-color: $black; }
+
+  .main-screen .main-screen-background .logo { background: rgba(0, 0, 0, 0.5); }
+  .ecosystem .link-big-blocks .big-link-wrapper .big-link { background-color: $white!important; border: 2px solid $black; }
+  .main-screen .top-sidebar { background-color: rgba(255, 255, 255, 0.8); border-bottom: 2px solid $black }
+  .news .big-new div.news-body .color-background { background: rgba($black, 0.5); }
+  .people .people-wrapper .people-scroll { display: none; } // нужно добавить альты для историй
+  .menu-block .menu-wrapper .logo::before { border-color: $black transparent transparent; }
+  .menu-block .menu-wrapper .category-menu .categories button {
+    background: $white!important;
+    border: 1px solid $black;
+    color: $black!important;
+    border-bottom: 4px solid $black!important; }
+  .menu-block .menu-wrapper .category-menu .categories button.active::after { border-color: $black transparent transparent!important; }
+
+  // .ecosystem .block-with-ship .top-container .target-audiences a { background: $white!important; border: 1px solid $black }
+  // .ecosystem .block-with-ship .bottom-container { background: $white; }
+  // .ecosystem .block-with-ship .bottom-container .department a:hover:before { background: $black; }
+  // .news h2::after { background: $black; }
+  // .news .big-new .news-border { border-color: $black; }
+  // .news ul.slick-dots li.slick-active { background: $black; }
+  // .news button.slick-arrow:hover::before { color: $black; }
+  // .news .smoll-news .new-wrapper a.news-body .date { background: $white; }
+  // .news .more-button button:hover { background: $white;; }
+  // .tour { background: $white; }
+  // .tour a, .tour a:hover { background: $white; border: 2px solid $black; }
+  // .people .people-wrapper .people-big h2::after { background: $black; }
+  // .people .people-wrapper .people-big .people-big-wrap .people-big-img .text { background: $white; }
+  // footer { background: $white; border: 2px solid $black; }
+  // footer .bottom-footer .social button:hover { background: $white; }
+  // .menu-block .menu-wrapper .logo { background: $black; }
+  // .menu-block .menu-wrapper .main-menu .bottom-links a:hover { border-color: $black; }
+  // .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a { background: $white; border: 1px solid $black; }
+}
+
+.img-off {
+  .main-screen .main-screen-background .video-container,
+  #ship, #ship_text_background,
+  .galery,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .bottom-block .img-block,
+  .img { display: none; }
+
+  .ecosystem .link-big-blocks .big-link-wrapper .big-link,
+  .news .big-new .news-img,
+  .news .smoll-news .new-wrapper .background,
+  .tour,
+  .people .people-wrapper .people-big .people-big-wrap .people-big-img,
+  .people .people-wrapper .people-scroll .people-small,
+  .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic { background-image: none!important; }
+}
+
+.img-black-and-white {
+  .main-screen .main-screen-background .video-container,
+  #ship, #ship_text_background,
+  .galery,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .bottom-block .img-block,
+  .img { filter: grayscale(1); }
+
+  .ecosystem .link-big-blocks .big-link-wrapper .big-link,
+  .news .big-new .news-img,
+  .news .smoll-news .new-wrapper .background,
+  .tour,
+  .people .people-wrapper .people-big .people-big-wrap .people-big-img,
+  .people .people-wrapper .people-scroll .people-small,
+  .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic { filter: grayscale(1); }
+}

@@ -17,6 +17,7 @@
   transition-duration: 0.5s;
 }
 .sv_settings.show {
+  position: relative;
   top: 0;
   transition-duration: 0.5s;
 }
@@ -107,6 +108,10 @@
 .sv_settings .cs-outer .cs-gb, .sv_settings .cs-outer .cs-gb:focus, .sv_settings .cs-outer .cs-gb:hover {
   color: #a9e44d !important;
   background: #3b2717 !important;
+}
+.sv_settings .cs-outer .cs-original, .sv_settings .cs-outer .cs-original:focus, .sv_settings .cs-outer .cs-original:hover {
+  color: black !important;
+  background: linear-gradient(-45deg, #eeff00, #f976ef, #00bcff, #01ffa8) !important;
 }
 .sv_settings .in-outer button {
   display: inline-block;

@@ -1,0 +1,119 @@
+.focus {
+  box-shadow: 0 0 0 0px #ffffff, 0 0 0 3px #555555;
+}
+
+.bvi-on .menu-buttons {
+  top: 160px;
+}
+.bvi-on .menu-block .menu-wrapper {
+  position: absolute;
+  top: 160px;
+}
+
+.black-on-white a, .black-on-white a:hover, .black-on-white p, .black-on-white span, .black-on-white i, .black-on-white h2 {
+  color: #000000 !important;
+}
+.black-on-white .menu-buttons .menu,
+.black-on-white .menu-buttons .menu:hover,
+.black-on-white .menu-buttons .category,
+.black-on-white .menu-buttons .category:hover,
+.black-on-white .menu-buttons.category-menu-active .menu:hover,
+.black-on-white .menu-buttons.category-menu-active .category,
+.black-on-white .menu-buttons.category-menu-active .category:hover,
+.black-on-white .ecosystem .block-with-ship .top-container .target-audiences a,
+.black-on-white .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a {
+  background: #ffffff !important;
+  border: 1px solid #000000;
+}
+.black-on-white #ship_color_background,
+.black-on-white .ecosystem .block-with-ship .bottom-container,
+.black-on-white .news .smoll-news .new-wrapper a.news-body .date,
+.black-on-white .news .more-button button:hover,
+.black-on-white .tour,
+.black-on-white .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+.black-on-white footer .bottom-footer .social button:hover,
+.black-on-white .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover {
+  background: #ffffff;
+}
+.black-on-white .tour a, .black-on-white .tour a:hover,
+.black-on-white footer {
+  background: #ffffff !important;
+  border: 2px solid #000000;
+}
+.black-on-white .ecosystem .block-with-ship .bottom-container .department a:before,
+.black-on-white .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+.black-on-white .news h2::after,
+.black-on-white .news ul.slick-dots li.slick-active,
+.black-on-white .news button.slick-arrow:hover::before,
+.black-on-white .people .people-wrapper .people-big h2::after,
+.black-on-white .menu-block .menu-wrapper .logo {
+  background: #000000;
+}
+.black-on-white .news .big-new .news-border,
+.black-on-white .people .people-wrapper .people-big .people-big-wrap .people-border,
+.black-on-white .menu-block .menu-wrapper .main-menu .bottom-links a:hover {
+  border-color: #000000;
+}
+.black-on-white .main-screen .main-screen-background .logo {
+  background: rgba(0, 0, 0, 0.5);
+}
+.black-on-white .ecosystem .link-big-blocks .big-link-wrapper .big-link {
+  background-color: #ffffff !important;
+  border: 2px solid #000000;
+}
+.black-on-white .main-screen .top-sidebar {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #000000;
+}
+.black-on-white .news .big-new div.news-body .color-background {
+  background: rgba(0, 0, 0, 0.5);
+}
+.black-on-white .people .people-wrapper .people-scroll {
+  display: none;
+}
+.black-on-white .menu-block .menu-wrapper .logo::before {
+  border-color: #000000 transparent transparent;
+}
+.black-on-white .menu-block .menu-wrapper .category-menu .categories button {
+  background: #ffffff !important;
+  border: 1px solid #000000;
+  color: #000000 !important;
+  border-bottom: 4px solid #000000 !important;
+}
+.black-on-white .menu-block .menu-wrapper .category-menu .categories button.active::after {
+  border-color: #000000 transparent transparent !important;
+}
+
+.img-off .main-screen .main-screen-background .video-container,
+.img-off #ship, .img-off #ship_text_background,
+.img-off .galery,
+.img-off .menu-block .menu-wrapper .category-menu .category-content-wrapper .bottom-block .img-block,
+.img-off .img {
+  display: none;
+}
+.img-off .ecosystem .link-big-blocks .big-link-wrapper .big-link,
+.img-off .news .big-new .news-img,
+.img-off .news .smoll-news .new-wrapper .background,
+.img-off .tour,
+.img-off .people .people-wrapper .people-big .people-big-wrap .people-big-img,
+.img-off .people .people-wrapper .people-scroll .people-small,
+.img-off .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic {
+  background-image: none !important;
+}
+
+.img-black-and-white .main-screen .main-screen-background .video-container,
+.img-black-and-white #ship, .img-black-and-white #ship_text_background,
+.img-black-and-white .galery,
+.img-black-and-white .menu-block .menu-wrapper .category-menu .category-content-wrapper .bottom-block .img-block,
+.img-black-and-white .img {
+  filter: grayscale(1);
+}
+.img-black-and-white .ecosystem .link-big-blocks .big-link-wrapper .big-link,
+.img-black-and-white .news .big-new .news-img,
+.img-black-and-white .news .smoll-news .new-wrapper .background,
+.img-black-and-white .tour,
+.img-black-and-white .people .people-wrapper .people-big .people-big-wrap .people-big-img,
+.img-black-and-white .people .people-wrapper .people-scroll .people-small,
+.img-black-and-white .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic {
+  filter: grayscale(1);
+}
