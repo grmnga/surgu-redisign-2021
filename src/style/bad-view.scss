@@ -11,6 +11,62 @@
 
 $black: #000000;
 $white: #ffffff;
+$light_blue: #9dd1ff;
+$dark_blue: #063462;
+$yellow: #f7f3d6;
+$brown: #4d4b43;
+$dark_brown: #3b2717;
+$green: #a9e44d;
+
+.fs-m {
+  font-size: 1.2rem;
+  .ecosystem .block-with-ship .top-container .target-audiences a {
+    width: 20%;
+  }
+  .ecosystem .block-with-ship .bottom-container .departments {
+    width: 100%;
+  }
+  h2, h3 a {
+    line-height: 80px;
+  }
+  .news .big-new .news-border {
+    height: 550px;
+  }
+  .news .big-new div.news-body .new-content {
+    padding: 5px;
+    h3.title {
+      height: auto;
+    }
+    .new-text-wrap .text {
+      line-height: 25px;
+    }
+  }
+}
+
+.fs-l {
+  font-size: 1.5rem;
+  .ecosystem .block-with-ship .top-container .target-audiences a {
+    width: 20%;
+  }
+  .ecosystem .block-with-ship .bottom-container .departments {
+    width: 100%;
+  }
+  h2, h3 a {
+    line-height: 80px;
+  }
+  .news .big-new .news-border {
+    height: 550px;
+  }
+  .news .big-new div.news-body .new-content {
+    padding: 5px;
+    h3.title {
+      height: auto;
+    }
+    .new-text-wrap .text {
+      line-height: 25px;
+    }
+  }
+}
 
 .black-on-white {
   a, a:hover, p, span, i, h2 { color: $black!important; }
@@ -35,7 +91,6 @@ $white: #ffffff;
   footer .bottom-footer .social button:hover,
   .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover { background: $white; }
 
-  // .ecosystem .link-big-blocks .big-link-wrapper .big-link,
   .tour a, .tour a:hover,
   footer { background: $white!important; border: 2px solid $black; }
 
@@ -55,7 +110,6 @@ $white: #ffffff;
   .ecosystem .link-big-blocks .big-link-wrapper .big-link { background-color: $white!important; border: 2px solid $black; }
   .main-screen .top-sidebar { background-color: rgba(255, 255, 255, 0.8); border-bottom: 2px solid $black }
   .news .big-new div.news-body .color-background { background: rgba($black, 0.5); }
-  .people .people-wrapper .people-scroll { display: none; } // нужно добавить альты для историй
   .menu-block .menu-wrapper .logo::before { border-color: $black transparent transparent; }
   .menu-block .menu-wrapper .category-menu .categories button {
     background: $white!important;
@@ -63,25 +117,320 @@ $white: #ffffff;
     color: $black!important;
     border-bottom: 4px solid $black!important; }
   .menu-block .menu-wrapper .category-menu .categories button.active::after { border-color: $black transparent transparent!important; }
+}
 
-  // .ecosystem .block-with-ship .top-container .target-audiences a { background: $white!important; border: 1px solid $black }
-  // .ecosystem .block-with-ship .bottom-container { background: $white; }
-  // .ecosystem .block-with-ship .bottom-container .department a:hover:before { background: $black; }
-  // .news h2::after { background: $black; }
-  // .news .big-new .news-border { border-color: $black; }
-  // .news ul.slick-dots li.slick-active { background: $black; }
-  // .news button.slick-arrow:hover::before { color: $black; }
-  // .news .smoll-news .new-wrapper a.news-body .date { background: $white; }
-  // .news .more-button button:hover { background: $white;; }
-  // .tour { background: $white; }
-  // .tour a, .tour a:hover { background: $white; border: 2px solid $black; }
-  // .people .people-wrapper .people-big h2::after { background: $black; }
-  // .people .people-wrapper .people-big .people-big-wrap .people-big-img .text { background: $white; }
-  // footer { background: $white; border: 2px solid $black; }
-  // footer .bottom-footer .social button:hover { background: $white; }
-  // .menu-block .menu-wrapper .logo { background: $black; }
-  // .menu-block .menu-wrapper .main-menu .bottom-links a:hover { border-color: $black; }
-  // .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a { background: $white; border: 1px solid $black; }
+.white-on-black {
+  a, a:hover, p, span, i, h2, h3,
+  .news button.slick-arrow::before,
+  .news .more-button button,
+  input { color: $white!important; }
+
+  * { border-color: $white!important; }
+
+  .menu-buttons .menu,
+  .menu-buttons .menu:hover,
+  .menu-buttons .category,
+  .menu-buttons .category:hover,
+  .menu-buttons.category-menu-active .menu:hover,
+  .menu-buttons.category-menu-active .category,
+  .menu-buttons.category-menu-active .category:hover,
+  .ecosystem .block-with-ship .top-container .target-audiences a,
+  .news .more-button button,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+  .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+    background: $black!important; border: 1px solid $white;
+  }
+  
+  .sv_settings,
+  .main-screen,
+  #ship_color_background,
+  .ecosystem .link-big-blocks,
+  .ecosystem .block-with-ship .bottom-container,
+  .news,
+  .news .smoll-news .new-wrapper a.news-body .date,
+  .news .more-button button:hover,
+  .news .big-new div.news-body .new-content,
+  .tour,
+  .people,
+  .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+  .contacts,
+  footer .bottom-footer .social button:hover,
+  .menu-wrapper,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+  input {
+    background: $black!important;
+  }
+
+  .tour a, .tour a:hover,
+  footer {
+    background: $black!important; border: 2px solid $white;
+  }
+
+  .ecosystem .block-with-ship .bottom-container .department a:before,
+  .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+  .news h2::after,
+  .news ul.slick-dots li.slick-active,
+  .people .people-wrapper .people-big h2::after,
+  .menu-block .menu-wrapper .logo { background: $white; }
+
+  .news .big-new .news-border,
+  .news .smoll-news .new-wrapper a.news-body,
+  .people .people-wrapper .people-big .people-big-wrap .people-border,
+  .menu-block .menu-wrapper .main-menu .bottom-links a:hover { border-color: $white; }
+
+  .main-screen .main-screen-background .logo { background: rgba($black, 0.5); }
+  .ecosystem .link-big-blocks .big-link-wrapper .big-link { background-color: $black!important; border: 2px solid $white; }
+  .main-screen .top-sidebar { background: $black!important; border-bottom: 2px solid $white }
+  .news .big-new div.news-body .color-background { background: rgba($white, 0.5); }
+  .menu-block .menu-wrapper .logo::before { border-color: $white transparent transparent; }
+  .menu-block .menu-wrapper .category-menu .categories button {
+    background: $black!important;
+    border: 1px solid $white;
+    color: $white!important;
+    border-bottom: 4px solid $white!important; }
+  .menu-block .menu-wrapper .category-menu .categories button.active::after { border-color: $white transparent transparent!important; }
+}
+
+.blue-on-blue {
+  a, a:hover, p, span, i, h2, h3,
+  .news button.slick-arrow::before,
+  .news .more-button button,
+  input { color: $dark_blue!important; }
+
+  * { border-color: $dark_blue!important; }
+
+  .menu-buttons .menu,
+  .menu-buttons .menu:hover,
+  .menu-buttons .category,
+  .menu-buttons .category:hover,
+  .menu-buttons.category-menu-active .menu:hover,
+  .menu-buttons.category-menu-active .category,
+  .menu-buttons.category-menu-active .category:hover,
+  .ecosystem .block-with-ship .top-container .target-audiences a,
+  .news .more-button button,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+  .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+    background: $light_blue!important; border: 1px solid $dark_blue;
+  }
+  
+  .main-screen,
+  #ship_color_background,
+  .ecosystem .link-big-blocks,
+  .ecosystem .block-with-ship .bottom-container,
+  .news,
+  .news .smoll-news .new-wrapper a.news-body .date,
+  .news .more-button button:hover,
+  .news .big-new div.news-body .new-content,
+  .tour,
+  .people,
+  .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+  .contacts,
+  footer .bottom-footer .social button:hover,
+  .menu-wrapper,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+  input {
+    background: $light_blue!important;
+  }
+
+  .tour a, .tour a:hover,
+  footer {
+    background: $light_blue!important; border: 2px solid $dark_blue;
+  }
+
+  .ecosystem .block-with-ship .bottom-container .department a:before,
+  .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+  .news h2::after,
+  .news ul.slick-dots li.slick-active,
+  .people .people-wrapper .people-big h2::after,
+  .menu-block .menu-wrapper .logo { background: $dark_blue; }
+
+  .news .big-new .news-border,
+  .news .smoll-news .new-wrapper a.news-body,
+  .people .people-wrapper .people-big .people-big-wrap .people-border,
+  .menu-block .menu-wrapper .main-menu .bottom-links a:hover { border-color: $dark_blue; }
+
+  .main-screen .main-screen-background .logo { background: rgba($light_blue, 0.5); }
+  .ecosystem .link-big-blocks .big-link-wrapper .big-link { background-color: $light_blue!important; border: 2px solid $dark_blue; }
+  .main-screen .top-sidebar { background: $light_blue!important; border-bottom: 2px solid $dark_blue }
+  .news .big-new div.news-body .color-background { background: rgba($dark_blue, 0.5); }
+  .menu-block .menu-wrapper .logo::before { border-color: $dark_blue transparent transparent; }
+  .menu-block .menu-wrapper .category-menu .categories button {
+    background: $light_blue!important;
+    border: 1px solid $dark_blue;
+    color: $dark_blue!important;
+    border-bottom: 4px solid $dark_blue!important; }
+  .menu-block .menu-wrapper .category-menu .categories button.active::after { border-color: $dark_blue transparent transparent!important; }
+}
+
+.brown-on-yellow {
+  a, a:hover, p, span, i, h2, h3,
+  .news button.slick-arrow::before,
+  .news .more-button button,
+  input { color: $brown!important; }
+
+  * { border-color: $brown!important; }
+
+  .menu-buttons .menu,
+  .menu-buttons .menu:hover,
+  .menu-buttons .category,
+  .menu-buttons .category:hover,
+  .menu-buttons.category-menu-active .menu:hover,
+  .menu-buttons.category-menu-active .category,
+  .menu-buttons.category-menu-active .category:hover,
+  .ecosystem .block-with-ship .top-container .target-audiences a,
+  .news .more-button button,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+  .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+    background: $yellow!important; border: 1px solid $brown;
+  }
+  
+  .main-screen,
+  #ship_color_background,
+  .ecosystem .link-big-blocks,
+  .ecosystem .block-with-ship .bottom-container,
+  .news,
+  .news .smoll-news .new-wrapper a.news-body .date,
+  .news .more-button button:hover,
+  .news .big-new div.news-body .new-content,
+  .tour,
+  .people,
+  .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+  .contacts,
+  footer .bottom-footer .social button:hover,
+  .menu-wrapper,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+  input {
+    background: $yellow!important;
+  }
+
+  .tour a, .tour a:hover,
+  footer {
+    background: $yellow!important; border: 2px solid $brown;
+  }
+
+  .ecosystem .block-with-ship .bottom-container .department a:before,
+  .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+  .news h2::after,
+  .news ul.slick-dots li.slick-active,
+  .people .people-wrapper .people-big h2::after,
+  .menu-block .menu-wrapper .logo { background: $brown; }
+
+  .news .big-new .news-border,
+  .news .smoll-news .new-wrapper a.news-body,
+  .people .people-wrapper .people-big .people-big-wrap .people-border,
+  .menu-block .menu-wrapper .main-menu .bottom-links a:hover { border-color: $brown; }
+
+  .main-screen .main-screen-background .logo { background: rgba($brown, 0.5); }
+  .ecosystem .link-big-blocks .big-link-wrapper .big-link { background-color: $yellow!important; border: 2px solid $brown; }
+  .main-screen .top-sidebar { background: $yellow!important; border-bottom: 2px solid $brown }
+  .news .big-new div.news-body .color-background { background: rgba($brown, 0.5); }
+  .menu-block .menu-wrapper .logo::before { border-color: $brown transparent transparent; }
+  .menu-block .menu-wrapper .category-menu .categories button {
+    background: $yellow!important;
+    border: 1px solid $brown;
+    color: $brown!important;
+    border-bottom: 4px solid $brown!important; }
+  .menu-block .menu-wrapper .category-menu .categories button.active::after { border-color: $brown transparent transparent!important; }
+}
+
+.green-on-brown {
+  a, a:hover, p, span, i, h2, h3,
+  .news button.slick-arrow::before,
+  .news .more-button button,
+  input { color: $green!important; }
+
+  * { border-color: $green!important; }
+
+  .menu-buttons .menu,
+  .menu-buttons .menu:hover,
+  .menu-buttons .category,
+  .menu-buttons .category:hover,
+  .menu-buttons.category-menu-active .menu:hover,
+  .menu-buttons.category-menu-active .category,
+  .menu-buttons.category-menu-active .category:hover,
+  .ecosystem .block-with-ship .top-container .target-audiences a,
+  .news .more-button button,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+  .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+    background: $dark_brown!important; border: 1px solid $green;
+  }
+  
+  .sv_settings,
+  .main-screen,
+  #ship_color_background,
+  .ecosystem .link-big-blocks,
+  .ecosystem .block-with-ship .bottom-container,
+  .news,
+  .news .smoll-news .new-wrapper a.news-body .date,
+  .news .more-button button:hover,
+  .news .big-new div.news-body .new-content,
+  .tour,
+  .people,
+  .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+  .contacts,
+  footer .bottom-footer .social button:hover,
+  .menu-wrapper,
+  .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+  input {
+    background: $dark_brown!important;
+  }
+
+  .tour a, .tour a:hover,
+  footer {
+    background: $dark_brown!important; border: 2px solid $green;
+  }
+
+  .ecosystem .block-with-ship .bottom-container .department a:before,
+  .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+  .news h2::after,
+  .news ul.slick-dots li.slick-active,
+  .people .people-wrapper .people-big h2::after,
+  .menu-block .menu-wrapper .logo { background: $green; }
+
+  .news .big-new .news-border,
+  .news .smoll-news .new-wrapper a.news-body,
+  .people .people-wrapper .people-big .people-big-wrap .people-border,
+  .menu-block .menu-wrapper .main-menu .bottom-links a:hover { border-color: $green; }
+
+  .main-screen .main-screen-background .logo { background: rgba($dark_brown, 0.5); }
+  .ecosystem .link-big-blocks .big-link-wrapper .big-link { background-color: $dark_brown!important; border: 2px solid $green; }
+  .main-screen .top-sidebar { background: $dark_brown!important; border-bottom: 2px solid $green }
+  .news .big-new div.news-body .color-background { background: rgba($green, 0.5); }
+  .menu-block .menu-wrapper .logo::before { border-color: $green transparent transparent; }
+  .menu-block .menu-wrapper .category-menu .categories button {
+    background: $dark_brown!important;
+    border: 1px solid $green;
+    color: $green!important;
+    border-bottom: 4px solid $green!important; }
+  .menu-block .menu-wrapper .category-menu .categories button.active::after { border-color: $green transparent transparent!important; }
+}
+
+.ls-n * {
+  letter-spacing: 0rem!important;
+}
+.ls-m * {
+  letter-spacing: 0.1rem!important;
+}
+.ls-l * {
+  letter-spacing: 0.2rem!important;
+}
+
+.arial * {
+  font-family: "Arial", sans-serif!important;
+  i {
+    font-family: 'icons' !important;
+  }
+}
+
+.tnr * {
+  font-family: "Times New Roman", sans-serif!important;
+  i {
+    font-family: 'icons' !important;
+  }
 }
 
 .img-off {
@@ -98,6 +447,10 @@ $white: #ffffff;
   .people .people-wrapper .people-big .people-big-wrap .people-big-img,
   .people .people-wrapper .people-scroll .people-small,
   .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic { background-image: none!important; }
+
+  .people-scroll {
+    display: none!important;
+  }
 }
 
 .img-black-and-white {
@@ -113,5 +466,10 @@ $white: #ffffff;
   .tour,
   .people .people-wrapper .people-big .people-big-wrap .people-big-img,
   .people .people-wrapper .people-scroll .people-small,
+  .people .people-wrapper .people-scroll .people-small:hover,
   .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic { filter: grayscale(1); }
+  
+  .people-scroll a {
+    border: 1px solid;
+  }
 }

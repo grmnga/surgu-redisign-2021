@@ -10,6 +10,56 @@
   top: 160px;
 }
 
+.fs-m {
+  font-size: 1.2rem;
+}
+.fs-m .ecosystem .block-with-ship .top-container .target-audiences a {
+  width: 20%;
+}
+.fs-m .ecosystem .block-with-ship .bottom-container .departments {
+  width: 100%;
+}
+.fs-m h2, .fs-m h3 a {
+  line-height: 80px;
+}
+.fs-m .news .big-new .news-border {
+  height: 550px;
+}
+.fs-m .news .big-new div.news-body .new-content {
+  padding: 5px;
+}
+.fs-m .news .big-new div.news-body .new-content h3.title {
+  height: auto;
+}
+.fs-m .news .big-new div.news-body .new-content .new-text-wrap .text {
+  line-height: 25px;
+}
+
+.fs-l {
+  font-size: 1.5rem;
+}
+.fs-l .ecosystem .block-with-ship .top-container .target-audiences a {
+  width: 20%;
+}
+.fs-l .ecosystem .block-with-ship .bottom-container .departments {
+  width: 100%;
+}
+.fs-l h2, .fs-l h3 a {
+  line-height: 80px;
+}
+.fs-l .news .big-new .news-border {
+  height: 550px;
+}
+.fs-l .news .big-new div.news-body .new-content {
+  padding: 5px;
+}
+.fs-l .news .big-new div.news-body .new-content h3.title {
+  height: auto;
+}
+.fs-l .news .big-new div.news-body .new-content .new-text-wrap .text {
+  line-height: 25px;
+}
+
 .black-on-white a, .black-on-white a:hover, .black-on-white p, .black-on-white span, .black-on-white i, .black-on-white h2 {
   color: #000000 !important;
 }
@@ -68,9 +118,6 @@
 .black-on-white .news .big-new div.news-body .color-background {
   background: rgba(0, 0, 0, 0.5);
 }
-.black-on-white .people .people-wrapper .people-scroll {
-  display: none;
-}
 .black-on-white .menu-block .menu-wrapper .logo::before {
   border-color: #000000 transparent transparent;
 }
@@ -82,6 +129,386 @@
 }
 .black-on-white .menu-block .menu-wrapper .category-menu .categories button.active::after {
   border-color: #000000 transparent transparent !important;
+}
+
+.white-on-black a, .white-on-black a:hover, .white-on-black p, .white-on-black span, .white-on-black i, .white-on-black h2, .white-on-black h3,
+.white-on-black .news button.slick-arrow::before,
+.white-on-black .news .more-button button,
+.white-on-black input {
+  color: #ffffff !important;
+}
+.white-on-black * {
+  border-color: #ffffff !important;
+}
+.white-on-black .menu-buttons .menu,
+.white-on-black .menu-buttons .menu:hover,
+.white-on-black .menu-buttons .category,
+.white-on-black .menu-buttons .category:hover,
+.white-on-black .menu-buttons.category-menu-active .menu:hover,
+.white-on-black .menu-buttons.category-menu-active .category,
+.white-on-black .menu-buttons.category-menu-active .category:hover,
+.white-on-black .ecosystem .block-with-ship .top-container .target-audiences a,
+.white-on-black .news .more-button button,
+.white-on-black .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+.white-on-black .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+.white-on-black .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+  background: #000000 !important;
+  border: 1px solid #ffffff;
+}
+.white-on-black .sv_settings,
+.white-on-black .main-screen,
+.white-on-black #ship_color_background,
+.white-on-black .ecosystem .link-big-blocks,
+.white-on-black .ecosystem .block-with-ship .bottom-container,
+.white-on-black .news,
+.white-on-black .news .smoll-news .new-wrapper a.news-body .date,
+.white-on-black .news .more-button button:hover,
+.white-on-black .news .big-new div.news-body .new-content,
+.white-on-black .tour,
+.white-on-black .people,
+.white-on-black .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+.white-on-black .contacts,
+.white-on-black footer .bottom-footer .social button:hover,
+.white-on-black .menu-wrapper,
+.white-on-black .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+.white-on-black input {
+  background: #000000 !important;
+}
+.white-on-black .tour a, .white-on-black .tour a:hover,
+.white-on-black footer {
+  background: #000000 !important;
+  border: 2px solid #ffffff;
+}
+.white-on-black .ecosystem .block-with-ship .bottom-container .department a:before,
+.white-on-black .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+.white-on-black .news h2::after,
+.white-on-black .news ul.slick-dots li.slick-active,
+.white-on-black .people .people-wrapper .people-big h2::after,
+.white-on-black .menu-block .menu-wrapper .logo {
+  background: #ffffff;
+}
+.white-on-black .news .big-new .news-border,
+.white-on-black .news .smoll-news .new-wrapper a.news-body,
+.white-on-black .people .people-wrapper .people-big .people-big-wrap .people-border,
+.white-on-black .menu-block .menu-wrapper .main-menu .bottom-links a:hover {
+  border-color: #ffffff;
+}
+.white-on-black .main-screen .main-screen-background .logo {
+  background: rgba(0, 0, 0, 0.5);
+}
+.white-on-black .ecosystem .link-big-blocks .big-link-wrapper .big-link {
+  background-color: #000000 !important;
+  border: 2px solid #ffffff;
+}
+.white-on-black .main-screen .top-sidebar {
+  background: #000000 !important;
+  border-bottom: 2px solid #ffffff;
+}
+.white-on-black .news .big-new div.news-body .color-background {
+  background: rgba(255, 255, 255, 0.5);
+}
+.white-on-black .menu-block .menu-wrapper .logo::before {
+  border-color: #ffffff transparent transparent;
+}
+.white-on-black .menu-block .menu-wrapper .category-menu .categories button {
+  background: #000000 !important;
+  border: 1px solid #ffffff;
+  color: #ffffff !important;
+  border-bottom: 4px solid #ffffff !important;
+}
+.white-on-black .menu-block .menu-wrapper .category-menu .categories button.active::after {
+  border-color: #ffffff transparent transparent !important;
+}
+
+.blue-on-blue a, .blue-on-blue a:hover, .blue-on-blue p, .blue-on-blue span, .blue-on-blue i, .blue-on-blue h2, .blue-on-blue h3,
+.blue-on-blue .news button.slick-arrow::before,
+.blue-on-blue .news .more-button button,
+.blue-on-blue input {
+  color: #063462 !important;
+}
+.blue-on-blue * {
+  border-color: #063462 !important;
+}
+.blue-on-blue .menu-buttons .menu,
+.blue-on-blue .menu-buttons .menu:hover,
+.blue-on-blue .menu-buttons .category,
+.blue-on-blue .menu-buttons .category:hover,
+.blue-on-blue .menu-buttons.category-menu-active .menu:hover,
+.blue-on-blue .menu-buttons.category-menu-active .category,
+.blue-on-blue .menu-buttons.category-menu-active .category:hover,
+.blue-on-blue .ecosystem .block-with-ship .top-container .target-audiences a,
+.blue-on-blue .news .more-button button,
+.blue-on-blue .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+.blue-on-blue .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+.blue-on-blue .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+  background: #9dd1ff !important;
+  border: 1px solid #063462;
+}
+.blue-on-blue .main-screen,
+.blue-on-blue #ship_color_background,
+.blue-on-blue .ecosystem .link-big-blocks,
+.blue-on-blue .ecosystem .block-with-ship .bottom-container,
+.blue-on-blue .news,
+.blue-on-blue .news .smoll-news .new-wrapper a.news-body .date,
+.blue-on-blue .news .more-button button:hover,
+.blue-on-blue .news .big-new div.news-body .new-content,
+.blue-on-blue .tour,
+.blue-on-blue .people,
+.blue-on-blue .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+.blue-on-blue .contacts,
+.blue-on-blue footer .bottom-footer .social button:hover,
+.blue-on-blue .menu-wrapper,
+.blue-on-blue .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+.blue-on-blue input {
+  background: #9dd1ff !important;
+}
+.blue-on-blue .tour a, .blue-on-blue .tour a:hover,
+.blue-on-blue footer {
+  background: #9dd1ff !important;
+  border: 2px solid #063462;
+}
+.blue-on-blue .ecosystem .block-with-ship .bottom-container .department a:before,
+.blue-on-blue .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+.blue-on-blue .news h2::after,
+.blue-on-blue .news ul.slick-dots li.slick-active,
+.blue-on-blue .people .people-wrapper .people-big h2::after,
+.blue-on-blue .menu-block .menu-wrapper .logo {
+  background: #063462;
+}
+.blue-on-blue .news .big-new .news-border,
+.blue-on-blue .news .smoll-news .new-wrapper a.news-body,
+.blue-on-blue .people .people-wrapper .people-big .people-big-wrap .people-border,
+.blue-on-blue .menu-block .menu-wrapper .main-menu .bottom-links a:hover {
+  border-color: #063462;
+}
+.blue-on-blue .main-screen .main-screen-background .logo {
+  background: rgba(157, 209, 255, 0.5);
+}
+.blue-on-blue .ecosystem .link-big-blocks .big-link-wrapper .big-link {
+  background-color: #9dd1ff !important;
+  border: 2px solid #063462;
+}
+.blue-on-blue .main-screen .top-sidebar {
+  background: #9dd1ff !important;
+  border-bottom: 2px solid #063462;
+}
+.blue-on-blue .news .big-new div.news-body .color-background {
+  background: rgba(6, 52, 98, 0.5);
+}
+.blue-on-blue .menu-block .menu-wrapper .logo::before {
+  border-color: #063462 transparent transparent;
+}
+.blue-on-blue .menu-block .menu-wrapper .category-menu .categories button {
+  background: #9dd1ff !important;
+  border: 1px solid #063462;
+  color: #063462 !important;
+  border-bottom: 4px solid #063462 !important;
+}
+.blue-on-blue .menu-block .menu-wrapper .category-menu .categories button.active::after {
+  border-color: #063462 transparent transparent !important;
+}
+
+.brown-on-yellow a, .brown-on-yellow a:hover, .brown-on-yellow p, .brown-on-yellow span, .brown-on-yellow i, .brown-on-yellow h2, .brown-on-yellow h3,
+.brown-on-yellow .news button.slick-arrow::before,
+.brown-on-yellow .news .more-button button,
+.brown-on-yellow input {
+  color: #4d4b43 !important;
+}
+.brown-on-yellow * {
+  border-color: #4d4b43 !important;
+}
+.brown-on-yellow .menu-buttons .menu,
+.brown-on-yellow .menu-buttons .menu:hover,
+.brown-on-yellow .menu-buttons .category,
+.brown-on-yellow .menu-buttons .category:hover,
+.brown-on-yellow .menu-buttons.category-menu-active .menu:hover,
+.brown-on-yellow .menu-buttons.category-menu-active .category,
+.brown-on-yellow .menu-buttons.category-menu-active .category:hover,
+.brown-on-yellow .ecosystem .block-with-ship .top-container .target-audiences a,
+.brown-on-yellow .news .more-button button,
+.brown-on-yellow .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+.brown-on-yellow .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+.brown-on-yellow .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+  background: #f7f3d6 !important;
+  border: 1px solid #4d4b43;
+}
+.brown-on-yellow .main-screen,
+.brown-on-yellow #ship_color_background,
+.brown-on-yellow .ecosystem .link-big-blocks,
+.brown-on-yellow .ecosystem .block-with-ship .bottom-container,
+.brown-on-yellow .news,
+.brown-on-yellow .news .smoll-news .new-wrapper a.news-body .date,
+.brown-on-yellow .news .more-button button:hover,
+.brown-on-yellow .news .big-new div.news-body .new-content,
+.brown-on-yellow .tour,
+.brown-on-yellow .people,
+.brown-on-yellow .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+.brown-on-yellow .contacts,
+.brown-on-yellow footer .bottom-footer .social button:hover,
+.brown-on-yellow .menu-wrapper,
+.brown-on-yellow .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+.brown-on-yellow input {
+  background: #f7f3d6 !important;
+}
+.brown-on-yellow .tour a, .brown-on-yellow .tour a:hover,
+.brown-on-yellow footer {
+  background: #f7f3d6 !important;
+  border: 2px solid #4d4b43;
+}
+.brown-on-yellow .ecosystem .block-with-ship .bottom-container .department a:before,
+.brown-on-yellow .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+.brown-on-yellow .news h2::after,
+.brown-on-yellow .news ul.slick-dots li.slick-active,
+.brown-on-yellow .people .people-wrapper .people-big h2::after,
+.brown-on-yellow .menu-block .menu-wrapper .logo {
+  background: #4d4b43;
+}
+.brown-on-yellow .news .big-new .news-border,
+.brown-on-yellow .news .smoll-news .new-wrapper a.news-body,
+.brown-on-yellow .people .people-wrapper .people-big .people-big-wrap .people-border,
+.brown-on-yellow .menu-block .menu-wrapper .main-menu .bottom-links a:hover {
+  border-color: #4d4b43;
+}
+.brown-on-yellow .main-screen .main-screen-background .logo {
+  background: rgba(77, 75, 67, 0.5);
+}
+.brown-on-yellow .ecosystem .link-big-blocks .big-link-wrapper .big-link {
+  background-color: #f7f3d6 !important;
+  border: 2px solid #4d4b43;
+}
+.brown-on-yellow .main-screen .top-sidebar {
+  background: #f7f3d6 !important;
+  border-bottom: 2px solid #4d4b43;
+}
+.brown-on-yellow .news .big-new div.news-body .color-background {
+  background: rgba(77, 75, 67, 0.5);
+}
+.brown-on-yellow .menu-block .menu-wrapper .logo::before {
+  border-color: #4d4b43 transparent transparent;
+}
+.brown-on-yellow .menu-block .menu-wrapper .category-menu .categories button {
+  background: #f7f3d6 !important;
+  border: 1px solid #4d4b43;
+  color: #4d4b43 !important;
+  border-bottom: 4px solid #4d4b43 !important;
+}
+.brown-on-yellow .menu-block .menu-wrapper .category-menu .categories button.active::after {
+  border-color: #4d4b43 transparent transparent !important;
+}
+
+.green-on-brown a, .green-on-brown a:hover, .green-on-brown p, .green-on-brown span, .green-on-brown i, .green-on-brown h2, .green-on-brown h3,
+.green-on-brown .news button.slick-arrow::before,
+.green-on-brown .news .more-button button,
+.green-on-brown input {
+  color: #a9e44d !important;
+}
+.green-on-brown * {
+  border-color: #a9e44d !important;
+}
+.green-on-brown .menu-buttons .menu,
+.green-on-brown .menu-buttons .menu:hover,
+.green-on-brown .menu-buttons .category,
+.green-on-brown .menu-buttons .category:hover,
+.green-on-brown .menu-buttons.category-menu-active .menu:hover,
+.green-on-brown .menu-buttons.category-menu-active .category,
+.green-on-brown .menu-buttons.category-menu-active .category:hover,
+.green-on-brown .ecosystem .block-with-ship .top-container .target-audiences a,
+.green-on-brown .news .more-button button,
+.green-on-brown .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .more a,
+.green-on-brown .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block,
+.green-on-brown .menu-block .menu-wrapper .main-menu .main-links .dropdown-links .sub .sub-title button {
+  background: #3b2717 !important;
+  border: 1px solid #a9e44d;
+}
+.green-on-brown .sv_settings,
+.green-on-brown .main-screen,
+.green-on-brown #ship_color_background,
+.green-on-brown .ecosystem .link-big-blocks,
+.green-on-brown .ecosystem .block-with-ship .bottom-container,
+.green-on-brown .news,
+.green-on-brown .news .smoll-news .new-wrapper a.news-body .date,
+.green-on-brown .news .more-button button:hover,
+.green-on-brown .news .big-new div.news-body .new-content,
+.green-on-brown .tour,
+.green-on-brown .people,
+.green-on-brown .people .people-wrapper .people-big .people-big-wrap .people-big-img .text,
+.green-on-brown .contacts,
+.green-on-brown footer .bottom-footer .social button:hover,
+.green-on-brown .menu-wrapper,
+.green-on-brown .menu-block .menu-wrapper .category-menu .category-content-wrapper .category-content .left-column .bottom-block .content-block .social button:hover,
+.green-on-brown input {
+  background: #3b2717 !important;
+}
+.green-on-brown .tour a, .green-on-brown .tour a:hover,
+.green-on-brown footer {
+  background: #3b2717 !important;
+  border: 2px solid #a9e44d;
+}
+.green-on-brown .ecosystem .block-with-ship .bottom-container .department a:before,
+.green-on-brown .ecosystem .block-with-ship .bottom-container .department a:hover:before,
+.green-on-brown .news h2::after,
+.green-on-brown .news ul.slick-dots li.slick-active,
+.green-on-brown .people .people-wrapper .people-big h2::after,
+.green-on-brown .menu-block .menu-wrapper .logo {
+  background: #a9e44d;
+}
+.green-on-brown .news .big-new .news-border,
+.green-on-brown .news .smoll-news .new-wrapper a.news-body,
+.green-on-brown .people .people-wrapper .people-big .people-big-wrap .people-border,
+.green-on-brown .menu-block .menu-wrapper .main-menu .bottom-links a:hover {
+  border-color: #a9e44d;
+}
+.green-on-brown .main-screen .main-screen-background .logo {
+  background: rgba(59, 39, 23, 0.5);
+}
+.green-on-brown .ecosystem .link-big-blocks .big-link-wrapper .big-link {
+  background-color: #3b2717 !important;
+  border: 2px solid #a9e44d;
+}
+.green-on-brown .main-screen .top-sidebar {
+  background: #3b2717 !important;
+  border-bottom: 2px solid #a9e44d;
+}
+.green-on-brown .news .big-new div.news-body .color-background {
+  background: rgba(169, 228, 77, 0.5);
+}
+.green-on-brown .menu-block .menu-wrapper .logo::before {
+  border-color: #a9e44d transparent transparent;
+}
+.green-on-brown .menu-block .menu-wrapper .category-menu .categories button {
+  background: #3b2717 !important;
+  border: 1px solid #a9e44d;
+  color: #a9e44d !important;
+  border-bottom: 4px solid #a9e44d !important;
+}
+.green-on-brown .menu-block .menu-wrapper .category-menu .categories button.active::after {
+  border-color: #a9e44d transparent transparent !important;
+}
+
+.ls-n * {
+  letter-spacing: 0rem !important;
+}
+
+.ls-m * {
+  letter-spacing: 0.1rem !important;
+}
+
+.ls-l * {
+  letter-spacing: 0.2rem !important;
+}
+
+.arial * {
+  font-family: "Arial", sans-serif !important;
+}
+.arial * i {
+  font-family: "icons" !important;
+}
+
+.tnr * {
+  font-family: "Times New Roman", sans-serif !important;
+}
+.tnr * i {
+  font-family: "icons" !important;
 }
 
 .img-off .main-screen .main-screen-background .video-container,
@@ -100,6 +527,9 @@
 .img-off .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic {
   background-image: none !important;
 }
+.img-off .people-scroll {
+  display: none !important;
+}
 
 .img-black-and-white .main-screen .main-screen-background .video-container,
 .img-black-and-white #ship, .img-black-and-white #ship_text_background,
@@ -114,6 +544,10 @@
 .img-black-and-white .tour,
 .img-black-and-white .people .people-wrapper .people-big .people-big-wrap .people-big-img,
 .img-black-and-white .people .people-wrapper .people-scroll .people-small,
+.img-black-and-white .people .people-wrapper .people-scroll .people-small:hover,
 .img-black-and-white .ecosystem .block-with-ship .top-container .target-audiences a .ta-pic {
   filter: grayscale(1);
+}
+.img-black-and-white .people-scroll a {
+  border: 1px solid;
 }
